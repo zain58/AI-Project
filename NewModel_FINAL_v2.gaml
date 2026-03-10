@@ -1,0 +1,407 @@
+/**
+* Name: NewModel
+* Based on the internal empty template. 
+* Author: zainn
+*/
+
+model NewModel
+
+global {
+
+    int num_days    <- 60;
+    int current_day <- 0;
+    int run_id      <- 1;
+
+    string input_folder  <- "C:/Users/zainn/downloads/AIproject/input/";
+    string output_folder <- "C:/Users/zainn/downloads/AIproject/output/";
+
+    string voters_file  <- input_folder  + "voters_run_001.csv";
+    string edges_file   <- input_folder  + "edges_run_001.csv";
+    string results_file <- output_folder + "simulation_results_run_001.csv";
+
+    string network_type     <- "erdos_renyi";
+    string preference_model <- "IC";
+    float prop_stubborn  <- 0.3;
+    float prop_strategic <- 0.4;
+    float prop_mixed     <- 0.3;
+
+    int viability_delta <- 0;
+
+    list<string> candidates <- [
+        "Macron", "Le Pen", "Melenchon", "Zemmour", "Pecresse",
+        "Jadot", "Lassalle", "Roussel", "Dupont-Aignan",
+        "Hidalgo", "Poutou", "Arthaud"
+    ];
+
+    map<string,int> candidate_scores <- map([]);
+    list<string> top2_candidates <- [];
+
+    float variance_scores <- 0.0;
+    float social_welfare  <- 0.0;
+    int num_changes       <- 0;
+
+    action reset_candidate_scores {
+        candidate_scores <- map([]);
+        loop c over: candidates {
+            candidate_scores[c] <- 0;
+        }
+    }
+
+    action compute_top2_global {
+        list<string> sc <- candidates sort_by (- candidate_scores[each]);
+        if length(sc) >= 2 {
+            top2_candidates <- [sc[0], sc[1]];
+        } else {
+            top2_candidates <- copy(sc);
+        }
+    }
+
+    action compute_global_metrics {
+
+        do reset_candidate_scores;
+
+        ask voter {
+            if candidate_scores[current_vote] = nil {
+                candidate_scores[current_vote] <- 0;
+            }
+            candidate_scores[current_vote] <- candidate_scores[current_vote] + 1;
+        }
+
+        do compute_top2_global;
+
+        list<float> counts <- [];
+        loop c over: candidates {
+            counts <- counts + [float(candidate_scores[c])];
+        }
+
+        float m <- mean(counts);
+        float s <- 0.0;
+        loop val over: counts {
+            s <- s + (val - m)^2;
+        }
+        variance_scores <- s / length(counts);
+
+        num_changes <- length(voter where (each.changed_today));
+
+        float welfare_sum <- 0.0;
+        if length(top2_candidates) >= 1 {
+            string cand1 <- top2_candidates[0];
+            string cand2 <- cand1;
+
+            if length(top2_candidates) >= 2 {
+                cand2 <- top2_candidates[1];
+            }
+
+            ask voter {
+                int w1 <- self.welfare_score_of(cand1);
+                int w2 <- self.welfare_score_of(cand2);
+                welfare_sum <- welfare_sum + max([w1, w2]);
+            }
+        }
+
+        if length(voter) > 0 {
+            social_welfare <- welfare_sum / length(voter);
+        } else {
+            social_welfare <- 0.0;
+        }
+    }
+
+    action save_row {
+        save [
+            run_id, current_day, length(voter),
+            network_type, preference_model,
+            prop_stubborn, prop_strategic, prop_mixed,
+            variance_scores, social_welfare, num_changes
+        ]
+        to: results_file
+        format: "csv"
+        header: false
+        rewrite: false;
+    }
+
+    init {
+
+        // Matrix indexing in your GAMA setup is [column, row]
+        // Voters CSV columns:
+        // 0:voter_id, 1:agent_type, 2:loyalty, 3..14:pref_1..pref_12, 15:initial_vote
+        matrix vm <- matrix(csv_file(voters_file, ",", true));
+
+        loop i from: 0 to: vm.rows - 1 {
+            create voter number: 1 {
+                voter_id   <- int(vm[0, i]);
+                agent_type <- string(vm[1, i]);
+                loyalty    <- float(vm[2, i]);
+
+                preferences <- [
+                    string(vm[3,  i]), string(vm[4,  i]),
+                    string(vm[5,  i]), string(vm[6,  i]),
+                    string(vm[7,  i]), string(vm[8,  i]),
+                    string(vm[9,  i]), string(vm[10, i]),
+                    string(vm[11, i]), string(vm[12, i]),
+                    string(vm[13, i]), string(vm[14, i])
+                ];
+
+                current_vote  <- string(vm[15, i]);
+                previous_vote <- string(vm[15, i]);
+                next_vote     <- string(vm[15, i]);
+                changed_today <- false;
+            }
+        }
+
+        ask voter {
+            my_neighbors <- [];
+        }
+
+        // Edges CSV columns:
+        // 0:source, 1:target
+        matrix em <- matrix(csv_file(edges_file, ",", true));
+
+        loop i from: 0 to: em.rows - 1 {
+            int s <- int(em[0, i]);
+            int t <- int(em[1, i]);
+
+            voter vs <- one_of(voter where (each.voter_id = s));
+            voter vt <- one_of(voter where (each.voter_id = t));
+
+            if vs != nil and vt != nil {
+                if not (vt in vs.my_neighbors) {
+                    add vt to: vs.my_neighbors;
+                }
+                if not (vs in vt.my_neighbors) {
+                    add vs to: vt.my_neighbors;
+                }
+            }
+        }
+
+        do compute_global_metrics;
+
+        save [
+            "run_id","day","num_agents",
+            "network_type","preference_model",
+            "prop_stubborn","prop_strategic","prop_mixed",
+            "variance_scores","social_welfare","num_changes"
+        ]
+        to: results_file
+        format: "csv"
+        header: false
+        rewrite: true;
+
+        do save_row;
+    }
+
+    reflex step_simulation when: current_day < num_days {
+
+        current_day <- current_day + 1;
+
+        ask voter {
+            previous_vote <- current_vote;
+        }
+
+        ask voter {
+            do decide_next_vote;
+        }
+
+        ask voter {
+            current_vote  <- next_vote;
+            changed_today <- (current_vote != previous_vote);
+            if changed_today {
+                switch_count     <- switch_count + 1;
+                last_changed_day <- current_day;
+            }
+        }
+
+        do compute_global_metrics;
+        do save_row;
+    }
+}
+
+species voter {
+
+    int voter_id;
+    string agent_type;
+    float loyalty;
+
+    list<string> preferences;
+    string current_vote;
+    string previous_vote;
+    string next_vote;
+
+    bool changed_today    <- false;
+    int switch_count      <- 0;
+    int last_changed_day  <- -999;
+
+    list<voter> my_neighbors <- [];
+    map<string,int> local_poll <- map([]);
+    list<string> local_top2 <- [];
+
+    int rank_of (string cand) {
+        int idx <- preferences index_of cand;
+        if idx < 0 {
+            return length(preferences);
+        }
+        return idx + 1;
+    }
+
+    int welfare_score_of (string cand) {
+        int idx <- preferences index_of cand;
+        if idx < 0 {
+            return 0;
+        }
+        return length(preferences) - idx;
+    }
+
+    string best_viable_candidate (list<string> viable) {
+        if length(viable) = 0 {
+            return preferences[0];
+        }
+
+        string best <- viable[0];
+        int best_rank <- rank_of(best);
+
+        loop c over: viable {
+            int r <- rank_of(c);
+            if r < best_rank {
+                best <- c;
+                best_rank <- r;
+            }
+        }
+        return best;
+    }
+
+    action update_local_poll {
+        local_poll <- map([]);
+        loop c over: candidates {
+            local_poll[c] <- 0;
+        }
+
+        if length(my_neighbors) = 0 {
+            local_poll[current_vote] <- 1;
+        } else {
+            loop n over: my_neighbors {
+                if local_poll[n.current_vote] = nil {
+                    local_poll[n.current_vote] <- 0;
+                }
+                local_poll[n.current_vote] <- local_poll[n.current_vote] + 1;
+            }
+        }
+
+        list<string> sc <- candidates sort_by (- local_poll[each]);
+        if length(sc) >= 2 {
+            local_top2 <- [sc[0], sc[1]];
+        } else {
+            local_top2 <- copy(sc);
+        }
+    }
+
+    list<string> compute_viable_candidates {
+        if length(local_top2) = 0 {
+            return candidates;
+        }
+
+        list<string> viable <- copy(local_top2);
+        string second_cand <- local_top2[0];
+
+        if length(local_top2) >= 2 {
+            second_cand <- local_top2[1];
+        }
+
+        int second_score <- local_poll[second_cand];
+
+        loop c over: candidates {
+            if not (c in viable) and (local_poll[c] >= (second_score - viability_delta)) {
+                add c to: viable;
+            }
+        }
+        return viable;
+    }
+
+    float mixed_switch_probability (string favorite) {
+        if length(local_top2) = 0 {
+            return 0.0;
+        }
+
+        string second_cand <- local_top2[0];
+        if length(local_top2) >= 2 {
+            second_cand <- local_top2[1];
+        }
+
+        int fav_score <- 0;
+        if local_poll[favorite] != nil {
+            fav_score <- local_poll[favorite];
+        }
+
+        int sec_score <- 0;
+        if local_poll[second_cand] != nil {
+            sec_score <- local_poll[second_cand];
+        }
+
+        int gap <- sec_score - fav_score;
+        if gap < 0 {
+            gap <- 0;
+        }
+
+        float p <- 0.10 + 0.12 * float(gap) - 0.35 * loyalty;
+
+        if (current_day - last_changed_day) <= 2 {
+            p <- p - 0.15;
+        }
+
+        if p < 0.0 {
+            p <- 0.0;
+        }
+        if p > 1.0 {
+            p <- 1.0;
+        }
+
+        return p;
+    }
+
+    action decide_next_vote {
+
+        do update_local_poll;
+
+        string favorite <- preferences[0];
+        list<string> viable <- compute_viable_candidates;
+        string best_v <- best_viable_candidate(viable);
+
+        if agent_type = "stubborn" {
+            next_vote <- favorite;
+
+        } else if agent_type = "strategic" {
+            if favorite in viable {
+                next_vote <- favorite;
+            } else {
+                next_vote <- best_v;
+            }
+
+        } else {
+            if favorite in viable {
+                next_vote <- favorite;
+            } else {
+                float p <- mixed_switch_probability(favorite);
+                if flip(p) {
+                    next_vote <- best_v;
+                } else {
+                    next_vote <- favorite;
+                }
+            }
+        }
+    }
+}
+
+experiment main type: gui {
+    output {
+        monitor "Day" value: current_day;
+        monitor "Variance of scores" value: variance_scores;
+        monitor "Social welfare" value: social_welfare;
+        monitor "Number of opinion changes" value: num_changes;
+
+        display "Daily indicators" type: 2d {
+            chart "Daily indicators" type: series {
+                data "Variance" value: float(variance_scores) color: #blue;
+                data "Social welfare" value: float(social_welfare) color: #green;
+                data "Opinion changes" value: float(num_changes) color: #red;
+            }
+        }
+    }
+}
