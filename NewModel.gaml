@@ -21,21 +21,11 @@ global {
     string edges_file   <- "";
     string results_file <- "";
 
-    string network_type     <- "erdos_renyi";
-    string preference_model <- "IC";
-    float prop_stubborn  <- 0.3;
-    float prop_strategic <- 0.4;
-    float prop_mixed     <- 0.3;
-
-    int viability_delta <- 0;
-
     list<string> candidates <- [
         "Macron", "Le Pen", "Melenchon", "Zemmour", "Pecresse",
         "Jadot", "Lassalle", "Roussel", "Dupont-Aignan",
         "Hidalgo", "Poutou", "Arthaud"
     ];
-
-
 
     map<string,int> candidate_scores <- map([]);
     list<string> top2_candidates <- [];
@@ -97,7 +87,13 @@ global {
             ask voter {
                 int w1 <- self.welfare_score_of(cand1);
                 int w2 <- self.welfare_score_of(cand2);
-                welfare_sum <- welfare_sum + max([w1, w2]);
+                
+                // Sum the points for BOTH candidates going to the second round
+                if (cand1 != cand2) {
+                    welfare_sum <- welfare_sum + w1 + w2; 
+                } else {
+                    welfare_sum <- welfare_sum + w1;
+                }
             }
         }
 
@@ -110,10 +106,7 @@ global {
 
     action save_row {
         save [
-            run_id, current_day, length(voter),
-            network_type, preference_model,
-            prop_stubborn, prop_strategic, prop_mixed,
-            variance_scores, social_welfare, num_changes
+            run_id, current_day, variance_scores, social_welfare, num_changes
         ]
         to: results_file
         format: "csv"
@@ -190,10 +183,7 @@ global {
 
         // Write header row once
         save [
-            "run_id","day","num_agents",
-            "network_type","preference_model",
-            "prop_stubborn","prop_strategic","prop_mixed",
-            "variance_scores","social_welfare","num_changes"
+            "run_id","day","variance_scores","social_welfare","num_changes"
         ]
         to: results_file
         format: "csv"
@@ -218,17 +208,14 @@ global {
         ask voter {
             current_vote  <- next_vote;
             changed_today <- (current_vote != previous_vote);
-            if changed_today {
-                switch_count     <- switch_count + 1;
-                last_changed_day <- current_day;
-            }
+            // Removed the dead switch_count tracking here
         }
 
         do compute_global_metrics;
         do save_row;
     }
 
-    reflex end_run when: current_day = num_days {
+    reflex end_run when: current_day >= num_days {
         write "Run " + run_id + " complete. File saved: " + results_file;
     }
 }
@@ -245,8 +232,6 @@ species voter {
     string next_vote;
 
     bool changed_today   <- false;
-    int switch_count     <- 0;
-    int last_changed_day <- -999;
 
     list<voter> my_neighbors <- [];
     map<string,int> local_poll <- map([]);
@@ -263,9 +248,9 @@ species voter {
     int welfare_score_of (string cand) {
         int idx <- preferences index_of cand;
         if idx < 0 {
-            return 0;
+            return 12; // If candidate isn't found, assign the worst possible rank (12)
         }
-        return length(preferences) - idx;
+        return idx + 1; // 1st position = 1 point, 2nd position = 2 points, etc.
     }
 
     string best_viable_candidate (list<string> viable) {
@@ -328,11 +313,6 @@ species voter {
             next_vote <- favorite;
 
         } else if agent_type = "strategic" {
-            // Model 2: Pure Strategic Agent (Expected Utility Maximizer)
-            // Logic: EU = P(win) * U(win). 
-            // This agent treats P(win) as zero if their favorite is not in the top-2 (viable).
-            // If EU(favorite) is zero, they switch to the top candidate in their preferences 
-            // that has a mathematical chance (P(win) > 0) by being in the top-2.
             if favorite in viable {
                 next_vote <- favorite;
             } else {
@@ -340,37 +320,43 @@ species voter {
             }
 
         } else { // Model 3: Mixed / In-Between Agent (Bounded Rationality)
-            float p_fav <- 0.0;
-            float margin <- 1.0; // Default to wide margin
             
-            if total_votes > 0 {
-                p_fav <- float(local_poll[favorite]) / total_votes;
+            // ALWAYS stay loyal if your favorite is already in the top 2
+            if favorite in viable {
+                next_vote <- favorite;
+            } else {
+                float p_fav <- 0.0;
+                float margin <- 1.0; 
                 
-                if length(local_top2) >= 2 {
-                    margin <- float(local_poll[local_top2[0]] - local_poll[local_top2[1]]) / total_votes;
+                if total_votes > 0 {
+                    p_fav <- float(local_poll[favorite]) / total_votes;
+                    if length(local_top2) >= 2 {
+                        // Use abs() to ensure margin is always positive
+                        margin <- float(abs(local_poll[local_top2[0]] - local_poll[local_top2[1]])) / total_votes;
+                    }
                 }
-            }
 
-            // Tipping Point Logic (Two-Factor Rule):
-            // 1. Abandonment: P(favorite) < 10% 
-            // 2. Efficacy: Race is tight (Margin < 5%)
-            if (p_fav < 0.10) and (margin < 0.05) {
-                // Risk penalty logic: higher loyalty = lower chance to take the risk of switching
-                if flip(1.0 - loyalty) {
-                    next_vote <- best_v;
+                // Tipping Point Logic (Two-Factor Rule):
+                // 1. Abandonment: P(favorite) < 10%
+                // 2. Efficacy: Race is tight (Margin < 5%)
+                if (p_fav < 0.10) and (margin < 0.05) {
+                    // Risk penalty logic: higher loyalty = lower chance to take the risk of switching
+                    if flip(1.0 - loyalty) {
+                        next_vote <- best_v;
+                    } else {
+                        next_vote <- favorite;
+                    }
                 } else {
+                    // Stay loyal if candidate is still viable (>10%) or race isn't tight (>5%)
                     next_vote <- favorite;
                 }
-            } else {
-                // Stay loyal if candidate is still viable (>10%) or race isn't tight (>5%)
-                next_vote <- favorite;
             }
         }
     }
 }
 
 // GUI experiment — single run
-experiment main type: gui {
+experiment main type: gui until: (current_day = num_days) {
     parameter "Run ID" var: run_id min: 1 max: 999;
 
     output {
