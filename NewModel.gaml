@@ -1,10 +1,10 @@
 /**
-* Name: NewModel
-* Based on the internal empty template. 
+* Name: NewModel (Multi-Run Batch)
 * Author: zainn
+* Reads separate input folder for each run_id
 */
 
-model NewModel
+model NewModel1
 
 global {
 
@@ -15,9 +15,11 @@ global {
     string input_folder  <- "C:/Users/zainn/downloads/AIproject/input/";
     string output_folder <- "C:/Users/zainn/downloads/AIproject/output/";
 
-    string voters_file  <- input_folder  + "voters_run_001.csv";
-    string edges_file   <- input_folder  + "edges_run_001.csv";
-    string results_file <- output_folder + "simulation_results_run_001.csv";
+    string run_tag      <- "";
+    string run_folder   <- "";
+    string voters_file  <- "";
+    string edges_file   <- "";
+    string results_file <- "";
 
     string network_type     <- "erdos_renyi";
     string preference_model <- "IC";
@@ -32,6 +34,8 @@ global {
         "Jadot", "Lassalle", "Roussel", "Dupont-Aignan",
         "Hidalgo", "Poutou", "Arthaud"
     ];
+
+
 
     map<string,int> candidate_scores <- map([]);
     list<string> top2_candidates <- [];
@@ -87,11 +91,9 @@ global {
         if length(top2_candidates) >= 1 {
             string cand1 <- top2_candidates[0];
             string cand2 <- cand1;
-
             if length(top2_candidates) >= 2 {
                 cand2 <- top2_candidates[1];
             }
-
             ask voter {
                 int w1 <- self.welfare_score_of(cand1);
                 int w2 <- self.welfare_score_of(cand2);
@@ -121,17 +123,31 @@ global {
 
     init {
 
-        // Matrix indexing in your GAMA setup is [column, row]
-        // Voters CSV columns:
-        // 0:voter_id, 1:agent_type, 2:loyalty, 3..14:pref_1..pref_12, 15:initial_vote
-        matrix vm <- matrix(csv_file(voters_file, ",", true));
+        // Build padded run tag: 1 -> 001, 12 -> 012, 100 -> 100
+        if run_id < 10 {
+            run_tag <- "00" + string(run_id);
+        } else if run_id < 100 {
+            run_tag <- "0" + string(run_id);
+        } else {
+            run_tag <- string(run_id);
+        }
 
+        // Each run has its own input subfolder
+        run_folder   <- input_folder + "run_" + run_tag + "/";
+        voters_file  <- run_folder + "voters_run_" + run_tag + ".csv";
+        edges_file   <- run_folder + "edges_run_" + run_tag + ".csv";
+        results_file <- output_folder + "simulation_results_run_" + run_tag + ".csv";
+
+        write "Starting run " + run_id + " using folder: " + run_folder;
+        write "Results will be saved to: " + results_file;
+
+        // Load voters
+        matrix vm <- matrix(csv_file(voters_file, ",", true));
         loop i from: 0 to: vm.rows - 1 {
             create voter number: 1 {
                 voter_id   <- int(vm[0, i]);
                 agent_type <- string(vm[1, i]);
                 loyalty    <- float(vm[2, i]);
-
                 preferences <- [
                     string(vm[3,  i]), string(vm[4,  i]),
                     string(vm[5,  i]), string(vm[6,  i]),
@@ -140,7 +156,6 @@ global {
                     string(vm[11, i]), string(vm[12, i]),
                     string(vm[13, i]), string(vm[14, i])
                 ];
-
                 current_vote  <- string(vm[15, i]);
                 previous_vote <- string(vm[15, i]);
                 next_vote     <- string(vm[15, i]);
@@ -152,10 +167,8 @@ global {
             my_neighbors <- [];
         }
 
-        // Edges CSV columns:
-        // 0:source, 1:target
+        // Load edges
         matrix em <- matrix(csv_file(edges_file, ",", true));
-
         loop i from: 0 to: em.rows - 1 {
             int s <- int(em[0, i]);
             int t <- int(em[1, i]);
@@ -175,6 +188,7 @@ global {
 
         do compute_global_metrics;
 
+        // Write header row once
         save [
             "run_id","day","num_agents",
             "network_type","preference_model",
@@ -213,6 +227,10 @@ global {
         do compute_global_metrics;
         do save_row;
     }
+
+    reflex end_run when: current_day = num_days {
+        write "Run " + run_id + " complete. File saved: " + results_file;
+    }
 }
 
 species voter {
@@ -226,9 +244,9 @@ species voter {
     string previous_vote;
     string next_vote;
 
-    bool changed_today    <- false;
-    int switch_count      <- 0;
-    int last_changed_day  <- -999;
+    bool changed_today   <- false;
+    int switch_count     <- 0;
+    int last_changed_day <- -999;
 
     list<voter> my_neighbors <- [];
     map<string,int> local_poll <- map([]);
@@ -254,7 +272,6 @@ species voter {
         if length(viable) = 0 {
             return preferences[0];
         }
-
         string best <- viable[0];
         int best_rank <- rank_of(best);
 
@@ -300,11 +317,9 @@ species voter {
 
         list<string> viable <- copy(local_top2);
         string second_cand <- local_top2[0];
-
         if length(local_top2) >= 2 {
             second_cand <- local_top2[1];
         }
-
         int second_score <- local_poll[second_cand];
 
         loop c over: candidates {
@@ -341,23 +356,19 @@ species voter {
         }
 
         float p <- 0.10 + 0.12 * float(gap) - 0.35 * loyalty;
-
         if (current_day - last_changed_day) <= 2 {
             p <- p - 0.15;
         }
-
         if p < 0.0 {
             p <- 0.0;
         }
         if p > 1.0 {
             p <- 1.0;
         }
-
         return p;
     }
 
     action decide_next_vote {
-
         do update_local_poll;
 
         string favorite <- preferences[0];
@@ -389,7 +400,10 @@ species voter {
     }
 }
 
+// GUI experiment — single run
 experiment main type: gui {
+    parameter "Run ID" var: run_id min: 1 max: 999;
+
     output {
         monitor "Day" value: current_day;
         monitor "Variance of scores" value: variance_scores;
@@ -404,4 +418,13 @@ experiment main type: gui {
             }
         }
     }
+}
+
+// Batch experiment — automatic 50 runs
+experiment batch_runs type: batch until: current_day = num_days {
+    parameter "Run ID" var: run_id among: [1,2,3,4,5,6,7,8,9,10,
+                                           11,12,13,14,15,16,17,18,19,20,
+                                           21,22,23,24,25,26,27,28,29,30,
+                                           31,32,33,34,35,36,37,38,39,40,
+                                           41,42,43,44,45,46,47,48,49,50];
 }
