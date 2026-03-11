@@ -1,2 +1,0 @@
-run_id,num_agents,network_type,preference_model,prop_stubborn,prop_strategic,prop_mixed,avg_degree,seed
-1,1000,erdos_renyi,IC,0.3,0.4,0.3,10,42
