@@ -12,8 +12,8 @@ global {
     int current_day <- 0;
     int run_id      <- 1;
 
-    string input_folder  <- "C:/Users/zainn/downloads/AIproject/input/";
-    string output_folder <- "C:/Users/zainn/downloads/AIproject/output/";
+   string input_folder  <- "C:/Users/moeez/Downloads/ATAI/GamaSetting/AIProject/input/";
+   string output_folder <- "C:/Users/moeez/Downloads/ATAI/GamaSetting/AIProject/output/";
 
     string run_tag      <- "";
     string run_folder   <- "";
@@ -310,91 +310,60 @@ species voter {
         }
     }
 
-    list<string> compute_viable_candidates {
-        if length(local_top2) = 0 {
-            return candidates;
-        }
-
-        list<string> viable <- copy(local_top2);
-        string second_cand <- local_top2[0];
-        if length(local_top2) >= 2 {
-            second_cand <- local_top2[1];
-        }
-        int second_score <- local_poll[second_cand];
-
-        loop c over: candidates {
-            if not (c in viable) and (local_poll[c] >= (second_score - viability_delta)) {
-                add c to: viable;
-            }
-        }
-        return viable;
-    }
-
-    float mixed_switch_probability (string favorite) {
-        if length(local_top2) = 0 {
-            return 0.0;
-        }
-
-        string second_cand <- local_top2[0];
-        if length(local_top2) >= 2 {
-            second_cand <- local_top2[1];
-        }
-
-        int fav_score <- 0;
-        if local_poll[favorite] != nil {
-            fav_score <- local_poll[favorite];
-        }
-
-        int sec_score <- 0;
-        if local_poll[second_cand] != nil {
-            sec_score <- local_poll[second_cand];
-        }
-
-        int gap <- sec_score - fav_score;
-        if gap < 0 {
-            gap <- 0;
-        }
-
-        float p <- 0.10 + 0.12 * float(gap) - 0.35 * loyalty;
-        if (current_day - last_changed_day) <= 2 {
-            p <- p - 0.15;
-        }
-        if p < 0.0 {
-            p <- 0.0;
-        }
-        if p > 1.0 {
-            p <- 1.0;
-        }
-        return p;
-    }
-
     action decide_next_vote {
         do update_local_poll;
 
         string favorite <- preferences[0];
-        list<string> viable <- compute_viable_candidates;
+        
+        // Strategic assessment: who are the top 2 candidates in my local network?
+        list<string> viable <- copy(local_top2);
         string best_v <- best_viable_candidate(viable);
+
+        int total_votes <- 0;
+        loop c over: candidates {
+            total_votes <- total_votes + local_poll[c];
+        }
 
         if agent_type = "stubborn" {
             next_vote <- favorite;
 
         } else if agent_type = "strategic" {
+            // Model 2: Pure Strategic Agent (Expected Utility Maximizer)
+            // Logic: EU = P(win) * U(win). 
+            // This agent treats P(win) as zero if their favorite is not in the top-2 (viable).
+            // If EU(favorite) is zero, they switch to the top candidate in their preferences 
+            // that has a mathematical chance (P(win) > 0) by being in the top-2.
             if favorite in viable {
                 next_vote <- favorite;
             } else {
                 next_vote <- best_v;
             }
 
-        } else {
-            if favorite in viable {
-                next_vote <- favorite;
-            } else {
-                float p <- mixed_switch_probability(favorite);
-                if flip(p) {
+        } else { // Model 3: Mixed / In-Between Agent (Bounded Rationality)
+            float p_fav <- 0.0;
+            float margin <- 1.0; // Default to wide margin
+            
+            if total_votes > 0 {
+                p_fav <- float(local_poll[favorite]) / total_votes;
+                
+                if length(local_top2) >= 2 {
+                    margin <- float(local_poll[local_top2[0]] - local_poll[local_top2[1]]) / total_votes;
+                }
+            }
+
+            // Tipping Point Logic (Two-Factor Rule):
+            // 1. Abandonment: P(favorite) < 10% 
+            // 2. Efficacy: Race is tight (Margin < 5%)
+            if (p_fav < 0.10) and (margin < 0.05) {
+                // Risk penalty logic: higher loyalty = lower chance to take the risk of switching
+                if flip(1.0 - loyalty) {
                     next_vote <- best_v;
                 } else {
                     next_vote <- favorite;
                 }
+            } else {
+                // Stay loyal if candidate is still viable (>10%) or race isn't tight (>5%)
+                next_vote <- favorite;
             }
         }
     }
