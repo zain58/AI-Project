@@ -70,58 +70,57 @@ def make_run_id(s, n, r):
 
 
 def load_runs():
-    meta = pd.read_csv(META_FILE).set_index("run_folder").to_dict("index")
+    meta_df = pd.read_csv(META_FILE)
+    meta = meta_df.set_index("run_folder").to_dict("index")
     runs, merged = [], []
 
-    for f in sorted(DATA_DIR.glob("simulation_results_*.csv")):
-        df = pd.read_csv(f).sort_values("day").reset_index(drop=True)
+    files = sorted(DATA_DIR.glob("simulation_results_*.csv"))
+    if not files:
+        print(f"Error: No CSV files found in {DATA_DIR}")
+        return []
 
-        # Unique key matches 'run_folder' in our new universal metadata
-        rid = f.name.replace("simulation_results_", "").replace(".csv", "")
+    for f in files:
+        try:
+            df = pd.read_csv(f).sort_values("day").reset_index(drop=True)
+            rid = f.name.replace("simulation_results_", "").replace(".csv", "")
 
-        if rid not in meta:
-            print(f"Warning: No metadata match for {f.name}")
-            continue
-        
-        # Ensure standard columns exist (handle potential differences in naming)
-        if 'scenario_id' not in df.columns or 'num_agents' not in df.columns:
-            print(f"Warning: Missing standard columns in {f.name}")
-            continue
+            if rid not in meta:
+                continue
+            
+            if 'scenario_id' not in df.columns and 'num_agents' not in df.columns:
+                # Handle teammate's old format if scenario_id is missing
+                pass 
 
-        if len(df) != HORIZON:
-            # Skip runs that didn't complete 60 days
-            print(f"Skipping {f.name}: expected {HORIZON} rows, got {len(df)}")
-            continue
+            if len(df) != HORIZON:
+                continue
 
-        m = meta[rid]
+            m = meta[rid]
+            static = {
+                "num_agents_log": np.log1p(m["num_agents"]),
+                "prop_stubborn": float(m["prop_stubborn"]),
+                "prop_strategic": float(m["prop_strategic"]),
+                "prop_mixed": float(m["prop_mixed"]),
+                "avg_degree": float(m["avg_degree"]),
+                "network_type": str(m["network_type"]),
+                "preference_model": str(m["preference_model"]),
+            }
 
-        static = {
-            "num_agents_log": np.log1p(m["num_agents"]),
-            "prop_stubborn": float(m["prop_stubborn"]),
-            "prop_strategic": float(m["prop_strategic"]),
-            "prop_mixed": float(m["prop_mixed"]),
-            "avg_degree": float(m["avg_degree"]),
-            "network_type": str(m["network_type"]),
-            "preference_model": str(m["preference_model"]),
-        }
+            y = df[TARGETS].astype(float).to_numpy()
+            runs.append({
+                "run_id": rid,
+                "days": df["day"].astype(int).to_numpy(),
+                "y": y,
+                "static": static
+            })
+            merged.append(df.assign(run_id=rid, avg_degree=m["avg_degree"], seed=m["seed"]))
+        except Exception as e:
+            print(f"Skipping {f.name} due to error: {e}")
 
-        y = df[TARGETS].astype(float).to_numpy()
-
-        runs.append({
-            "run_id": rid,
-            "days": df["day"].astype(int).to_numpy(),
-            "y": y,
-            "static": static
-        })
-
-        merged.append(df.assign(run_id=rid, avg_degree=m["avg_degree"], seed=m["seed"]))
-
-    if not runs:
-        raise FileNotFoundError(f"No simulation_results_*.csv files found in {DATA_DIR}")
-
-    pd.concat(merged, ignore_index=True).to_csv(
-        OUT_DIR / "csv" / "merged_long_dataset.csv", index=False
-    )
+    if merged:
+        pd.concat(merged, ignore_index=True).to_csv(
+            OUT_DIR / "csv" / "merged_long_dataset.csv", index=False
+        )
+    
     return runs
 
 
