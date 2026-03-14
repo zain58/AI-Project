@@ -1,0 +1,56 @@
+{
+  "model_family": "three separate many-to-one LSTM surrogates",
+  "targets": [
+    "num_changes",
+    "variance_scores",
+    "social_welfare"
+  ],
+  "horizon_days": 61,
+  "window": 7,
+  "seed_info": "day 0 is used as the initial seed; days 1..60 are predicted recursively",
+  "inputs_used": [
+    "past num_changes",
+    "past variance_scores",
+    "past social_welfare",
+    "day index",
+    "num_agents",
+    "network_type",
+    "preference_model",
+    "prop_stubborn",
+    "prop_strategic",
+    "prop_mixed",
+    "avg_degree"
+  ],
+  "training_params": {
+    "epochs": 120,
+    "batch_size": 16,
+    "learning_rate": 0.0003,
+    "optimizer": "Adam",
+    "clipnorm": 1.0
+  },
+  "split_sizes": {
+    "train_runs": 90,
+    "val_runs": 30,
+    "test_runs": 30
+  },
+  "test_metrics_day1_to_60": {
+    "num_changes": {
+      "mse": 1930.1035263182587,
+      "rmse": 43.93294351984919,
+      "mae": 31.33807581227613,
+      "r2": 0.9760735198447589
+    },
+    "variance_scores": {
+      "mse": 29573624.532588262,
+      "rmse": 5438.16370961635,
+      "mae": 2555.1169077981795,
+      "r2": 0.9753474097636969
+    },
+    "social_welfare": {
+      "mse": 0.005257071923472151,
+      "rmse": 0.0725056682161619,
+      "mae": 0.04927021268274056,
+      "r2": -0.1767700974675015
+    }
+  }
+}

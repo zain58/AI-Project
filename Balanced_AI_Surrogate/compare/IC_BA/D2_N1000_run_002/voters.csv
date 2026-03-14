@@ -1,0 +1,1001 @@
+voter_id,agent_type,loyalty,pref_1,pref_2,pref_3,pref_4,pref_5,pref_6,pref_7,pref_8,pref_9,pref_10,pref_11,pref_12,initial_vote
+0,stubborn,1.0,Jadot,Poutou,Hidalgo,Arthaud,Dupont-Aignan,Lassalle,Zemmour,Pecresse,Macron,Melenchon,Le Pen,Roussel,Jadot
+1,stubborn,1.0,Arthaud,Melenchon,Dupont-Aignan,Lassalle,Jadot,Roussel,Hidalgo,Macron,Zemmour,Poutou,Pecresse,Le Pen,Arthaud
+2,mixed,0.42,Lassalle,Pecresse,Arthaud,Melenchon,Jadot,Zemmour,Macron,Hidalgo,Dupont-Aignan,Poutou,Le Pen,Roussel,Lassalle
+3,mixed,0.851,Hidalgo,Poutou,Roussel,Dupont-Aignan,Lassalle,Le Pen,Macron,Arthaud,Pecresse,Melenchon,Zemmour,Jadot,Hidalgo
+4,mixed,0.435,Jadot,Le Pen,Roussel,Arthaud,Zemmour,Macron,Melenchon,Hidalgo,Lassalle,Pecresse,Dupont-Aignan,Poutou,Jadot
+5,strategic,0.0,Macron,Arthaud,Poutou,Melenchon,Dupont-Aignan,Le Pen,Pecresse,Zemmour,Jadot,Roussel,Hidalgo,Lassalle,Macron
+6,stubborn,1.0,Jadot,Lassalle,Arthaud,Pecresse,Macron,Dupont-Aignan,Le Pen,Melenchon,Hidalgo,Zemmour,Roussel,Poutou,Jadot
+7,strategic,0.0,Macron,Dupont-Aignan,Hidalgo,Le Pen,Pecresse,Lassalle,Zemmour,Jadot,Melenchon,Arthaud,Poutou,Roussel,Macron
+8,strategic,0.0,Pecresse,Macron,Lassalle,Melenchon,Dupont-Aignan,Poutou,Hidalgo,Zemmour,Le Pen,Roussel,Arthaud,Jadot,Pecresse
+9,strategic,0.0,Roussel,Jadot,Pecresse,Poutou,Arthaud,Melenchon,Dupont-Aignan,Macron,Hidalgo,Le Pen,Zemmour,Lassalle,Roussel
+10,stubborn,1.0,Zemmour,Roussel,Poutou,Macron,Le Pen,Dupont-Aignan,Melenchon,Pecresse,Jadot,Arthaud,Lassalle,Hidalgo,Zemmour
+11,stubborn,1.0,Lassalle,Macron,Arthaud,Poutou,Roussel,Hidalgo,Zemmour,Le Pen,Dupont-Aignan,Melenchon,Pecresse,Jadot,Lassalle
+12,mixed,0.891,Hidalgo,Zemmour,Melenchon,Roussel,Poutou,Arthaud,Pecresse,Macron,Le Pen,Lassalle,Jadot,Dupont-Aignan,Hidalgo
+13,stubborn,1.0,Dupont-Aignan,Pecresse,Arthaud,Le Pen,Poutou,Macron,Hidalgo,Jadot,Lassalle,Roussel,Zemmour,Melenchon,Dupont-Aignan
+14,mixed,0.508,Macron,Hidalgo,Dupont-Aignan,Pecresse,Le Pen,Jadot,Melenchon,Lassalle,Arthaud,Poutou,Roussel,Zemmour,Macron
+15,mixed,0.787,Pecresse,Lassalle,Jadot,Roussel,Macron,Arthaud,Zemmour,Melenchon,Poutou,Le Pen,Hidalgo,Dupont-Aignan,Pecresse
+16,strategic,0.0,Melenchon,Pecresse,Poutou,Zemmour,Jadot,Roussel,Dupont-Aignan,Arthaud,Macron,Hidalgo,Lassalle,Le Pen,Melenchon
+17,strategic,0.0,Le Pen,Dupont-Aignan,Jadot,Zemmour,Arthaud,Pecresse,Lassalle,Macron,Roussel,Melenchon,Hidalgo,Poutou,Le Pen
+18,strategic,0.0,Melenchon,Zemmour,Lassalle,Dupont-Aignan,Hidalgo,Jadot,Poutou,Arthaud,Macron,Pecresse,Le Pen,Roussel,Melenchon
+19,stubborn,1.0,Zemmour,Poutou,Le Pen,Arthaud,Jadot,Hidalgo,Melenchon,Roussel,Pecresse,Macron,Lassalle,Dupont-Aignan,Zemmour
+20,mixed,0.5,Zemmour,Dupont-Aignan,Jadot,Le Pen,Poutou,Pecresse,Roussel,Melenchon,Arthaud,Hidalgo,Macron,Lassalle,Zemmour
+21,mixed,0.838,Zemmour,Pecresse,Poutou,Hidalgo,Melenchon,Macron,Jadot,Arthaud,Le Pen,Dupont-Aignan,Lassalle,Roussel,Zemmour
+22,stubborn,1.0,Macron,Lassalle,Melenchon,Poutou,Dupont-Aignan,Zemmour,Le Pen,Jadot,Arthaud,Hidalgo,Roussel,Pecresse,Macron
+23,strategic,0.0,Hidalgo,Jadot,Poutou,Le Pen,Macron,Pecresse,Lassalle,Arthaud,Dupont-Aignan,Zemmour,Melenchon,Roussel,Hidalgo
+24,stubborn,1.0,Hidalgo,Le Pen,Roussel,Zemmour,Lassalle,Pecresse,Dupont-Aignan,Arthaud,Poutou,Melenchon,Macron,Jadot,Hidalgo
+25,strategic,0.0,Melenchon,Poutou,Hidalgo,Lassalle,Jadot,Arthaud,Zemmour,Roussel,Le Pen,Macron,Dupont-Aignan,Pecresse,Melenchon
+26,mixed,0.773,Hidalgo,Le Pen,Melenchon,Roussel,Macron,Jadot,Poutou,Dupont-Aignan,Pecresse,Arthaud,Lassalle,Zemmour,Hidalgo
+27,strategic,0.0,Pecresse,Le Pen,Melenchon,Roussel,Dupont-Aignan,Hidalgo,Lassalle,Jadot,Poutou,Macron,Zemmour,Arthaud,Pecresse
+28,stubborn,1.0,Hidalgo,Zemmour,Macron,Poutou,Arthaud,Melenchon,Jadot,Lassalle,Roussel,Pecresse,Dupont-Aignan,Le Pen,Hidalgo
+29,strategic,0.0,Dupont-Aignan,Arthaud,Macron,Zemmour,Lassalle,Melenchon,Hidalgo,Le Pen,Jadot,Roussel,Poutou,Pecresse,Dupont-Aignan
+30,stubborn,1.0,Jadot,Le Pen,Hidalgo,Lassalle,Zemmour,Dupont-Aignan,Arthaud,Pecresse,Poutou,Melenchon,Macron,Roussel,Jadot
+31,stubborn,1.0,Zemmour,Poutou,Jadot,Le Pen,Pecresse,Hidalgo,Arthaud,Macron,Roussel,Melenchon,Dupont-Aignan,Lassalle,Zemmour
+32,mixed,0.771,Poutou,Zemmour,Roussel,Pecresse,Lassalle,Hidalgo,Jadot,Melenchon,Dupont-Aignan,Arthaud,Le Pen,Macron,Poutou
+33,stubborn,1.0,Poutou,Melenchon,Macron,Zemmour,Arthaud,Pecresse,Hidalgo,Le Pen,Lassalle,Roussel,Jadot,Dupont-Aignan,Poutou
+34,stubborn,1.0,Hidalgo,Poutou,Zemmour,Jadot,Arthaud,Melenchon,Macron,Dupont-Aignan,Lassalle,Le Pen,Pecresse,Roussel,Hidalgo
+35,strategic,0.0,Arthaud,Le Pen,Poutou,Jadot,Macron,Melenchon,Hidalgo,Lassalle,Pecresse,Zemmour,Roussel,Dupont-Aignan,Arthaud
+36,stubborn,1.0,Hidalgo,Le Pen,Arthaud,Macron,Jadot,Poutou,Lassalle,Melenchon,Dupont-Aignan,Zemmour,Roussel,Pecresse,Hidalgo
+37,stubborn,1.0,Roussel,Hidalgo,Poutou,Dupont-Aignan,Pecresse,Zemmour,Melenchon,Jadot,Lassalle,Le Pen,Macron,Arthaud,Roussel
+38,strategic,0.0,Hidalgo,Dupont-Aignan,Le Pen,Poutou,Melenchon,Zemmour,Jadot,Macron,Lassalle,Pecresse,Arthaud,Roussel,Hidalgo
+39,stubborn,1.0,Macron,Jadot,Zemmour,Melenchon,Hidalgo,Le Pen,Dupont-Aignan,Poutou,Arthaud,Lassalle,Pecresse,Roussel,Macron
+40,strategic,0.0,Jadot,Dupont-Aignan,Macron,Lassalle,Roussel,Arthaud,Melenchon,Poutou,Zemmour,Pecresse,Le Pen,Hidalgo,Jadot
+41,strategic,0.0,Lassalle,Hidalgo,Arthaud,Dupont-Aignan,Pecresse,Macron,Roussel,Melenchon,Le Pen,Zemmour,Jadot,Poutou,Lassalle
+42,mixed,0.583,Zemmour,Lassalle,Dupont-Aignan,Arthaud,Roussel,Jadot,Hidalgo,Melenchon,Poutou,Macron,Pecresse,Le Pen,Zemmour
+43,strategic,0.0,Arthaud,Jadot,Dupont-Aignan,Lassalle,Hidalgo,Melenchon,Zemmour,Pecresse,Macron,Poutou,Roussel,Le Pen,Arthaud
+44,stubborn,1.0,Le Pen,Arthaud,Macron,Jadot,Melenchon,Zemmour,Poutou,Roussel,Hidalgo,Pecresse,Lassalle,Dupont-Aignan,Le Pen
+45,strategic,0.0,Zemmour,Dupont-Aignan,Le Pen,Roussel,Lassalle,Melenchon,Jadot,Arthaud,Macron,Hidalgo,Pecresse,Poutou,Zemmour
+46,mixed,0.491,Lassalle,Poutou,Dupont-Aignan,Le Pen,Macron,Jadot,Melenchon,Roussel,Arthaud,Hidalgo,Zemmour,Pecresse,Lassalle
+47,stubborn,1.0,Arthaud,Poutou,Pecresse,Roussel,Zemmour,Melenchon,Hidalgo,Dupont-Aignan,Jadot,Macron,Le Pen,Lassalle,Arthaud
+48,stubborn,1.0,Macron,Roussel,Lassalle,Jadot,Pecresse,Le Pen,Arthaud,Hidalgo,Zemmour,Dupont-Aignan,Poutou,Melenchon,Macron
+49,stubborn,1.0,Roussel,Pecresse,Hidalgo,Dupont-Aignan,Poutou,Lassalle,Melenchon,Le Pen,Zemmour,Arthaud,Macron,Jadot,Roussel
+50,strategic,0.0,Hidalgo,Le Pen,Zemmour,Roussel,Jadot,Melenchon,Macron,Lassalle,Dupont-Aignan,Pecresse,Poutou,Arthaud,Hidalgo
+51,mixed,0.48,Lassalle,Macron,Roussel,Arthaud,Dupont-Aignan,Zemmour,Jadot,Le Pen,Melenchon,Poutou,Hidalgo,Pecresse,Lassalle
+52,mixed,0.679,Le Pen,Dupont-Aignan,Hidalgo,Melenchon,Zemmour,Roussel,Macron,Poutou,Pecresse,Lassalle,Arthaud,Jadot,Le Pen
+53,mixed,0.832,Zemmour,Le Pen,Arthaud,Poutou,Pecresse,Jadot,Roussel,Macron,Hidalgo,Melenchon,Dupont-Aignan,Lassalle,Zemmour
+54,stubborn,1.0,Melenchon,Poutou,Le Pen,Hidalgo,Arthaud,Jadot,Zemmour,Dupont-Aignan,Lassalle,Roussel,Macron,Pecresse,Melenchon
+55,stubborn,1.0,Jadot,Le Pen,Hidalgo,Macron,Zemmour,Dupont-Aignan,Arthaud,Lassalle,Poutou,Pecresse,Roussel,Melenchon,Jadot
+56,stubborn,1.0,Le Pen,Lassalle,Hidalgo,Arthaud,Roussel,Dupont-Aignan,Poutou,Jadot,Macron,Zemmour,Melenchon,Pecresse,Le Pen
+57,stubborn,1.0,Dupont-Aignan,Roussel,Melenchon,Poutou,Macron,Arthaud,Lassalle,Zemmour,Le Pen,Jadot,Pecresse,Hidalgo,Dupont-Aignan
+58,strategic,0.0,Lassalle,Pecresse,Arthaud,Dupont-Aignan,Le Pen,Roussel,Zemmour,Melenchon,Jadot,Hidalgo,Macron,Poutou,Lassalle
+59,mixed,0.627,Dupont-Aignan,Melenchon,Zemmour,Arthaud,Jadot,Roussel,Pecresse,Lassalle,Poutou,Le Pen,Macron,Hidalgo,Dupont-Aignan
+60,strategic,0.0,Lassalle,Jadot,Arthaud,Poutou,Macron,Hidalgo,Dupont-Aignan,Zemmour,Melenchon,Pecresse,Roussel,Le Pen,Lassalle
+61,strategic,0.0,Pecresse,Lassalle,Arthaud,Poutou,Roussel,Le Pen,Melenchon,Jadot,Zemmour,Macron,Dupont-Aignan,Hidalgo,Pecresse
+62,strategic,0.0,Arthaud,Macron,Zemmour,Hidalgo,Pecresse,Lassalle,Jadot,Roussel,Poutou,Dupont-Aignan,Melenchon,Le Pen,Arthaud
+63,stubborn,1.0,Jadot,Roussel,Macron,Zemmour,Dupont-Aignan,Hidalgo,Pecresse,Arthaud,Lassalle,Le Pen,Melenchon,Poutou,Jadot
+64,stubborn,1.0,Poutou,Pecresse,Arthaud,Le Pen,Lassalle,Jadot,Roussel,Zemmour,Hidalgo,Macron,Melenchon,Dupont-Aignan,Poutou
+65,mixed,0.539,Le Pen,Arthaud,Melenchon,Jadot,Poutou,Hidalgo,Pecresse,Macron,Roussel,Zemmour,Dupont-Aignan,Lassalle,Le Pen
+66,stubborn,1.0,Melenchon,Roussel,Dupont-Aignan,Macron,Arthaud,Poutou,Pecresse,Le Pen,Lassalle,Hidalgo,Zemmour,Jadot,Melenchon
+67,stubborn,1.0,Lassalle,Poutou,Melenchon,Le Pen,Jadot,Macron,Pecresse,Roussel,Arthaud,Dupont-Aignan,Hidalgo,Zemmour,Lassalle
+68,stubborn,1.0,Arthaud,Melenchon,Hidalgo,Macron,Zemmour,Pecresse,Le Pen,Lassalle,Roussel,Dupont-Aignan,Jadot,Poutou,Arthaud
+69,strategic,0.0,Macron,Zemmour,Arthaud,Dupont-Aignan,Melenchon,Lassalle,Pecresse,Le Pen,Jadot,Hidalgo,Roussel,Poutou,Macron
+70,stubborn,1.0,Lassalle,Macron,Zemmour,Arthaud,Poutou,Pecresse,Hidalgo,Roussel,Dupont-Aignan,Jadot,Le Pen,Melenchon,Lassalle
+71,stubborn,1.0,Melenchon,Zemmour,Lassalle,Le Pen,Pecresse,Dupont-Aignan,Roussel,Poutou,Arthaud,Hidalgo,Macron,Jadot,Melenchon
+72,mixed,0.792,Arthaud,Pecresse,Jadot,Melenchon,Macron,Le Pen,Poutou,Zemmour,Dupont-Aignan,Lassalle,Roussel,Hidalgo,Arthaud
+73,strategic,0.0,Roussel,Le Pen,Hidalgo,Jadot,Zemmour,Poutou,Arthaud,Melenchon,Macron,Dupont-Aignan,Lassalle,Pecresse,Roussel
+74,strategic,0.0,Jadot,Zemmour,Poutou,Pecresse,Dupont-Aignan,Hidalgo,Roussel,Arthaud,Le Pen,Lassalle,Macron,Melenchon,Jadot
+75,mixed,0.563,Dupont-Aignan,Lassalle,Zemmour,Pecresse,Poutou,Melenchon,Jadot,Macron,Le Pen,Arthaud,Roussel,Hidalgo,Dupont-Aignan
+76,strategic,0.0,Jadot,Dupont-Aignan,Lassalle,Hidalgo,Le Pen,Arthaud,Macron,Zemmour,Melenchon,Poutou,Roussel,Pecresse,Jadot
+77,mixed,0.705,Le Pen,Pecresse,Macron,Poutou,Dupont-Aignan,Zemmour,Roussel,Lassalle,Melenchon,Jadot,Arthaud,Hidalgo,Le Pen
+78,mixed,0.838,Macron,Dupont-Aignan,Le Pen,Zemmour,Roussel,Poutou,Hidalgo,Jadot,Lassalle,Arthaud,Pecresse,Melenchon,Macron
+79,mixed,0.413,Macron,Lassalle,Hidalgo,Arthaud,Zemmour,Jadot,Poutou,Le Pen,Melenchon,Roussel,Pecresse,Dupont-Aignan,Macron
+80,mixed,0.628,Macron,Melenchon,Zemmour,Arthaud,Poutou,Dupont-Aignan,Jadot,Lassalle,Pecresse,Hidalgo,Le Pen,Roussel,Macron
+81,stubborn,1.0,Zemmour,Arthaud,Macron,Dupont-Aignan,Lassalle,Pecresse,Melenchon,Hidalgo,Jadot,Le Pen,Poutou,Roussel,Zemmour
+82,stubborn,1.0,Arthaud,Roussel,Zemmour,Pecresse,Hidalgo,Dupont-Aignan,Poutou,Macron,Jadot,Lassalle,Le Pen,Melenchon,Arthaud
+83,stubborn,1.0,Hidalgo,Macron,Dupont-Aignan,Pecresse,Zemmour,Le Pen,Arthaud,Roussel,Poutou,Melenchon,Jadot,Lassalle,Hidalgo
+84,stubborn,1.0,Poutou,Dupont-Aignan,Zemmour,Arthaud,Jadot,Lassalle,Roussel,Le Pen,Hidalgo,Melenchon,Pecresse,Macron,Poutou
+85,stubborn,1.0,Roussel,Macron,Melenchon,Jadot,Lassalle,Arthaud,Hidalgo,Pecresse,Poutou,Dupont-Aignan,Le Pen,Zemmour,Roussel
+86,stubborn,1.0,Dupont-Aignan,Hidalgo,Le Pen,Macron,Arthaud,Roussel,Lassalle,Poutou,Pecresse,Jadot,Zemmour,Melenchon,Dupont-Aignan
+87,strategic,0.0,Zemmour,Arthaud,Jadot,Poutou,Dupont-Aignan,Le Pen,Melenchon,Hidalgo,Roussel,Lassalle,Macron,Pecresse,Zemmour
+88,mixed,0.778,Arthaud,Hidalgo,Macron,Roussel,Melenchon,Jadot,Lassalle,Zemmour,Poutou,Pecresse,Dupont-Aignan,Le Pen,Arthaud
+89,strategic,0.0,Pecresse,Zemmour,Macron,Roussel,Dupont-Aignan,Arthaud,Poutou,Jadot,Melenchon,Le Pen,Lassalle,Hidalgo,Pecresse
+90,strategic,0.0,Le Pen,Lassalle,Roussel,Hidalgo,Arthaud,Poutou,Dupont-Aignan,Zemmour,Pecresse,Melenchon,Macron,Jadot,Le Pen
+91,strategic,0.0,Hidalgo,Dupont-Aignan,Pecresse,Melenchon,Macron,Roussel,Lassalle,Le Pen,Jadot,Poutou,Zemmour,Arthaud,Hidalgo
+92,stubborn,1.0,Poutou,Arthaud,Le Pen,Lassalle,Melenchon,Pecresse,Hidalgo,Jadot,Macron,Dupont-Aignan,Zemmour,Roussel,Poutou
+93,stubborn,1.0,Hidalgo,Dupont-Aignan,Jadot,Lassalle,Zemmour,Roussel,Poutou,Pecresse,Melenchon,Le Pen,Macron,Arthaud,Hidalgo
+94,stubborn,1.0,Roussel,Poutou,Zemmour,Jadot,Lassalle,Hidalgo,Macron,Le Pen,Melenchon,Arthaud,Dupont-Aignan,Pecresse,Roussel
+95,strategic,0.0,Le Pen,Lassalle,Poutou,Zemmour,Pecresse,Macron,Jadot,Melenchon,Roussel,Hidalgo,Arthaud,Dupont-Aignan,Le Pen
+96,stubborn,1.0,Arthaud,Le Pen,Jadot,Poutou,Hidalgo,Macron,Pecresse,Zemmour,Melenchon,Roussel,Lassalle,Dupont-Aignan,Arthaud
+97,stubborn,1.0,Zemmour,Poutou,Jadot,Roussel,Lassalle,Pecresse,Hidalgo,Dupont-Aignan,Melenchon,Le Pen,Arthaud,Macron,Zemmour
+98,strategic,0.0,Macron,Hidalgo,Le Pen,Melenchon,Poutou,Lassalle,Zemmour,Jadot,Roussel,Dupont-Aignan,Pecresse,Arthaud,Macron
+99,mixed,0.892,Hidalgo,Melenchon,Arthaud,Zemmour,Le Pen,Pecresse,Macron,Lassalle,Roussel,Jadot,Dupont-Aignan,Poutou,Hidalgo
+100,stubborn,1.0,Macron,Le Pen,Jadot,Arthaud,Poutou,Dupont-Aignan,Zemmour,Lassalle,Roussel,Pecresse,Melenchon,Hidalgo,Macron
+101,strategic,0.0,Melenchon,Le Pen,Lassalle,Jadot,Pecresse,Macron,Dupont-Aignan,Poutou,Arthaud,Hidalgo,Zemmour,Roussel,Melenchon
+102,stubborn,1.0,Lassalle,Poutou,Arthaud,Dupont-Aignan,Pecresse,Hidalgo,Roussel,Melenchon,Jadot,Zemmour,Macron,Le Pen,Lassalle
+103,strategic,0.0,Poutou,Le Pen,Jadot,Roussel,Pecresse,Melenchon,Dupont-Aignan,Arthaud,Macron,Zemmour,Lassalle,Hidalgo,Poutou
+104,stubborn,1.0,Lassalle,Pecresse,Dupont-Aignan,Hidalgo,Roussel,Zemmour,Arthaud,Macron,Poutou,Le Pen,Jadot,Melenchon,Lassalle
+105,mixed,0.574,Roussel,Lassalle,Melenchon,Poutou,Le Pen,Pecresse,Macron,Dupont-Aignan,Arthaud,Hidalgo,Zemmour,Jadot,Roussel
+106,mixed,0.662,Melenchon,Dupont-Aignan,Zemmour,Roussel,Poutou,Macron,Lassalle,Jadot,Pecresse,Le Pen,Hidalgo,Arthaud,Melenchon
+107,mixed,0.43,Poutou,Dupont-Aignan,Arthaud,Hidalgo,Melenchon,Lassalle,Pecresse,Zemmour,Le Pen,Jadot,Roussel,Macron,Poutou
+108,strategic,0.0,Le Pen,Zemmour,Pecresse,Roussel,Arthaud,Lassalle,Jadot,Macron,Poutou,Melenchon,Hidalgo,Dupont-Aignan,Le Pen
+109,mixed,0.438,Poutou,Lassalle,Hidalgo,Arthaud,Roussel,Dupont-Aignan,Jadot,Pecresse,Macron,Zemmour,Melenchon,Le Pen,Poutou
+110,mixed,0.542,Zemmour,Dupont-Aignan,Hidalgo,Le Pen,Lassalle,Poutou,Pecresse,Macron,Jadot,Arthaud,Roussel,Melenchon,Zemmour
+111,stubborn,1.0,Roussel,Melenchon,Hidalgo,Zemmour,Macron,Poutou,Le Pen,Pecresse,Jadot,Lassalle,Dupont-Aignan,Arthaud,Roussel
+112,strategic,0.0,Poutou,Roussel,Arthaud,Melenchon,Macron,Pecresse,Dupont-Aignan,Zemmour,Hidalgo,Jadot,Lassalle,Le Pen,Poutou
+113,strategic,0.0,Melenchon,Jadot,Roussel,Pecresse,Le Pen,Dupont-Aignan,Macron,Hidalgo,Lassalle,Zemmour,Poutou,Arthaud,Melenchon
+114,strategic,0.0,Arthaud,Le Pen,Melenchon,Hidalgo,Pecresse,Macron,Roussel,Poutou,Lassalle,Dupont-Aignan,Jadot,Zemmour,Arthaud
+115,mixed,0.769,Hidalgo,Dupont-Aignan,Lassalle,Jadot,Arthaud,Zemmour,Macron,Pecresse,Roussel,Poutou,Melenchon,Le Pen,Hidalgo
+116,stubborn,1.0,Le Pen,Roussel,Hidalgo,Arthaud,Lassalle,Pecresse,Zemmour,Jadot,Poutou,Melenchon,Dupont-Aignan,Macron,Le Pen
+117,stubborn,1.0,Roussel,Hidalgo,Dupont-Aignan,Macron,Melenchon,Arthaud,Lassalle,Zemmour,Jadot,Poutou,Pecresse,Le Pen,Roussel
+118,mixed,0.709,Jadot,Hidalgo,Macron,Arthaud,Dupont-Aignan,Pecresse,Melenchon,Le Pen,Poutou,Zemmour,Roussel,Lassalle,Jadot
+119,strategic,0.0,Pecresse,Zemmour,Le Pen,Macron,Poutou,Roussel,Hidalgo,Lassalle,Melenchon,Dupont-Aignan,Jadot,Arthaud,Pecresse
+120,stubborn,1.0,Poutou,Roussel,Dupont-Aignan,Melenchon,Jadot,Arthaud,Zemmour,Hidalgo,Lassalle,Macron,Pecresse,Le Pen,Poutou
+121,mixed,0.814,Pecresse,Le Pen,Melenchon,Lassalle,Zemmour,Jadot,Poutou,Dupont-Aignan,Roussel,Macron,Arthaud,Hidalgo,Pecresse
+122,stubborn,1.0,Arthaud,Hidalgo,Dupont-Aignan,Poutou,Roussel,Jadot,Pecresse,Le Pen,Zemmour,Lassalle,Melenchon,Macron,Arthaud
+123,strategic,0.0,Melenchon,Arthaud,Pecresse,Jadot,Dupont-Aignan,Zemmour,Le Pen,Lassalle,Roussel,Macron,Hidalgo,Poutou,Melenchon
+124,mixed,0.645,Jadot,Roussel,Hidalgo,Arthaud,Le Pen,Lassalle,Melenchon,Poutou,Zemmour,Pecresse,Macron,Dupont-Aignan,Jadot
+125,stubborn,1.0,Pecresse,Arthaud,Zemmour,Le Pen,Jadot,Poutou,Hidalgo,Dupont-Aignan,Melenchon,Macron,Lassalle,Roussel,Pecresse
+126,stubborn,1.0,Arthaud,Jadot,Melenchon,Poutou,Pecresse,Hidalgo,Zemmour,Macron,Dupont-Aignan,Lassalle,Roussel,Le Pen,Arthaud
+127,stubborn,1.0,Lassalle,Roussel,Pecresse,Le Pen,Poutou,Zemmour,Macron,Dupont-Aignan,Jadot,Arthaud,Melenchon,Hidalgo,Lassalle
+128,stubborn,1.0,Poutou,Arthaud,Jadot,Zemmour,Macron,Le Pen,Melenchon,Dupont-Aignan,Roussel,Lassalle,Hidalgo,Pecresse,Poutou
+129,stubborn,1.0,Melenchon,Lassalle,Roussel,Arthaud,Jadot,Hidalgo,Dupont-Aignan,Zemmour,Poutou,Pecresse,Le Pen,Macron,Melenchon
+130,mixed,0.856,Roussel,Jadot,Lassalle,Arthaud,Macron,Dupont-Aignan,Hidalgo,Poutou,Le Pen,Melenchon,Zemmour,Pecresse,Roussel
+131,strategic,0.0,Le Pen,Zemmour,Pecresse,Hidalgo,Roussel,Arthaud,Jadot,Lassalle,Macron,Poutou,Dupont-Aignan,Melenchon,Le Pen
+132,stubborn,1.0,Pecresse,Jadot,Poutou,Melenchon,Macron,Roussel,Arthaud,Lassalle,Le Pen,Zemmour,Dupont-Aignan,Hidalgo,Pecresse
+133,mixed,0.821,Melenchon,Roussel,Macron,Arthaud,Poutou,Lassalle,Pecresse,Dupont-Aignan,Hidalgo,Le Pen,Zemmour,Jadot,Melenchon
+134,strategic,0.0,Lassalle,Le Pen,Melenchon,Hidalgo,Arthaud,Roussel,Zemmour,Jadot,Pecresse,Macron,Poutou,Dupont-Aignan,Lassalle
+135,strategic,0.0,Lassalle,Zemmour,Roussel,Poutou,Macron,Jadot,Dupont-Aignan,Le Pen,Hidalgo,Melenchon,Arthaud,Pecresse,Lassalle
+136,mixed,0.645,Zemmour,Arthaud,Hidalgo,Melenchon,Poutou,Pecresse,Lassalle,Roussel,Dupont-Aignan,Jadot,Le Pen,Macron,Zemmour
+137,strategic,0.0,Pecresse,Poutou,Le Pen,Roussel,Zemmour,Dupont-Aignan,Hidalgo,Melenchon,Macron,Jadot,Lassalle,Arthaud,Pecresse
+138,stubborn,1.0,Zemmour,Arthaud,Melenchon,Hidalgo,Roussel,Jadot,Le Pen,Poutou,Macron,Pecresse,Lassalle,Dupont-Aignan,Zemmour
+139,stubborn,1.0,Zemmour,Le Pen,Jadot,Pecresse,Arthaud,Hidalgo,Lassalle,Poutou,Roussel,Macron,Melenchon,Dupont-Aignan,Zemmour
+140,stubborn,1.0,Arthaud,Zemmour,Pecresse,Lassalle,Dupont-Aignan,Roussel,Hidalgo,Le Pen,Macron,Melenchon,Jadot,Poutou,Arthaud
+141,stubborn,1.0,Jadot,Lassalle,Le Pen,Pecresse,Hidalgo,Macron,Melenchon,Arthaud,Zemmour,Dupont-Aignan,Poutou,Roussel,Jadot
+142,stubborn,1.0,Lassalle,Dupont-Aignan,Melenchon,Roussel,Hidalgo,Jadot,Macron,Zemmour,Pecresse,Arthaud,Le Pen,Poutou,Lassalle
+143,mixed,0.866,Le Pen,Roussel,Lassalle,Pecresse,Jadot,Arthaud,Melenchon,Poutou,Macron,Zemmour,Hidalgo,Dupont-Aignan,Le Pen
+144,stubborn,1.0,Hidalgo,Macron,Dupont-Aignan,Jadot,Poutou,Le Pen,Zemmour,Melenchon,Arthaud,Pecresse,Roussel,Lassalle,Hidalgo
+145,stubborn,1.0,Roussel,Dupont-Aignan,Zemmour,Arthaud,Pecresse,Hidalgo,Le Pen,Poutou,Lassalle,Jadot,Melenchon,Macron,Roussel
+146,strategic,0.0,Pecresse,Poutou,Le Pen,Melenchon,Dupont-Aignan,Arthaud,Zemmour,Hidalgo,Lassalle,Macron,Jadot,Roussel,Pecresse
+147,mixed,0.817,Macron,Lassalle,Dupont-Aignan,Jadot,Roussel,Zemmour,Poutou,Pecresse,Le Pen,Hidalgo,Arthaud,Melenchon,Macron
+148,stubborn,1.0,Pecresse,Dupont-Aignan,Zemmour,Hidalgo,Arthaud,Macron,Poutou,Lassalle,Le Pen,Jadot,Melenchon,Roussel,Pecresse
+149,stubborn,1.0,Poutou,Pecresse,Lassalle,Arthaud,Roussel,Le Pen,Melenchon,Zemmour,Jadot,Hidalgo,Dupont-Aignan,Macron,Poutou
+150,strategic,0.0,Le Pen,Dupont-Aignan,Pecresse,Lassalle,Jadot,Roussel,Hidalgo,Macron,Arthaud,Zemmour,Melenchon,Poutou,Le Pen
+151,stubborn,1.0,Lassalle,Poutou,Jadot,Zemmour,Arthaud,Le Pen,Macron,Pecresse,Hidalgo,Roussel,Melenchon,Dupont-Aignan,Lassalle
+152,mixed,0.409,Pecresse,Melenchon,Zemmour,Lassalle,Dupont-Aignan,Roussel,Hidalgo,Jadot,Le Pen,Poutou,Arthaud,Macron,Pecresse
+153,strategic,0.0,Le Pen,Jadot,Roussel,Lassalle,Hidalgo,Macron,Melenchon,Dupont-Aignan,Pecresse,Zemmour,Poutou,Arthaud,Le Pen
+154,stubborn,1.0,Macron,Poutou,Zemmour,Lassalle,Roussel,Dupont-Aignan,Hidalgo,Melenchon,Jadot,Pecresse,Arthaud,Le Pen,Macron
+155,stubborn,1.0,Macron,Lassalle,Zemmour,Roussel,Le Pen,Melenchon,Poutou,Arthaud,Dupont-Aignan,Hidalgo,Jadot,Pecresse,Macron
+156,strategic,0.0,Arthaud,Zemmour,Roussel,Poutou,Jadot,Macron,Le Pen,Dupont-Aignan,Lassalle,Hidalgo,Melenchon,Pecresse,Arthaud
+157,stubborn,1.0,Jadot,Pecresse,Poutou,Le Pen,Roussel,Hidalgo,Arthaud,Dupont-Aignan,Zemmour,Melenchon,Macron,Lassalle,Jadot
+158,stubborn,1.0,Macron,Pecresse,Melenchon,Roussel,Arthaud,Hidalgo,Zemmour,Poutou,Lassalle,Dupont-Aignan,Jadot,Le Pen,Macron
+159,mixed,0.467,Jadot,Arthaud,Macron,Roussel,Melenchon,Le Pen,Hidalgo,Dupont-Aignan,Poutou,Zemmour,Pecresse,Lassalle,Jadot
+160,mixed,0.412,Zemmour,Lassalle,Hidalgo,Arthaud,Le Pen,Pecresse,Macron,Jadot,Roussel,Melenchon,Dupont-Aignan,Poutou,Zemmour
+161,stubborn,1.0,Dupont-Aignan,Roussel,Zemmour,Melenchon,Lassalle,Jadot,Le Pen,Pecresse,Macron,Arthaud,Hidalgo,Poutou,Dupont-Aignan
+162,stubborn,1.0,Hidalgo,Dupont-Aignan,Melenchon,Arthaud,Pecresse,Poutou,Le Pen,Roussel,Lassalle,Zemmour,Macron,Jadot,Hidalgo
+163,stubborn,1.0,Arthaud,Lassalle,Melenchon,Poutou,Le Pen,Hidalgo,Zemmour,Roussel,Macron,Dupont-Aignan,Pecresse,Jadot,Arthaud
+164,mixed,0.732,Roussel,Arthaud,Pecresse,Poutou,Le Pen,Lassalle,Melenchon,Macron,Hidalgo,Dupont-Aignan,Zemmour,Jadot,Roussel
+165,stubborn,1.0,Macron,Zemmour,Le Pen,Hidalgo,Roussel,Dupont-Aignan,Lassalle,Poutou,Jadot,Arthaud,Melenchon,Pecresse,Macron
+166,mixed,0.464,Arthaud,Zemmour,Macron,Melenchon,Pecresse,Jadot,Lassalle,Poutou,Le Pen,Roussel,Dupont-Aignan,Hidalgo,Arthaud
+167,strategic,0.0,Melenchon,Jadot,Roussel,Arthaud,Le Pen,Pecresse,Macron,Lassalle,Dupont-Aignan,Poutou,Zemmour,Hidalgo,Melenchon
+168,stubborn,1.0,Zemmour,Jadot,Roussel,Pecresse,Macron,Hidalgo,Le Pen,Poutou,Melenchon,Dupont-Aignan,Lassalle,Arthaud,Zemmour
+169,stubborn,1.0,Roussel,Hidalgo,Poutou,Dupont-Aignan,Jadot,Macron,Lassalle,Le Pen,Pecresse,Melenchon,Arthaud,Zemmour,Roussel
+170,strategic,0.0,Poutou,Zemmour,Pecresse,Arthaud,Melenchon,Jadot,Macron,Le Pen,Hidalgo,Dupont-Aignan,Roussel,Lassalle,Poutou
+171,strategic,0.0,Hidalgo,Poutou,Dupont-Aignan,Le Pen,Melenchon,Jadot,Arthaud,Lassalle,Pecresse,Zemmour,Roussel,Macron,Hidalgo
+172,strategic,0.0,Le Pen,Zemmour,Macron,Melenchon,Arthaud,Hidalgo,Lassalle,Dupont-Aignan,Roussel,Poutou,Pecresse,Jadot,Le Pen
+173,mixed,0.895,Jadot,Macron,Zemmour,Hidalgo,Roussel,Le Pen,Poutou,Pecresse,Dupont-Aignan,Arthaud,Lassalle,Melenchon,Jadot
+174,mixed,0.728,Roussel,Le Pen,Macron,Lassalle,Arthaud,Poutou,Dupont-Aignan,Jadot,Melenchon,Pecresse,Zemmour,Hidalgo,Roussel
+175,mixed,0.53,Macron,Hidalgo,Roussel,Dupont-Aignan,Le Pen,Lassalle,Poutou,Melenchon,Pecresse,Jadot,Arthaud,Zemmour,Macron
+176,strategic,0.0,Melenchon,Poutou,Jadot,Le Pen,Macron,Arthaud,Hidalgo,Dupont-Aignan,Roussel,Pecresse,Zemmour,Lassalle,Melenchon
+177,stubborn,1.0,Jadot,Melenchon,Zemmour,Le Pen,Dupont-Aignan,Poutou,Pecresse,Hidalgo,Macron,Roussel,Arthaud,Lassalle,Jadot
+178,stubborn,1.0,Arthaud,Macron,Hidalgo,Jadot,Le Pen,Lassalle,Roussel,Melenchon,Dupont-Aignan,Poutou,Pecresse,Zemmour,Arthaud
+179,stubborn,1.0,Dupont-Aignan,Melenchon,Poutou,Lassalle,Arthaud,Zemmour,Roussel,Jadot,Hidalgo,Pecresse,Le Pen,Macron,Dupont-Aignan
+180,strategic,0.0,Arthaud,Pecresse,Melenchon,Macron,Jadot,Zemmour,Dupont-Aignan,Lassalle,Le Pen,Poutou,Roussel,Hidalgo,Arthaud
+181,stubborn,1.0,Poutou,Hidalgo,Le Pen,Melenchon,Lassalle,Pecresse,Dupont-Aignan,Roussel,Macron,Jadot,Arthaud,Zemmour,Poutou
+182,mixed,0.692,Roussel,Poutou,Melenchon,Jadot,Macron,Pecresse,Hidalgo,Dupont-Aignan,Zemmour,Le Pen,Lassalle,Arthaud,Roussel
+183,mixed,0.802,Arthaud,Jadot,Hidalgo,Roussel,Macron,Pecresse,Zemmour,Melenchon,Lassalle,Le Pen,Poutou,Dupont-Aignan,Arthaud
+184,mixed,0.562,Pecresse,Poutou,Melenchon,Zemmour,Arthaud,Hidalgo,Jadot,Dupont-Aignan,Lassalle,Le Pen,Roussel,Macron,Pecresse
+185,stubborn,1.0,Hidalgo,Lassalle,Zemmour,Roussel,Dupont-Aignan,Arthaud,Pecresse,Poutou,Jadot,Macron,Melenchon,Le Pen,Hidalgo
+186,stubborn,1.0,Poutou,Lassalle,Le Pen,Dupont-Aignan,Macron,Melenchon,Hidalgo,Jadot,Pecresse,Arthaud,Roussel,Zemmour,Poutou
+187,strategic,0.0,Le Pen,Macron,Zemmour,Melenchon,Arthaud,Roussel,Dupont-Aignan,Hidalgo,Jadot,Poutou,Lassalle,Pecresse,Le Pen
+188,mixed,0.773,Jadot,Arthaud,Roussel,Melenchon,Dupont-Aignan,Hidalgo,Lassalle,Le Pen,Pecresse,Macron,Poutou,Zemmour,Jadot
+189,mixed,0.702,Jadot,Poutou,Melenchon,Arthaud,Roussel,Zemmour,Dupont-Aignan,Le Pen,Pecresse,Hidalgo,Macron,Lassalle,Jadot
+190,mixed,0.546,Melenchon,Pecresse,Roussel,Arthaud,Lassalle,Jadot,Dupont-Aignan,Le Pen,Macron,Hidalgo,Zemmour,Poutou,Melenchon
+191,stubborn,1.0,Lassalle,Hidalgo,Zemmour,Melenchon,Macron,Arthaud,Jadot,Roussel,Dupont-Aignan,Pecresse,Poutou,Le Pen,Lassalle
+192,strategic,0.0,Macron,Le Pen,Dupont-Aignan,Melenchon,Arthaud,Jadot,Roussel,Hidalgo,Pecresse,Zemmour,Lassalle,Poutou,Macron
+193,strategic,0.0,Hidalgo,Melenchon,Jadot,Macron,Lassalle,Le Pen,Roussel,Zemmour,Pecresse,Poutou,Arthaud,Dupont-Aignan,Hidalgo
+194,mixed,0.853,Jadot,Poutou,Hidalgo,Zemmour,Macron,Lassalle,Le Pen,Pecresse,Dupont-Aignan,Roussel,Arthaud,Melenchon,Jadot
+195,mixed,0.412,Melenchon,Dupont-Aignan,Poutou,Pecresse,Macron,Le Pen,Arthaud,Jadot,Lassalle,Hidalgo,Roussel,Zemmour,Melenchon
+196,stubborn,1.0,Hidalgo,Arthaud,Zemmour,Poutou,Macron,Jadot,Dupont-Aignan,Melenchon,Le Pen,Lassalle,Roussel,Pecresse,Hidalgo
+197,strategic,0.0,Macron,Zemmour,Jadot,Pecresse,Arthaud,Roussel,Dupont-Aignan,Le Pen,Lassalle,Hidalgo,Poutou,Melenchon,Macron
+198,strategic,0.0,Pecresse,Macron,Zemmour,Melenchon,Roussel,Lassalle,Poutou,Hidalgo,Le Pen,Arthaud,Dupont-Aignan,Jadot,Pecresse
+199,strategic,0.0,Lassalle,Melenchon,Jadot,Poutou,Macron,Zemmour,Dupont-Aignan,Roussel,Arthaud,Pecresse,Le Pen,Hidalgo,Lassalle
+200,stubborn,1.0,Roussel,Lassalle,Pecresse,Arthaud,Zemmour,Dupont-Aignan,Hidalgo,Poutou,Macron,Le Pen,Melenchon,Jadot,Roussel
+201,mixed,0.634,Jadot,Arthaud,Le Pen,Lassalle,Poutou,Roussel,Pecresse,Dupont-Aignan,Zemmour,Macron,Hidalgo,Melenchon,Jadot
+202,stubborn,1.0,Dupont-Aignan,Poutou,Le Pen,Macron,Lassalle,Arthaud,Zemmour,Jadot,Pecresse,Roussel,Melenchon,Hidalgo,Dupont-Aignan
+203,stubborn,1.0,Poutou,Lassalle,Zemmour,Melenchon,Hidalgo,Pecresse,Roussel,Le Pen,Macron,Arthaud,Jadot,Dupont-Aignan,Poutou
+204,strategic,0.0,Poutou,Roussel,Arthaud,Melenchon,Lassalle,Pecresse,Hidalgo,Dupont-Aignan,Zemmour,Macron,Le Pen,Jadot,Poutou
+205,mixed,0.638,Dupont-Aignan,Melenchon,Le Pen,Poutou,Lassalle,Pecresse,Macron,Roussel,Arthaud,Zemmour,Jadot,Hidalgo,Dupont-Aignan
+206,mixed,0.471,Macron,Pecresse,Melenchon,Hidalgo,Lassalle,Roussel,Le Pen,Jadot,Dupont-Aignan,Poutou,Arthaud,Zemmour,Macron
+207,stubborn,1.0,Dupont-Aignan,Macron,Le Pen,Zemmour,Lassalle,Hidalgo,Jadot,Arthaud,Melenchon,Roussel,Pecresse,Poutou,Dupont-Aignan
+208,mixed,0.861,Zemmour,Le Pen,Macron,Poutou,Pecresse,Jadot,Lassalle,Roussel,Dupont-Aignan,Arthaud,Hidalgo,Melenchon,Zemmour
+209,mixed,0.793,Arthaud,Macron,Jadot,Zemmour,Poutou,Hidalgo,Lassalle,Dupont-Aignan,Roussel,Pecresse,Melenchon,Le Pen,Arthaud
+210,mixed,0.63,Le Pen,Jadot,Macron,Zemmour,Hidalgo,Poutou,Pecresse,Lassalle,Roussel,Dupont-Aignan,Arthaud,Melenchon,Le Pen
+211,strategic,0.0,Lassalle,Jadot,Le Pen,Melenchon,Macron,Pecresse,Dupont-Aignan,Roussel,Poutou,Hidalgo,Zemmour,Arthaud,Lassalle
+212,mixed,0.505,Le Pen,Pecresse,Zemmour,Macron,Roussel,Dupont-Aignan,Hidalgo,Arthaud,Lassalle,Melenchon,Jadot,Poutou,Le Pen
+213,stubborn,1.0,Hidalgo,Macron,Jadot,Le Pen,Dupont-Aignan,Roussel,Poutou,Melenchon,Zemmour,Lassalle,Pecresse,Arthaud,Hidalgo
+214,mixed,0.493,Melenchon,Roussel,Jadot,Lassalle,Macron,Zemmour,Poutou,Pecresse,Le Pen,Hidalgo,Arthaud,Dupont-Aignan,Melenchon
+215,mixed,0.657,Zemmour,Hidalgo,Macron,Jadot,Arthaud,Pecresse,Le Pen,Roussel,Lassalle,Melenchon,Dupont-Aignan,Poutou,Zemmour
+216,mixed,0.536,Lassalle,Macron,Zemmour,Hidalgo,Dupont-Aignan,Pecresse,Le Pen,Poutou,Melenchon,Roussel,Arthaud,Jadot,Lassalle
+217,stubborn,1.0,Dupont-Aignan,Arthaud,Melenchon,Macron,Pecresse,Hidalgo,Zemmour,Jadot,Poutou,Le Pen,Roussel,Lassalle,Dupont-Aignan
+218,strategic,0.0,Arthaud,Jadot,Lassalle,Hidalgo,Le Pen,Melenchon,Roussel,Poutou,Pecresse,Zemmour,Dupont-Aignan,Macron,Arthaud
+219,mixed,0.855,Le Pen,Macron,Zemmour,Dupont-Aignan,Arthaud,Lassalle,Pecresse,Jadot,Roussel,Melenchon,Poutou,Hidalgo,Le Pen
+220,stubborn,1.0,Le Pen,Pecresse,Dupont-Aignan,Zemmour,Lassalle,Roussel,Hidalgo,Arthaud,Jadot,Macron,Poutou,Melenchon,Le Pen
+221,stubborn,1.0,Poutou,Dupont-Aignan,Jadot,Le Pen,Melenchon,Roussel,Pecresse,Lassalle,Hidalgo,Arthaud,Macron,Zemmour,Poutou
+222,strategic,0.0,Dupont-Aignan,Hidalgo,Jadot,Arthaud,Lassalle,Roussel,Pecresse,Melenchon,Le Pen,Poutou,Zemmour,Macron,Dupont-Aignan
+223,mixed,0.741,Poutou,Melenchon,Dupont-Aignan,Zemmour,Pecresse,Jadot,Hidalgo,Le Pen,Arthaud,Macron,Lassalle,Roussel,Poutou
+224,stubborn,1.0,Jadot,Zemmour,Le Pen,Arthaud,Lassalle,Macron,Pecresse,Dupont-Aignan,Hidalgo,Poutou,Roussel,Melenchon,Jadot
+225,strategic,0.0,Hidalgo,Zemmour,Melenchon,Jadot,Roussel,Macron,Le Pen,Arthaud,Pecresse,Poutou,Lassalle,Dupont-Aignan,Hidalgo
+226,stubborn,1.0,Jadot,Melenchon,Le Pen,Poutou,Roussel,Hidalgo,Zemmour,Dupont-Aignan,Pecresse,Macron,Arthaud,Lassalle,Jadot
+227,stubborn,1.0,Lassalle,Roussel,Le Pen,Jadot,Arthaud,Zemmour,Dupont-Aignan,Melenchon,Hidalgo,Pecresse,Macron,Poutou,Lassalle
+228,stubborn,1.0,Pecresse,Melenchon,Roussel,Arthaud,Jadot,Zemmour,Macron,Lassalle,Hidalgo,Poutou,Dupont-Aignan,Le Pen,Pecresse
+229,strategic,0.0,Le Pen,Hidalgo,Poutou,Roussel,Jadot,Dupont-Aignan,Macron,Melenchon,Arthaud,Pecresse,Zemmour,Lassalle,Le Pen
+230,strategic,0.0,Melenchon,Jadot,Roussel,Dupont-Aignan,Le Pen,Zemmour,Hidalgo,Poutou,Arthaud,Pecresse,Lassalle,Macron,Melenchon
+231,mixed,0.746,Lassalle,Hidalgo,Poutou,Le Pen,Melenchon,Pecresse,Roussel,Arthaud,Dupont-Aignan,Jadot,Macron,Zemmour,Lassalle
+232,stubborn,1.0,Zemmour,Jadot,Le Pen,Lassalle,Pecresse,Macron,Poutou,Dupont-Aignan,Hidalgo,Arthaud,Melenchon,Roussel,Zemmour
+233,mixed,0.7,Lassalle,Poutou,Jadot,Le Pen,Hidalgo,Pecresse,Dupont-Aignan,Roussel,Arthaud,Zemmour,Melenchon,Macron,Lassalle
+234,strategic,0.0,Roussel,Arthaud,Jadot,Zemmour,Macron,Dupont-Aignan,Pecresse,Le Pen,Lassalle,Hidalgo,Melenchon,Poutou,Roussel
+235,mixed,0.582,Pecresse,Lassalle,Roussel,Hidalgo,Dupont-Aignan,Macron,Melenchon,Zemmour,Poutou,Jadot,Arthaud,Le Pen,Pecresse
+236,stubborn,1.0,Le Pen,Pecresse,Melenchon,Roussel,Macron,Zemmour,Jadot,Hidalgo,Poutou,Dupont-Aignan,Lassalle,Arthaud,Le Pen
+237,strategic,0.0,Melenchon,Jadot,Le Pen,Arthaud,Roussel,Pecresse,Dupont-Aignan,Hidalgo,Poutou,Zemmour,Macron,Lassalle,Melenchon
+238,stubborn,1.0,Macron,Lassalle,Poutou,Hidalgo,Arthaud,Roussel,Pecresse,Le Pen,Zemmour,Melenchon,Jadot,Dupont-Aignan,Macron
+239,strategic,0.0,Macron,Poutou,Arthaud,Dupont-Aignan,Jadot,Zemmour,Pecresse,Hidalgo,Le Pen,Lassalle,Melenchon,Roussel,Macron
+240,strategic,0.0,Lassalle,Arthaud,Macron,Zemmour,Hidalgo,Jadot,Pecresse,Le Pen,Roussel,Dupont-Aignan,Melenchon,Poutou,Lassalle
+241,mixed,0.657,Dupont-Aignan,Melenchon,Macron,Zemmour,Roussel,Jadot,Le Pen,Hidalgo,Lassalle,Pecresse,Poutou,Arthaud,Dupont-Aignan
+242,mixed,0.808,Dupont-Aignan,Pecresse,Roussel,Melenchon,Poutou,Zemmour,Le Pen,Lassalle,Macron,Hidalgo,Arthaud,Jadot,Dupont-Aignan
+243,strategic,0.0,Poutou,Arthaud,Lassalle,Macron,Roussel,Pecresse,Dupont-Aignan,Hidalgo,Le Pen,Jadot,Zemmour,Melenchon,Poutou
+244,stubborn,1.0,Arthaud,Pecresse,Poutou,Zemmour,Dupont-Aignan,Le Pen,Lassalle,Macron,Hidalgo,Roussel,Melenchon,Jadot,Arthaud
+245,strategic,0.0,Le Pen,Macron,Hidalgo,Arthaud,Roussel,Dupont-Aignan,Zemmour,Melenchon,Lassalle,Pecresse,Poutou,Jadot,Le Pen
+246,strategic,0.0,Zemmour,Melenchon,Pecresse,Macron,Roussel,Arthaud,Le Pen,Lassalle,Dupont-Aignan,Hidalgo,Poutou,Jadot,Zemmour
+247,mixed,0.756,Melenchon,Dupont-Aignan,Zemmour,Arthaud,Poutou,Jadot,Le Pen,Lassalle,Macron,Roussel,Hidalgo,Pecresse,Melenchon
+248,stubborn,1.0,Melenchon,Hidalgo,Pecresse,Macron,Arthaud,Poutou,Le Pen,Roussel,Lassalle,Zemmour,Dupont-Aignan,Jadot,Melenchon
+249,stubborn,1.0,Melenchon,Pecresse,Hidalgo,Le Pen,Macron,Arthaud,Poutou,Zemmour,Dupont-Aignan,Roussel,Lassalle,Jadot,Melenchon
+250,stubborn,1.0,Jadot,Lassalle,Hidalgo,Pecresse,Dupont-Aignan,Macron,Le Pen,Roussel,Zemmour,Poutou,Melenchon,Arthaud,Jadot
+251,mixed,0.501,Melenchon,Hidalgo,Le Pen,Pecresse,Lassalle,Zemmour,Arthaud,Roussel,Macron,Dupont-Aignan,Poutou,Jadot,Melenchon
+252,strategic,0.0,Roussel,Lassalle,Zemmour,Poutou,Dupont-Aignan,Melenchon,Pecresse,Le Pen,Macron,Arthaud,Jadot,Hidalgo,Roussel
+253,stubborn,1.0,Pecresse,Arthaud,Zemmour,Jadot,Dupont-Aignan,Poutou,Melenchon,Roussel,Lassalle,Macron,Hidalgo,Le Pen,Pecresse
+254,mixed,0.814,Melenchon,Dupont-Aignan,Pecresse,Poutou,Zemmour,Le Pen,Hidalgo,Jadot,Macron,Arthaud,Roussel,Lassalle,Melenchon
+255,stubborn,1.0,Arthaud,Hidalgo,Melenchon,Pecresse,Roussel,Lassalle,Dupont-Aignan,Macron,Jadot,Le Pen,Poutou,Zemmour,Arthaud
+256,mixed,0.89,Le Pen,Zemmour,Hidalgo,Melenchon,Jadot,Lassalle,Dupont-Aignan,Roussel,Pecresse,Arthaud,Macron,Poutou,Le Pen
+257,stubborn,1.0,Dupont-Aignan,Melenchon,Roussel,Pecresse,Poutou,Zemmour,Lassalle,Macron,Le Pen,Arthaud,Hidalgo,Jadot,Dupont-Aignan
+258,stubborn,1.0,Le Pen,Macron,Dupont-Aignan,Melenchon,Zemmour,Poutou,Hidalgo,Pecresse,Roussel,Arthaud,Jadot,Lassalle,Le Pen
+259,stubborn,1.0,Pecresse,Poutou,Macron,Melenchon,Hidalgo,Dupont-Aignan,Jadot,Zemmour,Roussel,Arthaud,Le Pen,Lassalle,Pecresse
+260,mixed,0.55,Hidalgo,Lassalle,Dupont-Aignan,Zemmour,Poutou,Pecresse,Melenchon,Roussel,Le Pen,Arthaud,Jadot,Macron,Hidalgo
+261,strategic,0.0,Roussel,Poutou,Jadot,Macron,Arthaud,Le Pen,Lassalle,Dupont-Aignan,Zemmour,Hidalgo,Melenchon,Pecresse,Roussel
+262,stubborn,1.0,Roussel,Poutou,Dupont-Aignan,Arthaud,Zemmour,Pecresse,Lassalle,Hidalgo,Jadot,Le Pen,Melenchon,Macron,Roussel
+263,stubborn,1.0,Jadot,Zemmour,Le Pen,Roussel,Macron,Hidalgo,Arthaud,Pecresse,Melenchon,Poutou,Lassalle,Dupont-Aignan,Jadot
+264,strategic,0.0,Macron,Poutou,Le Pen,Roussel,Arthaud,Pecresse,Dupont-Aignan,Hidalgo,Melenchon,Zemmour,Jadot,Lassalle,Macron
+265,strategic,0.0,Poutou,Lassalle,Macron,Roussel,Zemmour,Jadot,Pecresse,Arthaud,Melenchon,Hidalgo,Dupont-Aignan,Le Pen,Poutou
+266,stubborn,1.0,Roussel,Le Pen,Zemmour,Lassalle,Dupont-Aignan,Hidalgo,Macron,Pecresse,Jadot,Melenchon,Arthaud,Poutou,Roussel
+267,strategic,0.0,Dupont-Aignan,Poutou,Zemmour,Le Pen,Arthaud,Macron,Lassalle,Pecresse,Roussel,Hidalgo,Jadot,Melenchon,Dupont-Aignan
+268,mixed,0.428,Pecresse,Hidalgo,Zemmour,Le Pen,Macron,Arthaud,Roussel,Lassalle,Poutou,Melenchon,Jadot,Dupont-Aignan,Pecresse
+269,mixed,0.833,Arthaud,Jadot,Roussel,Lassalle,Pecresse,Le Pen,Melenchon,Dupont-Aignan,Macron,Hidalgo,Zemmour,Poutou,Arthaud
+270,mixed,0.819,Poutou,Melenchon,Zemmour,Hidalgo,Roussel,Lassalle,Dupont-Aignan,Le Pen,Jadot,Arthaud,Pecresse,Macron,Poutou
+271,strategic,0.0,Hidalgo,Arthaud,Poutou,Melenchon,Dupont-Aignan,Roussel,Zemmour,Macron,Lassalle,Le Pen,Jadot,Pecresse,Hidalgo
+272,strategic,0.0,Poutou,Melenchon,Zemmour,Dupont-Aignan,Hidalgo,Macron,Arthaud,Pecresse,Jadot,Roussel,Le Pen,Lassalle,Poutou
+273,stubborn,1.0,Pecresse,Zemmour,Poutou,Hidalgo,Arthaud,Roussel,Lassalle,Dupont-Aignan,Melenchon,Le Pen,Macron,Jadot,Pecresse
+274,strategic,0.0,Jadot,Pecresse,Macron,Lassalle,Melenchon,Zemmour,Dupont-Aignan,Poutou,Hidalgo,Roussel,Le Pen,Arthaud,Jadot
+275,stubborn,1.0,Hidalgo,Lassalle,Macron,Arthaud,Roussel,Le Pen,Jadot,Zemmour,Dupont-Aignan,Melenchon,Pecresse,Poutou,Hidalgo
+276,mixed,0.503,Lassalle,Pecresse,Jadot,Roussel,Macron,Zemmour,Le Pen,Dupont-Aignan,Hidalgo,Melenchon,Poutou,Arthaud,Lassalle
+277,strategic,0.0,Melenchon,Hidalgo,Jadot,Macron,Lassalle,Arthaud,Poutou,Pecresse,Roussel,Zemmour,Dupont-Aignan,Le Pen,Melenchon
+278,strategic,0.0,Arthaud,Melenchon,Roussel,Lassalle,Dupont-Aignan,Zemmour,Pecresse,Hidalgo,Macron,Poutou,Le Pen,Jadot,Arthaud
+279,strategic,0.0,Arthaud,Melenchon,Macron,Hidalgo,Poutou,Roussel,Lassalle,Dupont-Aignan,Zemmour,Pecresse,Jadot,Le Pen,Arthaud
+280,stubborn,1.0,Arthaud,Roussel,Le Pen,Jadot,Dupont-Aignan,Macron,Poutou,Zemmour,Hidalgo,Lassalle,Melenchon,Pecresse,Arthaud
+281,stubborn,1.0,Zemmour,Dupont-Aignan,Macron,Melenchon,Hidalgo,Arthaud,Roussel,Pecresse,Poutou,Le Pen,Jadot,Lassalle,Zemmour
+282,mixed,0.788,Pecresse,Melenchon,Roussel,Jadot,Poutou,Lassalle,Zemmour,Le Pen,Hidalgo,Arthaud,Macron,Dupont-Aignan,Pecresse
+283,stubborn,1.0,Hidalgo,Lassalle,Pecresse,Dupont-Aignan,Poutou,Melenchon,Roussel,Arthaud,Jadot,Le Pen,Macron,Zemmour,Hidalgo
+284,mixed,0.404,Melenchon,Macron,Hidalgo,Roussel,Le Pen,Dupont-Aignan,Zemmour,Jadot,Pecresse,Poutou,Arthaud,Lassalle,Melenchon
+285,mixed,0.861,Melenchon,Hidalgo,Roussel,Le Pen,Zemmour,Macron,Poutou,Dupont-Aignan,Jadot,Arthaud,Pecresse,Lassalle,Melenchon
+286,mixed,0.556,Roussel,Le Pen,Dupont-Aignan,Zemmour,Arthaud,Lassalle,Hidalgo,Pecresse,Macron,Poutou,Jadot,Melenchon,Roussel
+287,mixed,0.721,Hidalgo,Le Pen,Lassalle,Melenchon,Zemmour,Dupont-Aignan,Arthaud,Pecresse,Jadot,Roussel,Poutou,Macron,Hidalgo
+288,mixed,0.666,Poutou,Melenchon,Hidalgo,Roussel,Zemmour,Macron,Arthaud,Le Pen,Pecresse,Dupont-Aignan,Lassalle,Jadot,Poutou
+289,mixed,0.528,Pecresse,Poutou,Dupont-Aignan,Zemmour,Jadot,Melenchon,Arthaud,Roussel,Hidalgo,Macron,Le Pen,Lassalle,Pecresse
+290,stubborn,1.0,Melenchon,Arthaud,Zemmour,Roussel,Macron,Dupont-Aignan,Poutou,Hidalgo,Pecresse,Le Pen,Lassalle,Jadot,Melenchon
+291,strategic,0.0,Dupont-Aignan,Pecresse,Arthaud,Roussel,Melenchon,Macron,Hidalgo,Lassalle,Jadot,Poutou,Le Pen,Zemmour,Dupont-Aignan
+292,mixed,0.629,Hidalgo,Roussel,Arthaud,Macron,Jadot,Le Pen,Pecresse,Melenchon,Zemmour,Lassalle,Dupont-Aignan,Poutou,Hidalgo
+293,stubborn,1.0,Pecresse,Dupont-Aignan,Zemmour,Jadot,Poutou,Lassalle,Roussel,Hidalgo,Melenchon,Macron,Arthaud,Le Pen,Pecresse
+294,mixed,0.818,Macron,Roussel,Zemmour,Melenchon,Jadot,Hidalgo,Pecresse,Dupont-Aignan,Arthaud,Le Pen,Poutou,Lassalle,Macron
+295,mixed,0.672,Arthaud,Pecresse,Jadot,Dupont-Aignan,Zemmour,Melenchon,Roussel,Lassalle,Le Pen,Poutou,Macron,Hidalgo,Arthaud
+296,mixed,0.817,Dupont-Aignan,Pecresse,Lassalle,Poutou,Zemmour,Le Pen,Hidalgo,Roussel,Jadot,Macron,Arthaud,Melenchon,Dupont-Aignan
+297,mixed,0.613,Le Pen,Pecresse,Macron,Roussel,Zemmour,Dupont-Aignan,Melenchon,Arthaud,Hidalgo,Poutou,Jadot,Lassalle,Le Pen
+298,stubborn,1.0,Le Pen,Pecresse,Melenchon,Jadot,Roussel,Macron,Arthaud,Hidalgo,Dupont-Aignan,Lassalle,Poutou,Zemmour,Le Pen
+299,stubborn,1.0,Le Pen,Zemmour,Roussel,Macron,Pecresse,Dupont-Aignan,Jadot,Arthaud,Melenchon,Poutou,Lassalle,Hidalgo,Le Pen
+300,stubborn,1.0,Melenchon,Jadot,Dupont-Aignan,Hidalgo,Zemmour,Roussel,Poutou,Lassalle,Macron,Pecresse,Arthaud,Le Pen,Melenchon
+301,mixed,0.572,Melenchon,Dupont-Aignan,Zemmour,Pecresse,Le Pen,Lassalle,Poutou,Jadot,Arthaud,Macron,Roussel,Hidalgo,Melenchon
+302,stubborn,1.0,Dupont-Aignan,Roussel,Lassalle,Macron,Arthaud,Poutou,Jadot,Zemmour,Le Pen,Hidalgo,Pecresse,Melenchon,Dupont-Aignan
+303,strategic,0.0,Pecresse,Le Pen,Arthaud,Macron,Hidalgo,Lassalle,Dupont-Aignan,Roussel,Zemmour,Jadot,Poutou,Melenchon,Pecresse
+304,strategic,0.0,Arthaud,Macron,Poutou,Pecresse,Melenchon,Dupont-Aignan,Roussel,Zemmour,Jadot,Lassalle,Le Pen,Hidalgo,Arthaud
+305,strategic,0.0,Zemmour,Hidalgo,Lassalle,Pecresse,Dupont-Aignan,Arthaud,Melenchon,Le Pen,Macron,Roussel,Poutou,Jadot,Zemmour
+306,stubborn,1.0,Zemmour,Melenchon,Pecresse,Hidalgo,Lassalle,Jadot,Poutou,Macron,Le Pen,Dupont-Aignan,Roussel,Arthaud,Zemmour
+307,stubborn,1.0,Le Pen,Melenchon,Pecresse,Lassalle,Zemmour,Macron,Roussel,Jadot,Poutou,Hidalgo,Dupont-Aignan,Arthaud,Le Pen
+308,strategic,0.0,Pecresse,Arthaud,Melenchon,Zemmour,Hidalgo,Roussel,Dupont-Aignan,Jadot,Macron,Lassalle,Poutou,Le Pen,Pecresse
+309,stubborn,1.0,Zemmour,Le Pen,Roussel,Melenchon,Dupont-Aignan,Macron,Poutou,Jadot,Lassalle,Hidalgo,Arthaud,Pecresse,Zemmour
+310,mixed,0.557,Hidalgo,Jadot,Macron,Dupont-Aignan,Arthaud,Zemmour,Pecresse,Melenchon,Poutou,Lassalle,Roussel,Le Pen,Hidalgo
+311,stubborn,1.0,Dupont-Aignan,Melenchon,Arthaud,Zemmour,Macron,Jadot,Poutou,Le Pen,Hidalgo,Lassalle,Pecresse,Roussel,Dupont-Aignan
+312,stubborn,1.0,Hidalgo,Melenchon,Dupont-Aignan,Le Pen,Poutou,Zemmour,Roussel,Jadot,Arthaud,Lassalle,Pecresse,Macron,Hidalgo
+313,mixed,0.673,Roussel,Hidalgo,Jadot,Arthaud,Le Pen,Melenchon,Lassalle,Pecresse,Poutou,Macron,Dupont-Aignan,Zemmour,Roussel
+314,mixed,0.54,Pecresse,Le Pen,Arthaud,Dupont-Aignan,Roussel,Poutou,Melenchon,Zemmour,Jadot,Lassalle,Hidalgo,Macron,Pecresse
+315,stubborn,1.0,Pecresse,Dupont-Aignan,Jadot,Hidalgo,Lassalle,Macron,Le Pen,Roussel,Arthaud,Melenchon,Zemmour,Poutou,Pecresse
+316,stubborn,1.0,Le Pen,Poutou,Jadot,Zemmour,Pecresse,Roussel,Melenchon,Dupont-Aignan,Hidalgo,Lassalle,Macron,Arthaud,Le Pen
+317,mixed,0.419,Macron,Pecresse,Arthaud,Melenchon,Hidalgo,Roussel,Poutou,Le Pen,Jadot,Zemmour,Lassalle,Dupont-Aignan,Macron
+318,mixed,0.545,Hidalgo,Roussel,Melenchon,Dupont-Aignan,Pecresse,Poutou,Macron,Lassalle,Zemmour,Jadot,Le Pen,Arthaud,Hidalgo
+319,strategic,0.0,Macron,Hidalgo,Zemmour,Poutou,Dupont-Aignan,Roussel,Le Pen,Melenchon,Jadot,Arthaud,Lassalle,Pecresse,Macron
+320,mixed,0.495,Poutou,Le Pen,Jadot,Lassalle,Macron,Roussel,Arthaud,Melenchon,Zemmour,Pecresse,Hidalgo,Dupont-Aignan,Poutou
+321,stubborn,1.0,Melenchon,Pecresse,Arthaud,Roussel,Jadot,Macron,Zemmour,Hidalgo,Dupont-Aignan,Poutou,Le Pen,Lassalle,Melenchon
+322,stubborn,1.0,Poutou,Arthaud,Melenchon,Macron,Pecresse,Jadot,Lassalle,Le Pen,Dupont-Aignan,Roussel,Hidalgo,Zemmour,Poutou
+323,stubborn,1.0,Poutou,Le Pen,Hidalgo,Macron,Lassalle,Dupont-Aignan,Zemmour,Roussel,Jadot,Pecresse,Arthaud,Melenchon,Poutou
+324,mixed,0.739,Arthaud,Macron,Roussel,Jadot,Zemmour,Dupont-Aignan,Le Pen,Hidalgo,Pecresse,Melenchon,Poutou,Lassalle,Arthaud
+325,mixed,0.651,Zemmour,Lassalle,Poutou,Macron,Roussel,Dupont-Aignan,Pecresse,Melenchon,Arthaud,Le Pen,Jadot,Hidalgo,Zemmour
+326,stubborn,1.0,Pecresse,Jadot,Zemmour,Poutou,Roussel,Lassalle,Melenchon,Hidalgo,Dupont-Aignan,Le Pen,Macron,Arthaud,Pecresse
+327,strategic,0.0,Jadot,Le Pen,Poutou,Hidalgo,Lassalle,Melenchon,Zemmour,Pecresse,Arthaud,Macron,Dupont-Aignan,Roussel,Jadot
+328,stubborn,1.0,Melenchon,Pecresse,Roussel,Poutou,Zemmour,Lassalle,Macron,Hidalgo,Jadot,Dupont-Aignan,Arthaud,Le Pen,Melenchon
+329,stubborn,1.0,Pecresse,Zemmour,Dupont-Aignan,Melenchon,Hidalgo,Macron,Jadot,Arthaud,Lassalle,Roussel,Le Pen,Poutou,Pecresse
+330,mixed,0.596,Pecresse,Lassalle,Arthaud,Zemmour,Macron,Roussel,Le Pen,Hidalgo,Dupont-Aignan,Poutou,Jadot,Melenchon,Pecresse
+331,strategic,0.0,Dupont-Aignan,Macron,Lassalle,Pecresse,Poutou,Hidalgo,Roussel,Zemmour,Arthaud,Jadot,Melenchon,Le Pen,Dupont-Aignan
+332,mixed,0.456,Poutou,Jadot,Le Pen,Hidalgo,Zemmour,Macron,Pecresse,Dupont-Aignan,Arthaud,Lassalle,Roussel,Melenchon,Poutou
+333,strategic,0.0,Le Pen,Jadot,Zemmour,Roussel,Macron,Hidalgo,Melenchon,Lassalle,Arthaud,Poutou,Pecresse,Dupont-Aignan,Le Pen
+334,mixed,0.439,Jadot,Dupont-Aignan,Lassalle,Poutou,Macron,Pecresse,Melenchon,Arthaud,Roussel,Zemmour,Hidalgo,Le Pen,Jadot
+335,mixed,0.777,Melenchon,Lassalle,Poutou,Arthaud,Hidalgo,Dupont-Aignan,Zemmour,Le Pen,Roussel,Jadot,Pecresse,Macron,Melenchon
+336,strategic,0.0,Le Pen,Poutou,Zemmour,Dupont-Aignan,Jadot,Macron,Melenchon,Roussel,Pecresse,Hidalgo,Arthaud,Lassalle,Le Pen
+337,stubborn,1.0,Hidalgo,Jadot,Macron,Pecresse,Arthaud,Lassalle,Poutou,Le Pen,Dupont-Aignan,Melenchon,Zemmour,Roussel,Hidalgo
+338,stubborn,1.0,Zemmour,Jadot,Hidalgo,Roussel,Le Pen,Dupont-Aignan,Macron,Lassalle,Arthaud,Pecresse,Melenchon,Poutou,Zemmour
+339,mixed,0.673,Dupont-Aignan,Roussel,Hidalgo,Melenchon,Poutou,Jadot,Zemmour,Lassalle,Pecresse,Arthaud,Macron,Le Pen,Dupont-Aignan
+340,stubborn,1.0,Lassalle,Jadot,Le Pen,Macron,Roussel,Pecresse,Arthaud,Hidalgo,Melenchon,Poutou,Zemmour,Dupont-Aignan,Lassalle
+341,mixed,0.588,Melenchon,Pecresse,Dupont-Aignan,Hidalgo,Roussel,Le Pen,Zemmour,Lassalle,Macron,Arthaud,Jadot,Poutou,Melenchon
+342,strategic,0.0,Arthaud,Hidalgo,Roussel,Jadot,Poutou,Melenchon,Pecresse,Zemmour,Le Pen,Dupont-Aignan,Macron,Lassalle,Arthaud
+343,mixed,0.551,Pecresse,Poutou,Roussel,Jadot,Hidalgo,Arthaud,Lassalle,Melenchon,Zemmour,Le Pen,Macron,Dupont-Aignan,Pecresse
+344,strategic,0.0,Melenchon,Zemmour,Poutou,Roussel,Jadot,Pecresse,Arthaud,Lassalle,Hidalgo,Le Pen,Macron,Dupont-Aignan,Melenchon
+345,strategic,0.0,Macron,Poutou,Jadot,Roussel,Melenchon,Lassalle,Zemmour,Le Pen,Dupont-Aignan,Pecresse,Hidalgo,Arthaud,Macron
+346,stubborn,1.0,Dupont-Aignan,Pecresse,Macron,Poutou,Hidalgo,Jadot,Lassalle,Melenchon,Arthaud,Roussel,Zemmour,Le Pen,Dupont-Aignan
+347,mixed,0.663,Arthaud,Hidalgo,Pecresse,Macron,Lassalle,Dupont-Aignan,Jadot,Le Pen,Zemmour,Melenchon,Poutou,Roussel,Arthaud
+348,stubborn,1.0,Zemmour,Lassalle,Dupont-Aignan,Macron,Melenchon,Roussel,Jadot,Hidalgo,Pecresse,Poutou,Arthaud,Le Pen,Zemmour
+349,strategic,0.0,Hidalgo,Dupont-Aignan,Poutou,Jadot,Arthaud,Pecresse,Macron,Melenchon,Zemmour,Lassalle,Roussel,Le Pen,Hidalgo
+350,strategic,0.0,Pecresse,Lassalle,Zemmour,Poutou,Arthaud,Macron,Jadot,Melenchon,Dupont-Aignan,Roussel,Hidalgo,Le Pen,Pecresse
+351,stubborn,1.0,Hidalgo,Le Pen,Jadot,Macron,Zemmour,Dupont-Aignan,Poutou,Roussel,Pecresse,Arthaud,Lassalle,Melenchon,Hidalgo
+352,strategic,0.0,Hidalgo,Dupont-Aignan,Melenchon,Jadot,Roussel,Lassalle,Le Pen,Pecresse,Macron,Poutou,Zemmour,Arthaud,Hidalgo
+353,strategic,0.0,Le Pen,Arthaud,Hidalgo,Zemmour,Lassalle,Roussel,Melenchon,Jadot,Poutou,Macron,Pecresse,Dupont-Aignan,Le Pen
+354,stubborn,1.0,Melenchon,Poutou,Macron,Arthaud,Pecresse,Le Pen,Jadot,Dupont-Aignan,Roussel,Hidalgo,Lassalle,Zemmour,Melenchon
+355,mixed,0.633,Hidalgo,Pecresse,Arthaud,Le Pen,Poutou,Dupont-Aignan,Melenchon,Zemmour,Lassalle,Jadot,Roussel,Macron,Hidalgo
+356,stubborn,1.0,Macron,Zemmour,Poutou,Arthaud,Hidalgo,Jadot,Lassalle,Le Pen,Roussel,Melenchon,Dupont-Aignan,Pecresse,Macron
+357,stubborn,1.0,Hidalgo,Lassalle,Zemmour,Jadot,Roussel,Le Pen,Melenchon,Macron,Poutou,Dupont-Aignan,Pecresse,Arthaud,Hidalgo
+358,mixed,0.583,Hidalgo,Lassalle,Roussel,Poutou,Melenchon,Dupont-Aignan,Pecresse,Zemmour,Macron,Arthaud,Le Pen,Jadot,Hidalgo
+359,stubborn,1.0,Roussel,Le Pen,Hidalgo,Macron,Lassalle,Dupont-Aignan,Zemmour,Jadot,Pecresse,Poutou,Melenchon,Arthaud,Roussel
+360,strategic,0.0,Lassalle,Le Pen,Zemmour,Melenchon,Arthaud,Poutou,Macron,Hidalgo,Jadot,Roussel,Pecresse,Dupont-Aignan,Lassalle
+361,strategic,0.0,Melenchon,Arthaud,Dupont-Aignan,Hidalgo,Le Pen,Macron,Pecresse,Roussel,Poutou,Zemmour,Lassalle,Jadot,Melenchon
+362,stubborn,1.0,Lassalle,Melenchon,Pecresse,Macron,Jadot,Dupont-Aignan,Zemmour,Poutou,Le Pen,Roussel,Arthaud,Hidalgo,Lassalle
+363,stubborn,1.0,Macron,Zemmour,Lassalle,Pecresse,Arthaud,Poutou,Roussel,Le Pen,Jadot,Dupont-Aignan,Melenchon,Hidalgo,Macron
+364,stubborn,1.0,Macron,Arthaud,Roussel,Pecresse,Dupont-Aignan,Zemmour,Melenchon,Poutou,Hidalgo,Jadot,Lassalle,Le Pen,Macron
+365,stubborn,1.0,Zemmour,Pecresse,Macron,Hidalgo,Arthaud,Jadot,Le Pen,Dupont-Aignan,Poutou,Roussel,Melenchon,Lassalle,Zemmour
+366,strategic,0.0,Poutou,Dupont-Aignan,Pecresse,Jadot,Arthaud,Lassalle,Melenchon,Hidalgo,Roussel,Macron,Le Pen,Zemmour,Poutou
+367,stubborn,1.0,Lassalle,Macron,Hidalgo,Dupont-Aignan,Melenchon,Zemmour,Roussel,Jadot,Arthaud,Le Pen,Poutou,Pecresse,Lassalle
+368,stubborn,1.0,Roussel,Le Pen,Dupont-Aignan,Zemmour,Pecresse,Hidalgo,Melenchon,Jadot,Poutou,Lassalle,Macron,Arthaud,Roussel
+369,mixed,0.556,Le Pen,Hidalgo,Dupont-Aignan,Arthaud,Lassalle,Roussel,Poutou,Macron,Zemmour,Pecresse,Jadot,Melenchon,Le Pen
+370,strategic,0.0,Dupont-Aignan,Pecresse,Le Pen,Poutou,Macron,Jadot,Melenchon,Zemmour,Lassalle,Roussel,Hidalgo,Arthaud,Dupont-Aignan
+371,mixed,0.803,Le Pen,Macron,Roussel,Pecresse,Zemmour,Jadot,Arthaud,Dupont-Aignan,Lassalle,Poutou,Hidalgo,Melenchon,Le Pen
+372,stubborn,1.0,Melenchon,Lassalle,Poutou,Hidalgo,Roussel,Zemmour,Dupont-Aignan,Jadot,Macron,Le Pen,Pecresse,Arthaud,Melenchon
+373,stubborn,1.0,Pecresse,Melenchon,Poutou,Lassalle,Dupont-Aignan,Roussel,Le Pen,Jadot,Hidalgo,Macron,Zemmour,Arthaud,Pecresse
+374,mixed,0.584,Poutou,Macron,Le Pen,Roussel,Pecresse,Dupont-Aignan,Arthaud,Hidalgo,Lassalle,Melenchon,Zemmour,Jadot,Poutou
+375,stubborn,1.0,Pecresse,Lassalle,Melenchon,Arthaud,Poutou,Hidalgo,Dupont-Aignan,Roussel,Macron,Zemmour,Jadot,Le Pen,Pecresse
+376,stubborn,1.0,Roussel,Jadot,Le Pen,Hidalgo,Dupont-Aignan,Lassalle,Poutou,Macron,Zemmour,Pecresse,Arthaud,Melenchon,Roussel
+377,strategic,0.0,Macron,Zemmour,Hidalgo,Pecresse,Roussel,Jadot,Melenchon,Arthaud,Le Pen,Lassalle,Poutou,Dupont-Aignan,Macron
+378,stubborn,1.0,Dupont-Aignan,Pecresse,Macron,Lassalle,Hidalgo,Arthaud,Zemmour,Roussel,Melenchon,Jadot,Le Pen,Poutou,Dupont-Aignan
+379,stubborn,1.0,Hidalgo,Zemmour,Macron,Jadot,Le Pen,Roussel,Lassalle,Dupont-Aignan,Pecresse,Arthaud,Poutou,Melenchon,Hidalgo
+380,strategic,0.0,Roussel,Macron,Melenchon,Zemmour,Lassalle,Arthaud,Jadot,Poutou,Hidalgo,Dupont-Aignan,Pecresse,Le Pen,Roussel
+381,mixed,0.429,Pecresse,Melenchon,Jadot,Zemmour,Arthaud,Poutou,Hidalgo,Dupont-Aignan,Lassalle,Le Pen,Roussel,Macron,Pecresse
+382,stubborn,1.0,Pecresse,Roussel,Le Pen,Jadot,Hidalgo,Poutou,Melenchon,Macron,Zemmour,Dupont-Aignan,Lassalle,Arthaud,Pecresse
+383,stubborn,1.0,Roussel,Lassalle,Pecresse,Macron,Dupont-Aignan,Poutou,Melenchon,Hidalgo,Le Pen,Jadot,Arthaud,Zemmour,Roussel
+384,stubborn,1.0,Melenchon,Dupont-Aignan,Zemmour,Arthaud,Lassalle,Macron,Pecresse,Hidalgo,Le Pen,Poutou,Roussel,Jadot,Melenchon
+385,strategic,0.0,Zemmour,Pecresse,Dupont-Aignan,Arthaud,Hidalgo,Poutou,Melenchon,Jadot,Lassalle,Le Pen,Roussel,Macron,Zemmour
+386,mixed,0.446,Roussel,Melenchon,Arthaud,Macron,Le Pen,Hidalgo,Lassalle,Jadot,Pecresse,Zemmour,Poutou,Dupont-Aignan,Roussel
+387,mixed,0.466,Melenchon,Pecresse,Macron,Arthaud,Poutou,Hidalgo,Dupont-Aignan,Roussel,Jadot,Lassalle,Zemmour,Le Pen,Melenchon
+388,strategic,0.0,Hidalgo,Dupont-Aignan,Zemmour,Pecresse,Roussel,Macron,Poutou,Melenchon,Arthaud,Lassalle,Le Pen,Jadot,Hidalgo
+389,stubborn,1.0,Poutou,Dupont-Aignan,Jadot,Hidalgo,Le Pen,Melenchon,Macron,Zemmour,Pecresse,Roussel,Arthaud,Lassalle,Poutou
+390,strategic,0.0,Lassalle,Le Pen,Macron,Zemmour,Jadot,Dupont-Aignan,Roussel,Melenchon,Hidalgo,Pecresse,Arthaud,Poutou,Lassalle
+391,stubborn,1.0,Hidalgo,Jadot,Roussel,Poutou,Melenchon,Zemmour,Pecresse,Arthaud,Le Pen,Lassalle,Dupont-Aignan,Macron,Hidalgo
+392,strategic,0.0,Pecresse,Zemmour,Roussel,Dupont-Aignan,Hidalgo,Lassalle,Arthaud,Jadot,Macron,Le Pen,Melenchon,Poutou,Pecresse
+393,mixed,0.543,Poutou,Lassalle,Zemmour,Dupont-Aignan,Melenchon,Arthaud,Le Pen,Pecresse,Hidalgo,Jadot,Macron,Roussel,Poutou
+394,mixed,0.545,Poutou,Dupont-Aignan,Macron,Pecresse,Zemmour,Lassalle,Roussel,Melenchon,Le Pen,Arthaud,Jadot,Hidalgo,Poutou
+395,strategic,0.0,Poutou,Jadot,Arthaud,Melenchon,Le Pen,Lassalle,Hidalgo,Roussel,Dupont-Aignan,Macron,Pecresse,Zemmour,Poutou
+396,stubborn,1.0,Poutou,Roussel,Macron,Dupont-Aignan,Melenchon,Hidalgo,Pecresse,Jadot,Arthaud,Lassalle,Zemmour,Le Pen,Poutou
+397,strategic,0.0,Arthaud,Zemmour,Roussel,Jadot,Macron,Hidalgo,Poutou,Le Pen,Dupont-Aignan,Melenchon,Pecresse,Lassalle,Arthaud
+398,strategic,0.0,Hidalgo,Macron,Poutou,Pecresse,Lassalle,Le Pen,Roussel,Jadot,Arthaud,Dupont-Aignan,Melenchon,Zemmour,Hidalgo
+399,strategic,0.0,Lassalle,Le Pen,Arthaud,Pecresse,Poutou,Zemmour,Jadot,Macron,Melenchon,Roussel,Hidalgo,Dupont-Aignan,Lassalle
+400,mixed,0.515,Melenchon,Macron,Le Pen,Arthaud,Pecresse,Lassalle,Jadot,Zemmour,Hidalgo,Roussel,Dupont-Aignan,Poutou,Melenchon
+401,strategic,0.0,Melenchon,Zemmour,Hidalgo,Arthaud,Poutou,Macron,Jadot,Pecresse,Roussel,Lassalle,Le Pen,Dupont-Aignan,Melenchon
+402,stubborn,1.0,Pecresse,Hidalgo,Arthaud,Poutou,Zemmour,Lassalle,Le Pen,Roussel,Dupont-Aignan,Macron,Jadot,Melenchon,Pecresse
+403,strategic,0.0,Arthaud,Poutou,Hidalgo,Zemmour,Pecresse,Dupont-Aignan,Macron,Lassalle,Jadot,Le Pen,Roussel,Melenchon,Arthaud
+404,stubborn,1.0,Hidalgo,Jadot,Dupont-Aignan,Roussel,Pecresse,Macron,Zemmour,Le Pen,Melenchon,Arthaud,Lassalle,Poutou,Hidalgo
+405,stubborn,1.0,Roussel,Melenchon,Dupont-Aignan,Jadot,Pecresse,Macron,Hidalgo,Le Pen,Lassalle,Poutou,Arthaud,Zemmour,Roussel
+406,mixed,0.704,Macron,Melenchon,Le Pen,Jadot,Arthaud,Lassalle,Zemmour,Dupont-Aignan,Pecresse,Poutou,Roussel,Hidalgo,Macron
+407,mixed,0.501,Macron,Zemmour,Roussel,Melenchon,Le Pen,Poutou,Pecresse,Lassalle,Arthaud,Hidalgo,Jadot,Dupont-Aignan,Macron
+408,stubborn,1.0,Lassalle,Melenchon,Hidalgo,Roussel,Zemmour,Jadot,Macron,Pecresse,Arthaud,Poutou,Le Pen,Dupont-Aignan,Lassalle
+409,mixed,0.693,Roussel,Lassalle,Melenchon,Le Pen,Arthaud,Dupont-Aignan,Hidalgo,Zemmour,Poutou,Pecresse,Macron,Jadot,Roussel
+410,strategic,0.0,Arthaud,Le Pen,Roussel,Zemmour,Hidalgo,Dupont-Aignan,Poutou,Jadot,Melenchon,Pecresse,Macron,Lassalle,Arthaud
+411,stubborn,1.0,Poutou,Pecresse,Melenchon,Le Pen,Lassalle,Hidalgo,Jadot,Macron,Arthaud,Zemmour,Roussel,Dupont-Aignan,Poutou
+412,stubborn,1.0,Melenchon,Le Pen,Zemmour,Arthaud,Jadot,Roussel,Lassalle,Macron,Dupont-Aignan,Pecresse,Hidalgo,Poutou,Melenchon
+413,stubborn,1.0,Lassalle,Le Pen,Pecresse,Poutou,Roussel,Macron,Dupont-Aignan,Arthaud,Melenchon,Zemmour,Hidalgo,Jadot,Lassalle
+414,mixed,0.776,Le Pen,Hidalgo,Arthaud,Roussel,Lassalle,Zemmour,Macron,Melenchon,Dupont-Aignan,Poutou,Jadot,Pecresse,Le Pen
+415,mixed,0.742,Melenchon,Roussel,Zemmour,Hidalgo,Dupont-Aignan,Jadot,Macron,Pecresse,Poutou,Le Pen,Lassalle,Arthaud,Melenchon
+416,mixed,0.602,Jadot,Le Pen,Macron,Lassalle,Roussel,Zemmour,Hidalgo,Poutou,Pecresse,Dupont-Aignan,Arthaud,Melenchon,Jadot
+417,strategic,0.0,Hidalgo,Zemmour,Dupont-Aignan,Pecresse,Melenchon,Roussel,Lassalle,Le Pen,Arthaud,Macron,Poutou,Jadot,Hidalgo
+418,strategic,0.0,Macron,Pecresse,Jadot,Poutou,Dupont-Aignan,Le Pen,Hidalgo,Lassalle,Roussel,Arthaud,Melenchon,Zemmour,Macron
+419,stubborn,1.0,Zemmour,Jadot,Hidalgo,Melenchon,Lassalle,Le Pen,Poutou,Macron,Roussel,Arthaud,Pecresse,Dupont-Aignan,Zemmour
+420,stubborn,1.0,Le Pen,Melenchon,Pecresse,Poutou,Jadot,Roussel,Macron,Lassalle,Arthaud,Dupont-Aignan,Zemmour,Hidalgo,Le Pen
+421,stubborn,1.0,Hidalgo,Pecresse,Jadot,Lassalle,Melenchon,Arthaud,Le Pen,Macron,Zemmour,Roussel,Poutou,Dupont-Aignan,Hidalgo
+422,stubborn,1.0,Pecresse,Lassalle,Melenchon,Zemmour,Hidalgo,Roussel,Poutou,Dupont-Aignan,Le Pen,Jadot,Macron,Arthaud,Pecresse
+423,strategic,0.0,Pecresse,Melenchon,Jadot,Poutou,Hidalgo,Macron,Dupont-Aignan,Arthaud,Lassalle,Le Pen,Zemmour,Roussel,Pecresse
+424,strategic,0.0,Macron,Lassalle,Roussel,Arthaud,Jadot,Dupont-Aignan,Poutou,Zemmour,Le Pen,Hidalgo,Melenchon,Pecresse,Macron
+425,strategic,0.0,Roussel,Jadot,Arthaud,Le Pen,Pecresse,Dupont-Aignan,Macron,Zemmour,Lassalle,Melenchon,Poutou,Hidalgo,Roussel
+426,strategic,0.0,Hidalgo,Roussel,Arthaud,Melenchon,Zemmour,Pecresse,Macron,Dupont-Aignan,Jadot,Poutou,Le Pen,Lassalle,Hidalgo
+427,stubborn,1.0,Lassalle,Pecresse,Macron,Zemmour,Poutou,Jadot,Arthaud,Hidalgo,Melenchon,Le Pen,Roussel,Dupont-Aignan,Lassalle
+428,strategic,0.0,Pecresse,Hidalgo,Poutou,Melenchon,Le Pen,Roussel,Jadot,Arthaud,Macron,Lassalle,Zemmour,Dupont-Aignan,Pecresse
+429,stubborn,1.0,Zemmour,Jadot,Macron,Dupont-Aignan,Melenchon,Arthaud,Pecresse,Poutou,Roussel,Le Pen,Hidalgo,Lassalle,Zemmour
+430,stubborn,1.0,Jadot,Dupont-Aignan,Pecresse,Melenchon,Hidalgo,Poutou,Roussel,Le Pen,Lassalle,Macron,Arthaud,Zemmour,Jadot
+431,strategic,0.0,Roussel,Hidalgo,Pecresse,Zemmour,Le Pen,Melenchon,Jadot,Macron,Poutou,Dupont-Aignan,Arthaud,Lassalle,Roussel
+432,mixed,0.564,Arthaud,Dupont-Aignan,Jadot,Pecresse,Roussel,Macron,Hidalgo,Melenchon,Zemmour,Lassalle,Poutou,Le Pen,Arthaud
+433,stubborn,1.0,Le Pen,Lassalle,Arthaud,Hidalgo,Zemmour,Jadot,Macron,Dupont-Aignan,Melenchon,Poutou,Pecresse,Roussel,Le Pen
+434,mixed,0.781,Dupont-Aignan,Jadot,Hidalgo,Lassalle,Zemmour,Le Pen,Arthaud,Poutou,Pecresse,Roussel,Macron,Melenchon,Dupont-Aignan
+435,stubborn,1.0,Dupont-Aignan,Roussel,Poutou,Le Pen,Pecresse,Lassalle,Melenchon,Macron,Hidalgo,Arthaud,Jadot,Zemmour,Dupont-Aignan
+436,stubborn,1.0,Lassalle,Poutou,Pecresse,Hidalgo,Jadot,Roussel,Macron,Melenchon,Dupont-Aignan,Zemmour,Le Pen,Arthaud,Lassalle
+437,mixed,0.412,Dupont-Aignan,Roussel,Arthaud,Pecresse,Le Pen,Melenchon,Lassalle,Poutou,Jadot,Hidalgo,Zemmour,Macron,Dupont-Aignan
+438,stubborn,1.0,Le Pen,Lassalle,Hidalgo,Melenchon,Arthaud,Dupont-Aignan,Macron,Poutou,Zemmour,Pecresse,Roussel,Jadot,Le Pen
+439,mixed,0.753,Lassalle,Arthaud,Melenchon,Roussel,Pecresse,Poutou,Zemmour,Le Pen,Dupont-Aignan,Jadot,Hidalgo,Macron,Lassalle
+440,stubborn,1.0,Pecresse,Arthaud,Macron,Le Pen,Hidalgo,Dupont-Aignan,Zemmour,Roussel,Poutou,Lassalle,Melenchon,Jadot,Pecresse
+441,strategic,0.0,Arthaud,Le Pen,Hidalgo,Lassalle,Dupont-Aignan,Roussel,Macron,Pecresse,Melenchon,Jadot,Poutou,Zemmour,Arthaud
+442,mixed,0.492,Macron,Dupont-Aignan,Hidalgo,Jadot,Pecresse,Arthaud,Melenchon,Le Pen,Poutou,Roussel,Zemmour,Lassalle,Macron
+443,stubborn,1.0,Pecresse,Zemmour,Macron,Hidalgo,Le Pen,Poutou,Melenchon,Lassalle,Arthaud,Dupont-Aignan,Roussel,Jadot,Pecresse
+444,strategic,0.0,Hidalgo,Poutou,Zemmour,Jadot,Dupont-Aignan,Le Pen,Pecresse,Lassalle,Arthaud,Melenchon,Roussel,Macron,Hidalgo
+445,mixed,0.486,Jadot,Melenchon,Zemmour,Poutou,Le Pen,Roussel,Hidalgo,Arthaud,Pecresse,Lassalle,Dupont-Aignan,Macron,Jadot
+446,strategic,0.0,Arthaud,Zemmour,Lassalle,Dupont-Aignan,Macron,Roussel,Le Pen,Poutou,Hidalgo,Pecresse,Jadot,Melenchon,Arthaud
+447,stubborn,1.0,Melenchon,Arthaud,Macron,Zemmour,Jadot,Poutou,Roussel,Hidalgo,Pecresse,Lassalle,Dupont-Aignan,Le Pen,Melenchon
+448,mixed,0.771,Melenchon,Pecresse,Arthaud,Roussel,Le Pen,Macron,Jadot,Poutou,Hidalgo,Dupont-Aignan,Lassalle,Zemmour,Melenchon
+449,strategic,0.0,Arthaud,Lassalle,Roussel,Zemmour,Le Pen,Poutou,Macron,Jadot,Dupont-Aignan,Hidalgo,Pecresse,Melenchon,Arthaud
+450,mixed,0.639,Jadot,Lassalle,Macron,Hidalgo,Zemmour,Le Pen,Pecresse,Arthaud,Dupont-Aignan,Melenchon,Roussel,Poutou,Jadot
+451,stubborn,1.0,Arthaud,Lassalle,Roussel,Pecresse,Le Pen,Hidalgo,Zemmour,Melenchon,Poutou,Dupont-Aignan,Jadot,Macron,Arthaud
+452,strategic,0.0,Macron,Le Pen,Hidalgo,Arthaud,Lassalle,Melenchon,Poutou,Dupont-Aignan,Roussel,Jadot,Zemmour,Pecresse,Macron
+453,stubborn,1.0,Lassalle,Pecresse,Poutou,Jadot,Arthaud,Hidalgo,Le Pen,Roussel,Macron,Melenchon,Dupont-Aignan,Zemmour,Lassalle
+454,mixed,0.585,Poutou,Jadot,Le Pen,Roussel,Pecresse,Macron,Dupont-Aignan,Hidalgo,Arthaud,Lassalle,Melenchon,Zemmour,Poutou
+455,stubborn,1.0,Hidalgo,Roussel,Jadot,Arthaud,Dupont-Aignan,Lassalle,Zemmour,Melenchon,Macron,Le Pen,Poutou,Pecresse,Hidalgo
+456,stubborn,1.0,Melenchon,Jadot,Poutou,Zemmour,Macron,Lassalle,Pecresse,Le Pen,Hidalgo,Dupont-Aignan,Roussel,Arthaud,Melenchon
+457,strategic,0.0,Jadot,Macron,Poutou,Zemmour,Roussel,Arthaud,Pecresse,Le Pen,Melenchon,Dupont-Aignan,Lassalle,Hidalgo,Jadot
+458,mixed,0.527,Macron,Arthaud,Pecresse,Zemmour,Roussel,Dupont-Aignan,Hidalgo,Le Pen,Poutou,Lassalle,Melenchon,Jadot,Macron
+459,strategic,0.0,Jadot,Melenchon,Le Pen,Poutou,Macron,Pecresse,Hidalgo,Arthaud,Lassalle,Dupont-Aignan,Zemmour,Roussel,Jadot
+460,stubborn,1.0,Macron,Zemmour,Melenchon,Poutou,Arthaud,Roussel,Lassalle,Dupont-Aignan,Pecresse,Jadot,Le Pen,Hidalgo,Macron
+461,mixed,0.567,Lassalle,Dupont-Aignan,Arthaud,Jadot,Roussel,Macron,Pecresse,Melenchon,Le Pen,Hidalgo,Poutou,Zemmour,Lassalle
+462,mixed,0.439,Poutou,Melenchon,Dupont-Aignan,Jadot,Macron,Roussel,Pecresse,Zemmour,Hidalgo,Arthaud,Lassalle,Le Pen,Poutou
+463,stubborn,1.0,Poutou,Zemmour,Roussel,Melenchon,Macron,Dupont-Aignan,Jadot,Arthaud,Lassalle,Pecresse,Hidalgo,Le Pen,Poutou
+464,stubborn,1.0,Poutou,Melenchon,Zemmour,Jadot,Macron,Roussel,Lassalle,Dupont-Aignan,Hidalgo,Pecresse,Arthaud,Le Pen,Poutou
+465,stubborn,1.0,Poutou,Hidalgo,Dupont-Aignan,Pecresse,Zemmour,Arthaud,Roussel,Jadot,Melenchon,Le Pen,Lassalle,Macron,Poutou
+466,stubborn,1.0,Zemmour,Poutou,Macron,Roussel,Arthaud,Jadot,Lassalle,Melenchon,Pecresse,Dupont-Aignan,Le Pen,Hidalgo,Zemmour
+467,stubborn,1.0,Macron,Zemmour,Hidalgo,Pecresse,Dupont-Aignan,Jadot,Melenchon,Arthaud,Le Pen,Lassalle,Poutou,Roussel,Macron
+468,mixed,0.749,Le Pen,Pecresse,Macron,Hidalgo,Dupont-Aignan,Arthaud,Poutou,Zemmour,Melenchon,Lassalle,Jadot,Roussel,Le Pen
+469,stubborn,1.0,Hidalgo,Dupont-Aignan,Roussel,Lassalle,Zemmour,Melenchon,Le Pen,Macron,Jadot,Poutou,Pecresse,Arthaud,Hidalgo
+470,mixed,0.613,Hidalgo,Roussel,Poutou,Lassalle,Melenchon,Jadot,Dupont-Aignan,Arthaud,Pecresse,Le Pen,Macron,Zemmour,Hidalgo
+471,mixed,0.818,Zemmour,Le Pen,Melenchon,Arthaud,Poutou,Lassalle,Jadot,Hidalgo,Pecresse,Macron,Dupont-Aignan,Roussel,Zemmour
+472,stubborn,1.0,Melenchon,Zemmour,Jadot,Roussel,Hidalgo,Macron,Pecresse,Arthaud,Dupont-Aignan,Lassalle,Le Pen,Poutou,Melenchon
+473,stubborn,1.0,Pecresse,Jadot,Dupont-Aignan,Le Pen,Macron,Melenchon,Arthaud,Hidalgo,Zemmour,Poutou,Roussel,Lassalle,Pecresse
+474,strategic,0.0,Lassalle,Dupont-Aignan,Zemmour,Pecresse,Hidalgo,Le Pen,Macron,Roussel,Arthaud,Poutou,Melenchon,Jadot,Lassalle
+475,strategic,0.0,Poutou,Macron,Pecresse,Roussel,Lassalle,Le Pen,Melenchon,Jadot,Dupont-Aignan,Zemmour,Hidalgo,Arthaud,Poutou
+476,stubborn,1.0,Melenchon,Pecresse,Poutou,Arthaud,Le Pen,Macron,Hidalgo,Jadot,Dupont-Aignan,Roussel,Zemmour,Lassalle,Melenchon
+477,strategic,0.0,Dupont-Aignan,Macron,Zemmour,Roussel,Jadot,Melenchon,Pecresse,Poutou,Lassalle,Arthaud,Hidalgo,Le Pen,Dupont-Aignan
+478,stubborn,1.0,Jadot,Le Pen,Hidalgo,Macron,Poutou,Pecresse,Roussel,Lassalle,Arthaud,Dupont-Aignan,Zemmour,Melenchon,Jadot
+479,stubborn,1.0,Pecresse,Zemmour,Roussel,Arthaud,Poutou,Hidalgo,Dupont-Aignan,Jadot,Macron,Melenchon,Le Pen,Lassalle,Pecresse
+480,strategic,0.0,Pecresse,Lassalle,Poutou,Melenchon,Arthaud,Jadot,Roussel,Hidalgo,Zemmour,Dupont-Aignan,Macron,Le Pen,Pecresse
+481,mixed,0.638,Poutou,Roussel,Lassalle,Zemmour,Hidalgo,Le Pen,Jadot,Dupont-Aignan,Pecresse,Macron,Arthaud,Melenchon,Poutou
+482,mixed,0.417,Lassalle,Poutou,Pecresse,Hidalgo,Zemmour,Jadot,Dupont-Aignan,Melenchon,Arthaud,Macron,Roussel,Le Pen,Lassalle
+483,stubborn,1.0,Pecresse,Poutou,Melenchon,Le Pen,Macron,Roussel,Jadot,Arthaud,Dupont-Aignan,Hidalgo,Lassalle,Zemmour,Pecresse
+484,mixed,0.786,Arthaud,Poutou,Zemmour,Hidalgo,Roussel,Le Pen,Melenchon,Lassalle,Jadot,Macron,Pecresse,Dupont-Aignan,Arthaud
+485,mixed,0.895,Macron,Pecresse,Hidalgo,Lassalle,Roussel,Jadot,Poutou,Le Pen,Zemmour,Arthaud,Melenchon,Dupont-Aignan,Macron
+486,mixed,0.719,Lassalle,Hidalgo,Arthaud,Poutou,Roussel,Dupont-Aignan,Le Pen,Pecresse,Macron,Zemmour,Melenchon,Jadot,Lassalle
+487,stubborn,1.0,Zemmour,Arthaud,Poutou,Lassalle,Dupont-Aignan,Melenchon,Hidalgo,Jadot,Macron,Roussel,Pecresse,Le Pen,Zemmour
+488,strategic,0.0,Poutou,Hidalgo,Dupont-Aignan,Macron,Le Pen,Zemmour,Roussel,Jadot,Pecresse,Melenchon,Arthaud,Lassalle,Poutou
+489,mixed,0.76,Hidalgo,Dupont-Aignan,Melenchon,Pecresse,Lassalle,Macron,Jadot,Poutou,Zemmour,Arthaud,Roussel,Le Pen,Hidalgo
+490,mixed,0.613,Poutou,Le Pen,Jadot,Zemmour,Macron,Arthaud,Pecresse,Dupont-Aignan,Melenchon,Roussel,Hidalgo,Lassalle,Poutou
+491,stubborn,1.0,Arthaud,Le Pen,Poutou,Dupont-Aignan,Melenchon,Zemmour,Lassalle,Pecresse,Jadot,Roussel,Macron,Hidalgo,Arthaud
+492,stubborn,1.0,Dupont-Aignan,Roussel,Arthaud,Hidalgo,Macron,Le Pen,Lassalle,Jadot,Poutou,Pecresse,Melenchon,Zemmour,Dupont-Aignan
+493,stubborn,1.0,Poutou,Melenchon,Arthaud,Macron,Le Pen,Jadot,Lassalle,Pecresse,Dupont-Aignan,Hidalgo,Roussel,Zemmour,Poutou
+494,mixed,0.692,Poutou,Jadot,Melenchon,Pecresse,Lassalle,Dupont-Aignan,Zemmour,Macron,Arthaud,Roussel,Le Pen,Hidalgo,Poutou
+495,stubborn,1.0,Roussel,Macron,Le Pen,Pecresse,Zemmour,Jadot,Poutou,Melenchon,Arthaud,Hidalgo,Dupont-Aignan,Lassalle,Roussel
+496,strategic,0.0,Arthaud,Le Pen,Macron,Poutou,Pecresse,Dupont-Aignan,Melenchon,Zemmour,Roussel,Jadot,Hidalgo,Lassalle,Arthaud
+497,strategic,0.0,Hidalgo,Macron,Roussel,Pecresse,Lassalle,Arthaud,Jadot,Poutou,Zemmour,Le Pen,Melenchon,Dupont-Aignan,Hidalgo
+498,strategic,0.0,Dupont-Aignan,Zemmour,Hidalgo,Melenchon,Jadot,Le Pen,Arthaud,Poutou,Roussel,Lassalle,Macron,Pecresse,Dupont-Aignan
+499,stubborn,1.0,Pecresse,Zemmour,Melenchon,Poutou,Macron,Jadot,Le Pen,Hidalgo,Roussel,Arthaud,Lassalle,Dupont-Aignan,Pecresse
+500,mixed,0.751,Roussel,Lassalle,Dupont-Aignan,Arthaud,Poutou,Jadot,Macron,Melenchon,Hidalgo,Zemmour,Le Pen,Pecresse,Roussel
+501,strategic,0.0,Le Pen,Dupont-Aignan,Poutou,Zemmour,Arthaud,Roussel,Pecresse,Hidalgo,Macron,Jadot,Lassalle,Melenchon,Le Pen
+502,stubborn,1.0,Poutou,Hidalgo,Lassalle,Dupont-Aignan,Melenchon,Macron,Jadot,Roussel,Pecresse,Le Pen,Arthaud,Zemmour,Poutou
+503,stubborn,1.0,Dupont-Aignan,Macron,Melenchon,Lassalle,Arthaud,Le Pen,Zemmour,Roussel,Poutou,Pecresse,Jadot,Hidalgo,Dupont-Aignan
+504,stubborn,1.0,Lassalle,Roussel,Melenchon,Jadot,Arthaud,Hidalgo,Poutou,Pecresse,Le Pen,Macron,Zemmour,Dupont-Aignan,Lassalle
+505,mixed,0.702,Melenchon,Dupont-Aignan,Hidalgo,Arthaud,Roussel,Jadot,Pecresse,Lassalle,Macron,Le Pen,Zemmour,Poutou,Melenchon
+506,mixed,0.409,Pecresse,Lassalle,Le Pen,Hidalgo,Macron,Roussel,Dupont-Aignan,Zemmour,Jadot,Melenchon,Arthaud,Poutou,Pecresse
+507,mixed,0.687,Le Pen,Lassalle,Poutou,Jadot,Pecresse,Arthaud,Melenchon,Zemmour,Dupont-Aignan,Roussel,Hidalgo,Macron,Le Pen
+508,stubborn,1.0,Arthaud,Pecresse,Poutou,Jadot,Le Pen,Melenchon,Roussel,Macron,Lassalle,Zemmour,Dupont-Aignan,Hidalgo,Arthaud
+509,mixed,0.519,Poutou,Melenchon,Hidalgo,Zemmour,Pecresse,Lassalle,Roussel,Jadot,Arthaud,Le Pen,Macron,Dupont-Aignan,Poutou
+510,strategic,0.0,Roussel,Macron,Hidalgo,Le Pen,Arthaud,Poutou,Dupont-Aignan,Jadot,Pecresse,Melenchon,Zemmour,Lassalle,Roussel
+511,stubborn,1.0,Arthaud,Jadot,Roussel,Macron,Melenchon,Hidalgo,Zemmour,Poutou,Pecresse,Dupont-Aignan,Le Pen,Lassalle,Arthaud
+512,stubborn,1.0,Dupont-Aignan,Arthaud,Melenchon,Poutou,Hidalgo,Lassalle,Pecresse,Zemmour,Macron,Roussel,Jadot,Le Pen,Dupont-Aignan
+513,mixed,0.777,Zemmour,Melenchon,Poutou,Dupont-Aignan,Roussel,Le Pen,Lassalle,Hidalgo,Pecresse,Jadot,Arthaud,Macron,Zemmour
+514,mixed,0.465,Melenchon,Jadot,Dupont-Aignan,Poutou,Hidalgo,Pecresse,Macron,Lassalle,Roussel,Le Pen,Arthaud,Zemmour,Melenchon
+515,stubborn,1.0,Le Pen,Zemmour,Arthaud,Roussel,Hidalgo,Dupont-Aignan,Macron,Lassalle,Poutou,Jadot,Melenchon,Pecresse,Le Pen
+516,strategic,0.0,Macron,Zemmour,Poutou,Le Pen,Lassalle,Pecresse,Hidalgo,Dupont-Aignan,Arthaud,Roussel,Melenchon,Jadot,Macron
+517,strategic,0.0,Zemmour,Jadot,Dupont-Aignan,Hidalgo,Arthaud,Poutou,Macron,Pecresse,Lassalle,Roussel,Le Pen,Melenchon,Zemmour
+518,stubborn,1.0,Zemmour,Hidalgo,Roussel,Dupont-Aignan,Poutou,Lassalle,Macron,Jadot,Melenchon,Pecresse,Arthaud,Le Pen,Zemmour
+519,mixed,0.535,Poutou,Pecresse,Macron,Roussel,Melenchon,Jadot,Arthaud,Zemmour,Lassalle,Hidalgo,Le Pen,Dupont-Aignan,Poutou
+520,stubborn,1.0,Arthaud,Le Pen,Jadot,Macron,Zemmour,Dupont-Aignan,Poutou,Pecresse,Melenchon,Hidalgo,Roussel,Lassalle,Arthaud
+521,stubborn,1.0,Melenchon,Macron,Pecresse,Poutou,Lassalle,Roussel,Jadot,Zemmour,Dupont-Aignan,Arthaud,Hidalgo,Le Pen,Melenchon
+522,strategic,0.0,Zemmour,Le Pen,Roussel,Hidalgo,Poutou,Jadot,Pecresse,Macron,Arthaud,Dupont-Aignan,Lassalle,Melenchon,Zemmour
+523,stubborn,1.0,Zemmour,Roussel,Macron,Poutou,Arthaud,Jadot,Dupont-Aignan,Melenchon,Hidalgo,Lassalle,Le Pen,Pecresse,Zemmour
+524,stubborn,1.0,Lassalle,Arthaud,Pecresse,Le Pen,Macron,Roussel,Poutou,Zemmour,Hidalgo,Dupont-Aignan,Melenchon,Jadot,Lassalle
+525,mixed,0.746,Roussel,Arthaud,Dupont-Aignan,Jadot,Pecresse,Le Pen,Macron,Zemmour,Hidalgo,Lassalle,Poutou,Melenchon,Roussel
+526,strategic,0.0,Lassalle,Pecresse,Dupont-Aignan,Melenchon,Macron,Arthaud,Roussel,Zemmour,Hidalgo,Poutou,Le Pen,Jadot,Lassalle
+527,strategic,0.0,Macron,Arthaud,Poutou,Roussel,Melenchon,Lassalle,Pecresse,Jadot,Zemmour,Le Pen,Hidalgo,Dupont-Aignan,Macron
+528,stubborn,1.0,Le Pen,Zemmour,Poutou,Dupont-Aignan,Jadot,Macron,Melenchon,Pecresse,Roussel,Hidalgo,Lassalle,Arthaud,Le Pen
+529,stubborn,1.0,Le Pen,Roussel,Poutou,Lassalle,Hidalgo,Dupont-Aignan,Zemmour,Melenchon,Macron,Jadot,Pecresse,Arthaud,Le Pen
+530,stubborn,1.0,Lassalle,Hidalgo,Le Pen,Roussel,Poutou,Pecresse,Zemmour,Melenchon,Jadot,Dupont-Aignan,Arthaud,Macron,Lassalle
+531,strategic,0.0,Pecresse,Arthaud,Roussel,Le Pen,Macron,Jadot,Zemmour,Dupont-Aignan,Hidalgo,Poutou,Lassalle,Melenchon,Pecresse
+532,strategic,0.0,Melenchon,Poutou,Dupont-Aignan,Roussel,Hidalgo,Jadot,Arthaud,Macron,Lassalle,Pecresse,Zemmour,Le Pen,Melenchon
+533,stubborn,1.0,Hidalgo,Le Pen,Pecresse,Macron,Poutou,Roussel,Jadot,Dupont-Aignan,Melenchon,Lassalle,Arthaud,Zemmour,Hidalgo
+534,stubborn,1.0,Lassalle,Hidalgo,Jadot,Dupont-Aignan,Macron,Roussel,Zemmour,Le Pen,Pecresse,Poutou,Melenchon,Arthaud,Lassalle
+535,stubborn,1.0,Macron,Melenchon,Le Pen,Hidalgo,Arthaud,Zemmour,Dupont-Aignan,Jadot,Poutou,Lassalle,Pecresse,Roussel,Macron
+536,strategic,0.0,Le Pen,Dupont-Aignan,Lassalle,Zemmour,Pecresse,Jadot,Arthaud,Roussel,Hidalgo,Poutou,Melenchon,Macron,Le Pen
+537,mixed,0.571,Roussel,Melenchon,Arthaud,Macron,Pecresse,Jadot,Poutou,Lassalle,Hidalgo,Le Pen,Zemmour,Dupont-Aignan,Roussel
+538,mixed,0.693,Le Pen,Lassalle,Poutou,Zemmour,Dupont-Aignan,Hidalgo,Roussel,Pecresse,Macron,Jadot,Arthaud,Melenchon,Le Pen
+539,mixed,0.812,Hidalgo,Poutou,Pecresse,Dupont-Aignan,Jadot,Roussel,Macron,Zemmour,Le Pen,Melenchon,Lassalle,Arthaud,Hidalgo
+540,stubborn,1.0,Poutou,Hidalgo,Jadot,Lassalle,Macron,Zemmour,Melenchon,Pecresse,Roussel,Le Pen,Dupont-Aignan,Arthaud,Poutou
+541,strategic,0.0,Roussel,Arthaud,Macron,Hidalgo,Poutou,Le Pen,Zemmour,Melenchon,Dupont-Aignan,Lassalle,Pecresse,Jadot,Roussel
+542,mixed,0.458,Lassalle,Macron,Roussel,Pecresse,Poutou,Dupont-Aignan,Arthaud,Melenchon,Le Pen,Hidalgo,Jadot,Zemmour,Lassalle
+543,strategic,0.0,Le Pen,Melenchon,Macron,Lassalle,Arthaud,Pecresse,Jadot,Dupont-Aignan,Roussel,Zemmour,Hidalgo,Poutou,Le Pen
+544,stubborn,1.0,Roussel,Hidalgo,Poutou,Zemmour,Arthaud,Melenchon,Le Pen,Pecresse,Lassalle,Macron,Jadot,Dupont-Aignan,Roussel
+545,mixed,0.46,Hidalgo,Arthaud,Macron,Jadot,Dupont-Aignan,Melenchon,Poutou,Lassalle,Roussel,Le Pen,Zemmour,Pecresse,Hidalgo
+546,stubborn,1.0,Zemmour,Poutou,Le Pen,Roussel,Macron,Lassalle,Hidalgo,Arthaud,Pecresse,Jadot,Dupont-Aignan,Melenchon,Zemmour
+547,stubborn,1.0,Melenchon,Jadot,Roussel,Dupont-Aignan,Macron,Poutou,Arthaud,Pecresse,Hidalgo,Le Pen,Lassalle,Zemmour,Melenchon
+548,strategic,0.0,Hidalgo,Lassalle,Macron,Poutou,Arthaud,Roussel,Pecresse,Zemmour,Jadot,Dupont-Aignan,Le Pen,Melenchon,Hidalgo
+549,strategic,0.0,Melenchon,Lassalle,Poutou,Pecresse,Roussel,Zemmour,Dupont-Aignan,Le Pen,Macron,Arthaud,Jadot,Hidalgo,Melenchon
+550,stubborn,1.0,Dupont-Aignan,Macron,Poutou,Hidalgo,Melenchon,Zemmour,Arthaud,Roussel,Le Pen,Lassalle,Pecresse,Jadot,Dupont-Aignan
+551,stubborn,1.0,Dupont-Aignan,Jadot,Macron,Pecresse,Melenchon,Hidalgo,Zemmour,Arthaud,Le Pen,Poutou,Lassalle,Roussel,Dupont-Aignan
+552,strategic,0.0,Jadot,Poutou,Roussel,Arthaud,Macron,Pecresse,Le Pen,Hidalgo,Lassalle,Dupont-Aignan,Zemmour,Melenchon,Jadot
+553,strategic,0.0,Le Pen,Poutou,Arthaud,Macron,Dupont-Aignan,Lassalle,Hidalgo,Zemmour,Melenchon,Pecresse,Roussel,Jadot,Le Pen
+554,stubborn,1.0,Poutou,Melenchon,Lassalle,Arthaud,Zemmour,Hidalgo,Dupont-Aignan,Roussel,Pecresse,Jadot,Le Pen,Macron,Poutou
+555,stubborn,1.0,Hidalgo,Zemmour,Arthaud,Dupont-Aignan,Melenchon,Lassalle,Macron,Jadot,Le Pen,Pecresse,Roussel,Poutou,Hidalgo
+556,strategic,0.0,Macron,Jadot,Le Pen,Lassalle,Zemmour,Pecresse,Arthaud,Poutou,Hidalgo,Roussel,Dupont-Aignan,Melenchon,Macron
+557,strategic,0.0,Melenchon,Hidalgo,Le Pen,Jadot,Roussel,Dupont-Aignan,Poutou,Arthaud,Lassalle,Zemmour,Macron,Pecresse,Melenchon
+558,strategic,0.0,Melenchon,Poutou,Pecresse,Le Pen,Zemmour,Dupont-Aignan,Arthaud,Lassalle,Jadot,Hidalgo,Roussel,Macron,Melenchon
+559,stubborn,1.0,Dupont-Aignan,Poutou,Macron,Melenchon,Hidalgo,Jadot,Roussel,Zemmour,Arthaud,Lassalle,Le Pen,Pecresse,Dupont-Aignan
+560,strategic,0.0,Lassalle,Arthaud,Poutou,Jadot,Zemmour,Hidalgo,Le Pen,Macron,Roussel,Melenchon,Dupont-Aignan,Pecresse,Lassalle
+561,mixed,0.738,Poutou,Lassalle,Melenchon,Jadot,Dupont-Aignan,Le Pen,Roussel,Zemmour,Hidalgo,Arthaud,Pecresse,Macron,Poutou
+562,stubborn,1.0,Roussel,Macron,Melenchon,Pecresse,Lassalle,Dupont-Aignan,Zemmour,Jadot,Le Pen,Arthaud,Poutou,Hidalgo,Roussel
+563,stubborn,1.0,Poutou,Arthaud,Lassalle,Dupont-Aignan,Jadot,Melenchon,Le Pen,Pecresse,Roussel,Hidalgo,Zemmour,Macron,Poutou
+564,stubborn,1.0,Le Pen,Roussel,Arthaud,Macron,Pecresse,Poutou,Hidalgo,Jadot,Melenchon,Dupont-Aignan,Lassalle,Zemmour,Le Pen
+565,strategic,0.0,Zemmour,Le Pen,Melenchon,Poutou,Jadot,Macron,Dupont-Aignan,Pecresse,Hidalgo,Arthaud,Lassalle,Roussel,Zemmour
+566,stubborn,1.0,Dupont-Aignan,Jadot,Hidalgo,Lassalle,Zemmour,Le Pen,Arthaud,Melenchon,Pecresse,Poutou,Macron,Roussel,Dupont-Aignan
+567,mixed,0.784,Hidalgo,Dupont-Aignan,Melenchon,Arthaud,Roussel,Jadot,Zemmour,Poutou,Le Pen,Macron,Pecresse,Lassalle,Hidalgo
+568,stubborn,1.0,Macron,Roussel,Poutou,Pecresse,Melenchon,Dupont-Aignan,Zemmour,Lassalle,Le Pen,Hidalgo,Arthaud,Jadot,Macron
+569,mixed,0.824,Melenchon,Jadot,Hidalgo,Le Pen,Arthaud,Lassalle,Pecresse,Macron,Zemmour,Poutou,Roussel,Dupont-Aignan,Melenchon
+570,mixed,0.413,Dupont-Aignan,Melenchon,Zemmour,Le Pen,Roussel,Macron,Lassalle,Jadot,Arthaud,Poutou,Pecresse,Hidalgo,Dupont-Aignan
+571,stubborn,1.0,Pecresse,Macron,Le Pen,Jadot,Zemmour,Arthaud,Lassalle,Poutou,Roussel,Melenchon,Hidalgo,Dupont-Aignan,Pecresse
+572,mixed,0.731,Pecresse,Poutou,Hidalgo,Dupont-Aignan,Melenchon,Zemmour,Roussel,Macron,Jadot,Arthaud,Le Pen,Lassalle,Pecresse
+573,stubborn,1.0,Pecresse,Lassalle,Zemmour,Jadot,Le Pen,Dupont-Aignan,Poutou,Macron,Arthaud,Hidalgo,Roussel,Melenchon,Pecresse
+574,strategic,0.0,Macron,Roussel,Lassalle,Dupont-Aignan,Poutou,Le Pen,Melenchon,Hidalgo,Zemmour,Pecresse,Jadot,Arthaud,Macron
+575,strategic,0.0,Jadot,Lassalle,Hidalgo,Le Pen,Roussel,Melenchon,Zemmour,Dupont-Aignan,Pecresse,Arthaud,Macron,Poutou,Jadot
+576,strategic,0.0,Lassalle,Le Pen,Macron,Zemmour,Poutou,Jadot,Melenchon,Arthaud,Pecresse,Dupont-Aignan,Hidalgo,Roussel,Lassalle
+577,strategic,0.0,Lassalle,Le Pen,Zemmour,Roussel,Macron,Pecresse,Melenchon,Hidalgo,Jadot,Dupont-Aignan,Arthaud,Poutou,Lassalle
+578,mixed,0.852,Hidalgo,Lassalle,Pecresse,Arthaud,Roussel,Macron,Melenchon,Dupont-Aignan,Poutou,Zemmour,Le Pen,Jadot,Hidalgo
+579,strategic,0.0,Hidalgo,Melenchon,Poutou,Zemmour,Pecresse,Arthaud,Dupont-Aignan,Macron,Roussel,Jadot,Lassalle,Le Pen,Hidalgo
+580,stubborn,1.0,Dupont-Aignan,Zemmour,Jadot,Lassalle,Roussel,Le Pen,Pecresse,Melenchon,Poutou,Macron,Hidalgo,Arthaud,Dupont-Aignan
+581,stubborn,1.0,Lassalle,Arthaud,Roussel,Poutou,Zemmour,Le Pen,Melenchon,Jadot,Hidalgo,Pecresse,Macron,Dupont-Aignan,Lassalle
+582,stubborn,1.0,Dupont-Aignan,Arthaud,Zemmour,Pecresse,Jadot,Le Pen,Macron,Hidalgo,Roussel,Poutou,Lassalle,Melenchon,Dupont-Aignan
+583,mixed,0.693,Le Pen,Macron,Melenchon,Zemmour,Pecresse,Roussel,Dupont-Aignan,Hidalgo,Arthaud,Lassalle,Jadot,Poutou,Le Pen
+584,stubborn,1.0,Lassalle,Hidalgo,Arthaud,Pecresse,Dupont-Aignan,Zemmour,Jadot,Roussel,Le Pen,Macron,Melenchon,Poutou,Lassalle
+585,stubborn,1.0,Lassalle,Roussel,Pecresse,Melenchon,Macron,Arthaud,Zemmour,Poutou,Dupont-Aignan,Jadot,Le Pen,Hidalgo,Lassalle
+586,mixed,0.514,Arthaud,Zemmour,Macron,Lassalle,Jadot,Poutou,Pecresse,Roussel,Le Pen,Hidalgo,Melenchon,Dupont-Aignan,Arthaud
+587,stubborn,1.0,Pecresse,Arthaud,Dupont-Aignan,Macron,Lassalle,Jadot,Le Pen,Roussel,Poutou,Melenchon,Hidalgo,Zemmour,Pecresse
+588,mixed,0.588,Le Pen,Jadot,Macron,Roussel,Hidalgo,Melenchon,Dupont-Aignan,Poutou,Arthaud,Pecresse,Zemmour,Lassalle,Le Pen
+589,stubborn,1.0,Le Pen,Dupont-Aignan,Roussel,Macron,Pecresse,Poutou,Jadot,Hidalgo,Lassalle,Melenchon,Zemmour,Arthaud,Le Pen
+590,stubborn,1.0,Hidalgo,Macron,Le Pen,Pecresse,Melenchon,Poutou,Roussel,Jadot,Zemmour,Dupont-Aignan,Lassalle,Arthaud,Hidalgo
+591,stubborn,1.0,Melenchon,Hidalgo,Zemmour,Roussel,Macron,Le Pen,Poutou,Dupont-Aignan,Jadot,Lassalle,Arthaud,Pecresse,Melenchon
+592,mixed,0.504,Poutou,Melenchon,Le Pen,Roussel,Zemmour,Pecresse,Macron,Jadot,Dupont-Aignan,Hidalgo,Lassalle,Arthaud,Poutou
+593,strategic,0.0,Pecresse,Macron,Melenchon,Roussel,Lassalle,Le Pen,Hidalgo,Zemmour,Jadot,Poutou,Arthaud,Dupont-Aignan,Pecresse
+594,stubborn,1.0,Poutou,Macron,Lassalle,Hidalgo,Arthaud,Jadot,Roussel,Dupont-Aignan,Melenchon,Le Pen,Pecresse,Zemmour,Poutou
+595,strategic,0.0,Macron,Pecresse,Dupont-Aignan,Hidalgo,Roussel,Poutou,Melenchon,Jadot,Le Pen,Zemmour,Arthaud,Lassalle,Macron
+596,stubborn,1.0,Hidalgo,Poutou,Lassalle,Zemmour,Melenchon,Macron,Dupont-Aignan,Arthaud,Le Pen,Jadot,Pecresse,Roussel,Hidalgo
+597,stubborn,1.0,Jadot,Zemmour,Hidalgo,Roussel,Dupont-Aignan,Macron,Arthaud,Lassalle,Melenchon,Le Pen,Poutou,Pecresse,Jadot
+598,strategic,0.0,Melenchon,Hidalgo,Zemmour,Poutou,Le Pen,Arthaud,Dupont-Aignan,Jadot,Pecresse,Macron,Roussel,Lassalle,Melenchon
+599,strategic,0.0,Pecresse,Zemmour,Lassalle,Poutou,Dupont-Aignan,Roussel,Jadot,Arthaud,Macron,Melenchon,Hidalgo,Le Pen,Pecresse
+600,mixed,0.645,Le Pen,Roussel,Lassalle,Poutou,Dupont-Aignan,Melenchon,Macron,Pecresse,Arthaud,Hidalgo,Jadot,Zemmour,Le Pen
+601,stubborn,1.0,Melenchon,Dupont-Aignan,Arthaud,Zemmour,Pecresse,Le Pen,Poutou,Macron,Roussel,Lassalle,Jadot,Hidalgo,Melenchon
+602,stubborn,1.0,Le Pen,Hidalgo,Zemmour,Jadot,Roussel,Arthaud,Poutou,Lassalle,Dupont-Aignan,Melenchon,Macron,Pecresse,Le Pen
+603,stubborn,1.0,Pecresse,Macron,Dupont-Aignan,Roussel,Arthaud,Hidalgo,Le Pen,Melenchon,Zemmour,Lassalle,Poutou,Jadot,Pecresse
+604,stubborn,1.0,Poutou,Dupont-Aignan,Melenchon,Hidalgo,Macron,Arthaud,Roussel,Le Pen,Pecresse,Lassalle,Jadot,Zemmour,Poutou
+605,strategic,0.0,Le Pen,Lassalle,Poutou,Roussel,Pecresse,Melenchon,Zemmour,Dupont-Aignan,Arthaud,Jadot,Hidalgo,Macron,Le Pen
+606,mixed,0.585,Roussel,Poutou,Pecresse,Jadot,Melenchon,Le Pen,Macron,Lassalle,Dupont-Aignan,Hidalgo,Arthaud,Zemmour,Roussel
+607,stubborn,1.0,Hidalgo,Zemmour,Macron,Poutou,Pecresse,Lassalle,Roussel,Jadot,Le Pen,Dupont-Aignan,Melenchon,Arthaud,Hidalgo
+608,strategic,0.0,Macron,Arthaud,Zemmour,Jadot,Poutou,Lassalle,Dupont-Aignan,Roussel,Pecresse,Hidalgo,Melenchon,Le Pen,Macron
+609,mixed,0.798,Arthaud,Lassalle,Poutou,Jadot,Macron,Roussel,Dupont-Aignan,Hidalgo,Pecresse,Le Pen,Zemmour,Melenchon,Arthaud
+610,mixed,0.522,Pecresse,Arthaud,Poutou,Jadot,Hidalgo,Lassalle,Zemmour,Macron,Melenchon,Roussel,Le Pen,Dupont-Aignan,Pecresse
+611,mixed,0.542,Roussel,Pecresse,Dupont-Aignan,Melenchon,Hidalgo,Lassalle,Jadot,Poutou,Le Pen,Zemmour,Arthaud,Macron,Roussel
+612,stubborn,1.0,Poutou,Arthaud,Dupont-Aignan,Le Pen,Pecresse,Hidalgo,Roussel,Macron,Melenchon,Zemmour,Jadot,Lassalle,Poutou
+613,strategic,0.0,Hidalgo,Macron,Poutou,Melenchon,Dupont-Aignan,Roussel,Jadot,Zemmour,Pecresse,Lassalle,Arthaud,Le Pen,Hidalgo
+614,stubborn,1.0,Dupont-Aignan,Le Pen,Lassalle,Poutou,Zemmour,Arthaud,Macron,Roussel,Melenchon,Jadot,Pecresse,Hidalgo,Dupont-Aignan
+615,strategic,0.0,Roussel,Macron,Jadot,Arthaud,Zemmour,Hidalgo,Le Pen,Poutou,Melenchon,Lassalle,Dupont-Aignan,Pecresse,Roussel
+616,strategic,0.0,Arthaud,Jadot,Roussel,Poutou,Le Pen,Lassalle,Hidalgo,Pecresse,Zemmour,Dupont-Aignan,Macron,Melenchon,Arthaud
+617,mixed,0.456,Le Pen,Jadot,Arthaud,Poutou,Macron,Lassalle,Roussel,Zemmour,Dupont-Aignan,Melenchon,Hidalgo,Pecresse,Le Pen
+618,mixed,0.627,Le Pen,Roussel,Macron,Lassalle,Arthaud,Dupont-Aignan,Zemmour,Poutou,Pecresse,Jadot,Melenchon,Hidalgo,Le Pen
+619,mixed,0.541,Jadot,Hidalgo,Zemmour,Pecresse,Macron,Lassalle,Roussel,Le Pen,Melenchon,Arthaud,Dupont-Aignan,Poutou,Jadot
+620,mixed,0.847,Macron,Jadot,Le Pen,Pecresse,Hidalgo,Poutou,Lassalle,Roussel,Zemmour,Dupont-Aignan,Arthaud,Melenchon,Macron
+621,strategic,0.0,Arthaud,Hidalgo,Zemmour,Lassalle,Melenchon,Poutou,Jadot,Dupont-Aignan,Le Pen,Pecresse,Macron,Roussel,Arthaud
+622,stubborn,1.0,Macron,Arthaud,Pecresse,Poutou,Lassalle,Dupont-Aignan,Melenchon,Le Pen,Jadot,Hidalgo,Roussel,Zemmour,Macron
+623,strategic,0.0,Arthaud,Le Pen,Jadot,Poutou,Zemmour,Roussel,Lassalle,Dupont-Aignan,Pecresse,Macron,Melenchon,Hidalgo,Arthaud
+624,stubborn,1.0,Poutou,Pecresse,Zemmour,Dupont-Aignan,Arthaud,Melenchon,Le Pen,Roussel,Lassalle,Jadot,Macron,Hidalgo,Poutou
+625,stubborn,1.0,Melenchon,Roussel,Jadot,Pecresse,Poutou,Dupont-Aignan,Arthaud,Le Pen,Zemmour,Lassalle,Macron,Hidalgo,Melenchon
+626,strategic,0.0,Melenchon,Lassalle,Le Pen,Arthaud,Poutou,Macron,Roussel,Zemmour,Hidalgo,Jadot,Pecresse,Dupont-Aignan,Melenchon
+627,strategic,0.0,Roussel,Poutou,Dupont-Aignan,Zemmour,Jadot,Macron,Arthaud,Pecresse,Le Pen,Lassalle,Melenchon,Hidalgo,Roussel
+628,stubborn,1.0,Lassalle,Macron,Roussel,Arthaud,Jadot,Poutou,Dupont-Aignan,Pecresse,Melenchon,Hidalgo,Le Pen,Zemmour,Lassalle
+629,stubborn,1.0,Poutou,Dupont-Aignan,Jadot,Roussel,Lassalle,Le Pen,Pecresse,Arthaud,Hidalgo,Melenchon,Zemmour,Macron,Poutou
+630,mixed,0.745,Poutou,Dupont-Aignan,Jadot,Le Pen,Lassalle,Roussel,Arthaud,Hidalgo,Melenchon,Pecresse,Zemmour,Macron,Poutou
+631,strategic,0.0,Roussel,Macron,Hidalgo,Zemmour,Dupont-Aignan,Arthaud,Le Pen,Poutou,Melenchon,Jadot,Lassalle,Pecresse,Roussel
+632,mixed,0.683,Arthaud,Pecresse,Hidalgo,Roussel,Lassalle,Le Pen,Jadot,Poutou,Zemmour,Macron,Dupont-Aignan,Melenchon,Arthaud
+633,mixed,0.802,Roussel,Hidalgo,Pecresse,Macron,Lassalle,Jadot,Le Pen,Dupont-Aignan,Melenchon,Arthaud,Zemmour,Poutou,Roussel
+634,stubborn,1.0,Le Pen,Pecresse,Lassalle,Poutou,Jadot,Dupont-Aignan,Macron,Zemmour,Hidalgo,Roussel,Melenchon,Arthaud,Le Pen
+635,strategic,0.0,Melenchon,Le Pen,Zemmour,Arthaud,Roussel,Dupont-Aignan,Pecresse,Jadot,Hidalgo,Lassalle,Macron,Poutou,Melenchon
+636,mixed,0.702,Zemmour,Le Pen,Arthaud,Dupont-Aignan,Jadot,Poutou,Macron,Melenchon,Roussel,Hidalgo,Lassalle,Pecresse,Zemmour
+637,strategic,0.0,Le Pen,Pecresse,Lassalle,Dupont-Aignan,Melenchon,Zemmour,Hidalgo,Roussel,Arthaud,Poutou,Macron,Jadot,Le Pen
+638,stubborn,1.0,Melenchon,Poutou,Zemmour,Le Pen,Pecresse,Jadot,Macron,Arthaud,Hidalgo,Dupont-Aignan,Roussel,Lassalle,Melenchon
+639,strategic,0.0,Poutou,Zemmour,Macron,Jadot,Roussel,Hidalgo,Melenchon,Lassalle,Pecresse,Le Pen,Dupont-Aignan,Arthaud,Poutou
+640,stubborn,1.0,Jadot,Poutou,Melenchon,Arthaud,Macron,Zemmour,Hidalgo,Pecresse,Le Pen,Lassalle,Dupont-Aignan,Roussel,Jadot
+641,stubborn,1.0,Melenchon,Roussel,Zemmour,Le Pen,Jadot,Pecresse,Dupont-Aignan,Macron,Hidalgo,Arthaud,Poutou,Lassalle,Melenchon
+642,strategic,0.0,Melenchon,Lassalle,Arthaud,Le Pen,Poutou,Macron,Hidalgo,Zemmour,Pecresse,Roussel,Dupont-Aignan,Jadot,Melenchon
+643,stubborn,1.0,Jadot,Le Pen,Poutou,Roussel,Lassalle,Dupont-Aignan,Macron,Arthaud,Zemmour,Hidalgo,Melenchon,Pecresse,Jadot
+644,strategic,0.0,Arthaud,Zemmour,Le Pen,Lassalle,Macron,Pecresse,Jadot,Hidalgo,Melenchon,Roussel,Dupont-Aignan,Poutou,Arthaud
+645,stubborn,1.0,Lassalle,Roussel,Pecresse,Melenchon,Poutou,Dupont-Aignan,Le Pen,Zemmour,Hidalgo,Macron,Arthaud,Jadot,Lassalle
+646,stubborn,1.0,Zemmour,Pecresse,Jadot,Le Pen,Macron,Poutou,Arthaud,Lassalle,Roussel,Melenchon,Hidalgo,Dupont-Aignan,Zemmour
+647,strategic,0.0,Le Pen,Pecresse,Dupont-Aignan,Hidalgo,Arthaud,Macron,Zemmour,Lassalle,Roussel,Jadot,Poutou,Melenchon,Le Pen
+648,stubborn,1.0,Zemmour,Poutou,Pecresse,Arthaud,Hidalgo,Le Pen,Jadot,Dupont-Aignan,Roussel,Melenchon,Lassalle,Macron,Zemmour
+649,strategic,0.0,Le Pen,Lassalle,Zemmour,Roussel,Dupont-Aignan,Pecresse,Melenchon,Poutou,Macron,Jadot,Arthaud,Hidalgo,Le Pen
+650,mixed,0.645,Le Pen,Roussel,Arthaud,Pecresse,Melenchon,Macron,Dupont-Aignan,Hidalgo,Poutou,Lassalle,Jadot,Zemmour,Le Pen
+651,strategic,0.0,Jadot,Macron,Poutou,Lassalle,Pecresse,Le Pen,Dupont-Aignan,Hidalgo,Roussel,Zemmour,Melenchon,Arthaud,Jadot
+652,stubborn,1.0,Roussel,Hidalgo,Pecresse,Arthaud,Dupont-Aignan,Jadot,Lassalle,Melenchon,Zemmour,Poutou,Le Pen,Macron,Roussel
+653,stubborn,1.0,Macron,Lassalle,Poutou,Arthaud,Hidalgo,Pecresse,Dupont-Aignan,Zemmour,Roussel,Melenchon,Jadot,Le Pen,Macron
+654,strategic,0.0,Roussel,Hidalgo,Macron,Pecresse,Jadot,Zemmour,Le Pen,Dupont-Aignan,Arthaud,Poutou,Lassalle,Melenchon,Roussel
+655,mixed,0.574,Arthaud,Le Pen,Roussel,Pecresse,Hidalgo,Jadot,Lassalle,Poutou,Macron,Dupont-Aignan,Melenchon,Zemmour,Arthaud
+656,stubborn,1.0,Hidalgo,Zemmour,Roussel,Dupont-Aignan,Poutou,Macron,Lassalle,Arthaud,Melenchon,Jadot,Pecresse,Le Pen,Hidalgo
+657,mixed,0.441,Zemmour,Lassalle,Roussel,Pecresse,Poutou,Le Pen,Hidalgo,Melenchon,Dupont-Aignan,Arthaud,Jadot,Macron,Zemmour
+658,strategic,0.0,Dupont-Aignan,Hidalgo,Arthaud,Melenchon,Pecresse,Zemmour,Roussel,Macron,Le Pen,Lassalle,Jadot,Poutou,Dupont-Aignan
+659,stubborn,1.0,Macron,Jadot,Hidalgo,Lassalle,Pecresse,Poutou,Arthaud,Dupont-Aignan,Zemmour,Le Pen,Roussel,Melenchon,Macron
+660,mixed,0.527,Pecresse,Dupont-Aignan,Melenchon,Jadot,Poutou,Roussel,Arthaud,Hidalgo,Lassalle,Macron,Le Pen,Zemmour,Pecresse
+661,mixed,0.796,Hidalgo,Zemmour,Roussel,Melenchon,Dupont-Aignan,Pecresse,Jadot,Lassalle,Arthaud,Poutou,Macron,Le Pen,Hidalgo
+662,stubborn,1.0,Macron,Dupont-Aignan,Zemmour,Arthaud,Melenchon,Jadot,Pecresse,Poutou,Hidalgo,Roussel,Le Pen,Lassalle,Macron
+663,stubborn,1.0,Roussel,Dupont-Aignan,Lassalle,Poutou,Melenchon,Hidalgo,Jadot,Macron,Le Pen,Zemmour,Pecresse,Arthaud,Roussel
+664,mixed,0.653,Lassalle,Hidalgo,Melenchon,Poutou,Pecresse,Jadot,Le Pen,Dupont-Aignan,Zemmour,Roussel,Macron,Arthaud,Lassalle
+665,mixed,0.786,Pecresse,Zemmour,Dupont-Aignan,Lassalle,Melenchon,Poutou,Hidalgo,Macron,Le Pen,Roussel,Arthaud,Jadot,Pecresse
+666,strategic,0.0,Zemmour,Arthaud,Roussel,Dupont-Aignan,Jadot,Macron,Le Pen,Melenchon,Pecresse,Lassalle,Poutou,Hidalgo,Zemmour
+667,mixed,0.706,Le Pen,Roussel,Dupont-Aignan,Arthaud,Melenchon,Zemmour,Hidalgo,Macron,Pecresse,Poutou,Jadot,Lassalle,Le Pen
+668,mixed,0.416,Melenchon,Roussel,Dupont-Aignan,Le Pen,Lassalle,Zemmour,Macron,Jadot,Poutou,Hidalgo,Pecresse,Arthaud,Melenchon
+669,strategic,0.0,Melenchon,Pecresse,Hidalgo,Dupont-Aignan,Poutou,Macron,Jadot,Lassalle,Le Pen,Roussel,Arthaud,Zemmour,Melenchon
+670,mixed,0.704,Dupont-Aignan,Poutou,Pecresse,Arthaud,Lassalle,Melenchon,Le Pen,Jadot,Zemmour,Roussel,Macron,Hidalgo,Dupont-Aignan
+671,stubborn,1.0,Roussel,Macron,Hidalgo,Dupont-Aignan,Arthaud,Poutou,Lassalle,Pecresse,Zemmour,Jadot,Le Pen,Melenchon,Roussel
+672,strategic,0.0,Dupont-Aignan,Pecresse,Hidalgo,Arthaud,Le Pen,Lassalle,Macron,Zemmour,Poutou,Roussel,Melenchon,Jadot,Dupont-Aignan
+673,strategic,0.0,Hidalgo,Dupont-Aignan,Poutou,Pecresse,Macron,Melenchon,Lassalle,Zemmour,Arthaud,Le Pen,Roussel,Jadot,Hidalgo
+674,mixed,0.845,Le Pen,Lassalle,Hidalgo,Dupont-Aignan,Zemmour,Macron,Roussel,Jadot,Arthaud,Melenchon,Poutou,Pecresse,Le Pen
+675,stubborn,1.0,Dupont-Aignan,Le Pen,Poutou,Arthaud,Macron,Pecresse,Roussel,Melenchon,Hidalgo,Zemmour,Lassalle,Jadot,Dupont-Aignan
+676,strategic,0.0,Zemmour,Lassalle,Arthaud,Melenchon,Roussel,Le Pen,Hidalgo,Jadot,Poutou,Pecresse,Dupont-Aignan,Macron,Zemmour
+677,mixed,0.483,Arthaud,Poutou,Melenchon,Hidalgo,Roussel,Le Pen,Pecresse,Dupont-Aignan,Zemmour,Lassalle,Macron,Jadot,Arthaud
+678,stubborn,1.0,Roussel,Jadot,Zemmour,Melenchon,Lassalle,Pecresse,Poutou,Macron,Arthaud,Le Pen,Dupont-Aignan,Hidalgo,Roussel
+679,mixed,0.668,Pecresse,Le Pen,Zemmour,Poutou,Jadot,Lassalle,Macron,Hidalgo,Arthaud,Dupont-Aignan,Melenchon,Roussel,Pecresse
+680,mixed,0.739,Hidalgo,Arthaud,Poutou,Roussel,Pecresse,Zemmour,Le Pen,Macron,Melenchon,Dupont-Aignan,Jadot,Lassalle,Hidalgo
+681,strategic,0.0,Roussel,Lassalle,Melenchon,Hidalgo,Pecresse,Jadot,Poutou,Zemmour,Dupont-Aignan,Le Pen,Arthaud,Macron,Roussel
+682,stubborn,1.0,Zemmour,Lassalle,Macron,Le Pen,Pecresse,Roussel,Poutou,Hidalgo,Arthaud,Jadot,Dupont-Aignan,Melenchon,Zemmour
+683,stubborn,1.0,Le Pen,Zemmour,Roussel,Pecresse,Lassalle,Macron,Melenchon,Hidalgo,Poutou,Dupont-Aignan,Jadot,Arthaud,Le Pen
+684,strategic,0.0,Macron,Hidalgo,Poutou,Le Pen,Arthaud,Lassalle,Pecresse,Roussel,Jadot,Melenchon,Zemmour,Dupont-Aignan,Macron
+685,strategic,0.0,Hidalgo,Le Pen,Jadot,Arthaud,Dupont-Aignan,Zemmour,Pecresse,Poutou,Melenchon,Roussel,Lassalle,Macron,Hidalgo
+686,mixed,0.564,Pecresse,Lassalle,Hidalgo,Jadot,Roussel,Arthaud,Zemmour,Poutou,Le Pen,Melenchon,Macron,Dupont-Aignan,Pecresse
+687,mixed,0.741,Poutou,Le Pen,Arthaud,Lassalle,Macron,Jadot,Pecresse,Melenchon,Hidalgo,Dupont-Aignan,Roussel,Zemmour,Poutou
+688,mixed,0.695,Hidalgo,Zemmour,Melenchon,Jadot,Pecresse,Macron,Roussel,Dupont-Aignan,Arthaud,Poutou,Lassalle,Le Pen,Hidalgo
+689,stubborn,1.0,Dupont-Aignan,Jadot,Roussel,Pecresse,Hidalgo,Zemmour,Lassalle,Melenchon,Macron,Arthaud,Le Pen,Poutou,Dupont-Aignan
+690,mixed,0.796,Pecresse,Poutou,Lassalle,Zemmour,Le Pen,Melenchon,Macron,Roussel,Jadot,Arthaud,Dupont-Aignan,Hidalgo,Pecresse
+691,strategic,0.0,Pecresse,Arthaud,Hidalgo,Lassalle,Dupont-Aignan,Macron,Jadot,Poutou,Zemmour,Melenchon,Le Pen,Roussel,Pecresse
+692,stubborn,1.0,Lassalle,Poutou,Dupont-Aignan,Roussel,Hidalgo,Le Pen,Arthaud,Pecresse,Melenchon,Macron,Zemmour,Jadot,Lassalle
+693,mixed,0.807,Le Pen,Jadot,Arthaud,Poutou,Hidalgo,Macron,Zemmour,Roussel,Lassalle,Pecresse,Melenchon,Dupont-Aignan,Le Pen
+694,strategic,0.0,Macron,Jadot,Hidalgo,Roussel,Dupont-Aignan,Pecresse,Arthaud,Le Pen,Zemmour,Lassalle,Melenchon,Poutou,Macron
+695,stubborn,1.0,Pecresse,Poutou,Jadot,Zemmour,Melenchon,Macron,Roussel,Le Pen,Dupont-Aignan,Arthaud,Lassalle,Hidalgo,Pecresse
+696,stubborn,1.0,Poutou,Roussel,Macron,Pecresse,Lassalle,Dupont-Aignan,Jadot,Hidalgo,Arthaud,Melenchon,Zemmour,Le Pen,Poutou
+697,strategic,0.0,Macron,Jadot,Dupont-Aignan,Poutou,Arthaud,Pecresse,Le Pen,Roussel,Zemmour,Hidalgo,Lassalle,Melenchon,Macron
+698,mixed,0.585,Hidalgo,Arthaud,Le Pen,Melenchon,Jadot,Roussel,Dupont-Aignan,Poutou,Lassalle,Macron,Zemmour,Pecresse,Hidalgo
+699,mixed,0.652,Zemmour,Pecresse,Melenchon,Roussel,Lassalle,Arthaud,Poutou,Dupont-Aignan,Hidalgo,Jadot,Le Pen,Macron,Zemmour
+700,strategic,0.0,Poutou,Lassalle,Melenchon,Jadot,Macron,Arthaud,Le Pen,Roussel,Dupont-Aignan,Zemmour,Pecresse,Hidalgo,Poutou
+701,strategic,0.0,Lassalle,Poutou,Jadot,Macron,Roussel,Arthaud,Le Pen,Dupont-Aignan,Hidalgo,Melenchon,Zemmour,Pecresse,Lassalle
+702,stubborn,1.0,Poutou,Roussel,Macron,Melenchon,Pecresse,Zemmour,Hidalgo,Dupont-Aignan,Le Pen,Jadot,Lassalle,Arthaud,Poutou
+703,mixed,0.43,Le Pen,Macron,Poutou,Pecresse,Melenchon,Roussel,Lassalle,Jadot,Hidalgo,Arthaud,Zemmour,Dupont-Aignan,Le Pen
+704,strategic,0.0,Dupont-Aignan,Lassalle,Le Pen,Roussel,Zemmour,Pecresse,Macron,Hidalgo,Poutou,Arthaud,Melenchon,Jadot,Dupont-Aignan
+705,stubborn,1.0,Arthaud,Hidalgo,Dupont-Aignan,Lassalle,Poutou,Le Pen,Melenchon,Pecresse,Roussel,Zemmour,Macron,Jadot,Arthaud
+706,stubborn,1.0,Lassalle,Jadot,Pecresse,Le Pen,Macron,Zemmour,Roussel,Melenchon,Hidalgo,Poutou,Dupont-Aignan,Arthaud,Lassalle
+707,strategic,0.0,Le Pen,Jadot,Poutou,Roussel,Dupont-Aignan,Macron,Pecresse,Hidalgo,Melenchon,Arthaud,Lassalle,Zemmour,Le Pen
+708,mixed,0.521,Roussel,Poutou,Macron,Hidalgo,Le Pen,Dupont-Aignan,Pecresse,Lassalle,Melenchon,Arthaud,Jadot,Zemmour,Roussel
+709,stubborn,1.0,Hidalgo,Arthaud,Dupont-Aignan,Poutou,Le Pen,Pecresse,Melenchon,Zemmour,Jadot,Macron,Roussel,Lassalle,Hidalgo
+710,mixed,0.572,Zemmour,Melenchon,Le Pen,Poutou,Dupont-Aignan,Pecresse,Jadot,Arthaud,Macron,Roussel,Hidalgo,Lassalle,Zemmour
+711,mixed,0.676,Zemmour,Macron,Lassalle,Roussel,Jadot,Le Pen,Poutou,Melenchon,Arthaud,Hidalgo,Dupont-Aignan,Pecresse,Zemmour
+712,mixed,0.426,Arthaud,Melenchon,Dupont-Aignan,Le Pen,Jadot,Roussel,Pecresse,Zemmour,Lassalle,Hidalgo,Macron,Poutou,Arthaud
+713,stubborn,1.0,Macron,Arthaud,Le Pen,Melenchon,Hidalgo,Dupont-Aignan,Poutou,Lassalle,Roussel,Jadot,Zemmour,Pecresse,Macron
+714,strategic,0.0,Macron,Poutou,Le Pen,Dupont-Aignan,Zemmour,Lassalle,Arthaud,Jadot,Pecresse,Roussel,Melenchon,Hidalgo,Macron
+715,strategic,0.0,Melenchon,Poutou,Jadot,Roussel,Pecresse,Macron,Zemmour,Le Pen,Hidalgo,Lassalle,Arthaud,Dupont-Aignan,Melenchon
+716,stubborn,1.0,Lassalle,Le Pen,Poutou,Macron,Zemmour,Pecresse,Hidalgo,Arthaud,Roussel,Dupont-Aignan,Melenchon,Jadot,Lassalle
+717,mixed,0.73,Arthaud,Poutou,Le Pen,Macron,Roussel,Hidalgo,Melenchon,Zemmour,Jadot,Lassalle,Pecresse,Dupont-Aignan,Arthaud
+718,mixed,0.693,Le Pen,Roussel,Macron,Lassalle,Poutou,Melenchon,Pecresse,Zemmour,Arthaud,Hidalgo,Dupont-Aignan,Jadot,Le Pen
+719,stubborn,1.0,Lassalle,Zemmour,Melenchon,Dupont-Aignan,Arthaud,Macron,Hidalgo,Jadot,Roussel,Poutou,Pecresse,Le Pen,Lassalle
+720,stubborn,1.0,Jadot,Zemmour,Pecresse,Arthaud,Macron,Hidalgo,Lassalle,Melenchon,Dupont-Aignan,Poutou,Le Pen,Roussel,Jadot
+721,strategic,0.0,Jadot,Hidalgo,Macron,Dupont-Aignan,Zemmour,Le Pen,Roussel,Lassalle,Arthaud,Poutou,Melenchon,Pecresse,Jadot
+722,mixed,0.607,Zemmour,Pecresse,Macron,Poutou,Lassalle,Dupont-Aignan,Hidalgo,Jadot,Le Pen,Arthaud,Roussel,Melenchon,Zemmour
+723,mixed,0.597,Macron,Roussel,Poutou,Jadot,Hidalgo,Melenchon,Pecresse,Le Pen,Arthaud,Zemmour,Dupont-Aignan,Lassalle,Macron
+724,strategic,0.0,Macron,Zemmour,Lassalle,Hidalgo,Le Pen,Dupont-Aignan,Arthaud,Pecresse,Roussel,Melenchon,Jadot,Poutou,Macron
+725,stubborn,1.0,Pecresse,Lassalle,Poutou,Hidalgo,Le Pen,Arthaud,Melenchon,Jadot,Dupont-Aignan,Zemmour,Roussel,Macron,Pecresse
+726,mixed,0.884,Arthaud,Dupont-Aignan,Le Pen,Roussel,Poutou,Macron,Hidalgo,Zemmour,Melenchon,Pecresse,Jadot,Lassalle,Arthaud
+727,stubborn,1.0,Arthaud,Jadot,Roussel,Le Pen,Hidalgo,Dupont-Aignan,Melenchon,Lassalle,Zemmour,Pecresse,Poutou,Macron,Arthaud
+728,stubborn,1.0,Arthaud,Macron,Lassalle,Poutou,Dupont-Aignan,Melenchon,Hidalgo,Le Pen,Roussel,Jadot,Pecresse,Zemmour,Arthaud
+729,stubborn,1.0,Hidalgo,Zemmour,Poutou,Le Pen,Dupont-Aignan,Arthaud,Lassalle,Pecresse,Jadot,Macron,Roussel,Melenchon,Hidalgo
+730,strategic,0.0,Jadot,Dupont-Aignan,Lassalle,Pecresse,Zemmour,Le Pen,Poutou,Hidalgo,Melenchon,Roussel,Arthaud,Macron,Jadot
+731,strategic,0.0,Arthaud,Melenchon,Pecresse,Le Pen,Dupont-Aignan,Macron,Jadot,Hidalgo,Lassalle,Zemmour,Roussel,Poutou,Arthaud
+732,stubborn,1.0,Jadot,Melenchon,Hidalgo,Macron,Poutou,Le Pen,Dupont-Aignan,Lassalle,Arthaud,Roussel,Pecresse,Zemmour,Jadot
+733,stubborn,1.0,Dupont-Aignan,Melenchon,Jadot,Arthaud,Roussel,Le Pen,Lassalle,Hidalgo,Poutou,Pecresse,Macron,Zemmour,Dupont-Aignan
+734,stubborn,1.0,Hidalgo,Dupont-Aignan,Le Pen,Zemmour,Roussel,Poutou,Arthaud,Pecresse,Jadot,Macron,Melenchon,Lassalle,Hidalgo
+735,strategic,0.0,Poutou,Hidalgo,Roussel,Macron,Dupont-Aignan,Le Pen,Arthaud,Zemmour,Pecresse,Melenchon,Jadot,Lassalle,Poutou
+736,mixed,0.864,Hidalgo,Arthaud,Jadot,Lassalle,Macron,Dupont-Aignan,Zemmour,Le Pen,Roussel,Pecresse,Melenchon,Poutou,Hidalgo
+737,strategic,0.0,Dupont-Aignan,Arthaud,Poutou,Macron,Roussel,Jadot,Le Pen,Zemmour,Pecresse,Lassalle,Melenchon,Hidalgo,Dupont-Aignan
+738,stubborn,1.0,Jadot,Hidalgo,Roussel,Melenchon,Poutou,Macron,Dupont-Aignan,Le Pen,Pecresse,Arthaud,Zemmour,Lassalle,Jadot
+739,stubborn,1.0,Melenchon,Macron,Arthaud,Dupont-Aignan,Le Pen,Roussel,Lassalle,Hidalgo,Jadot,Zemmour,Pecresse,Poutou,Melenchon
+740,stubborn,1.0,Melenchon,Macron,Lassalle,Pecresse,Roussel,Hidalgo,Jadot,Arthaud,Poutou,Le Pen,Dupont-Aignan,Zemmour,Melenchon
+741,strategic,0.0,Hidalgo,Dupont-Aignan,Roussel,Pecresse,Zemmour,Macron,Melenchon,Arthaud,Jadot,Poutou,Le Pen,Lassalle,Hidalgo
+742,mixed,0.642,Poutou,Le Pen,Zemmour,Melenchon,Dupont-Aignan,Roussel,Pecresse,Arthaud,Jadot,Hidalgo,Macron,Lassalle,Poutou
+743,strategic,0.0,Le Pen,Jadot,Arthaud,Poutou,Lassalle,Zemmour,Hidalgo,Macron,Melenchon,Pecresse,Dupont-Aignan,Roussel,Le Pen
+744,mixed,0.744,Arthaud,Macron,Roussel,Hidalgo,Lassalle,Pecresse,Zemmour,Jadot,Poutou,Melenchon,Dupont-Aignan,Le Pen,Arthaud
+745,strategic,0.0,Arthaud,Roussel,Zemmour,Dupont-Aignan,Poutou,Le Pen,Lassalle,Macron,Jadot,Pecresse,Melenchon,Hidalgo,Arthaud
+746,stubborn,1.0,Macron,Zemmour,Poutou,Pecresse,Dupont-Aignan,Lassalle,Le Pen,Jadot,Arthaud,Roussel,Melenchon,Hidalgo,Macron
+747,strategic,0.0,Jadot,Arthaud,Lassalle,Melenchon,Macron,Roussel,Zemmour,Dupont-Aignan,Poutou,Hidalgo,Le Pen,Pecresse,Jadot
+748,stubborn,1.0,Zemmour,Arthaud,Le Pen,Pecresse,Jadot,Roussel,Dupont-Aignan,Macron,Poutou,Lassalle,Hidalgo,Melenchon,Zemmour
+749,strategic,0.0,Hidalgo,Dupont-Aignan,Zemmour,Macron,Roussel,Jadot,Le Pen,Poutou,Melenchon,Lassalle,Pecresse,Arthaud,Hidalgo
+750,stubborn,1.0,Roussel,Poutou,Arthaud,Pecresse,Le Pen,Zemmour,Jadot,Dupont-Aignan,Lassalle,Hidalgo,Melenchon,Macron,Roussel
+751,mixed,0.824,Arthaud,Dupont-Aignan,Hidalgo,Roussel,Poutou,Melenchon,Pecresse,Le Pen,Lassalle,Zemmour,Macron,Jadot,Arthaud
+752,strategic,0.0,Dupont-Aignan,Hidalgo,Le Pen,Roussel,Zemmour,Pecresse,Macron,Jadot,Melenchon,Poutou,Lassalle,Arthaud,Dupont-Aignan
+753,mixed,0.761,Dupont-Aignan,Macron,Zemmour,Le Pen,Jadot,Roussel,Lassalle,Pecresse,Melenchon,Arthaud,Hidalgo,Poutou,Dupont-Aignan
+754,stubborn,1.0,Zemmour,Arthaud,Pecresse,Poutou,Jadot,Le Pen,Melenchon,Dupont-Aignan,Lassalle,Hidalgo,Roussel,Macron,Zemmour
+755,mixed,0.567,Roussel,Arthaud,Poutou,Lassalle,Jadot,Le Pen,Melenchon,Dupont-Aignan,Pecresse,Macron,Hidalgo,Zemmour,Roussel
+756,stubborn,1.0,Lassalle,Zemmour,Poutou,Macron,Le Pen,Dupont-Aignan,Arthaud,Jadot,Roussel,Hidalgo,Pecresse,Melenchon,Lassalle
+757,strategic,0.0,Melenchon,Macron,Le Pen,Zemmour,Pecresse,Roussel,Arthaud,Poutou,Jadot,Dupont-Aignan,Hidalgo,Lassalle,Melenchon
+758,strategic,0.0,Pecresse,Jadot,Zemmour,Melenchon,Lassalle,Poutou,Arthaud,Hidalgo,Macron,Le Pen,Dupont-Aignan,Roussel,Pecresse
+759,stubborn,1.0,Roussel,Melenchon,Le Pen,Zemmour,Pecresse,Macron,Jadot,Lassalle,Hidalgo,Arthaud,Dupont-Aignan,Poutou,Roussel
+760,mixed,0.736,Melenchon,Poutou,Dupont-Aignan,Pecresse,Le Pen,Roussel,Jadot,Macron,Lassalle,Hidalgo,Arthaud,Zemmour,Melenchon
+761,stubborn,1.0,Pecresse,Melenchon,Arthaud,Hidalgo,Roussel,Macron,Le Pen,Dupont-Aignan,Lassalle,Zemmour,Poutou,Jadot,Pecresse
+762,mixed,0.693,Lassalle,Jadot,Melenchon,Dupont-Aignan,Pecresse,Arthaud,Zemmour,Le Pen,Poutou,Hidalgo,Macron,Roussel,Lassalle
+763,stubborn,1.0,Le Pen,Macron,Zemmour,Poutou,Hidalgo,Pecresse,Roussel,Melenchon,Arthaud,Lassalle,Dupont-Aignan,Jadot,Le Pen
+764,stubborn,1.0,Zemmour,Roussel,Arthaud,Poutou,Hidalgo,Melenchon,Pecresse,Jadot,Macron,Le Pen,Lassalle,Dupont-Aignan,Zemmour
+765,mixed,0.578,Roussel,Dupont-Aignan,Jadot,Pecresse,Lassalle,Melenchon,Le Pen,Hidalgo,Arthaud,Poutou,Macron,Zemmour,Roussel
+766,stubborn,1.0,Hidalgo,Poutou,Melenchon,Arthaud,Zemmour,Roussel,Macron,Dupont-Aignan,Lassalle,Jadot,Le Pen,Pecresse,Hidalgo
+767,stubborn,1.0,Zemmour,Dupont-Aignan,Lassalle,Macron,Poutou,Melenchon,Roussel,Jadot,Hidalgo,Le Pen,Arthaud,Pecresse,Zemmour
+768,strategic,0.0,Zemmour,Macron,Hidalgo,Roussel,Lassalle,Dupont-Aignan,Melenchon,Le Pen,Poutou,Arthaud,Pecresse,Jadot,Zemmour
+769,mixed,0.818,Lassalle,Jadot,Zemmour,Macron,Poutou,Le Pen,Pecresse,Roussel,Arthaud,Dupont-Aignan,Melenchon,Hidalgo,Lassalle
+770,strategic,0.0,Poutou,Pecresse,Hidalgo,Macron,Arthaud,Zemmour,Le Pen,Jadot,Melenchon,Dupont-Aignan,Roussel,Lassalle,Poutou
+771,stubborn,1.0,Dupont-Aignan,Pecresse,Jadot,Macron,Arthaud,Melenchon,Roussel,Lassalle,Zemmour,Hidalgo,Poutou,Le Pen,Dupont-Aignan
+772,strategic,0.0,Hidalgo,Pecresse,Melenchon,Jadot,Arthaud,Macron,Zemmour,Le Pen,Roussel,Dupont-Aignan,Lassalle,Poutou,Hidalgo
+773,stubborn,1.0,Macron,Jadot,Roussel,Hidalgo,Zemmour,Dupont-Aignan,Poutou,Le Pen,Lassalle,Melenchon,Pecresse,Arthaud,Macron
+774,stubborn,1.0,Arthaud,Poutou,Le Pen,Hidalgo,Dupont-Aignan,Roussel,Lassalle,Pecresse,Zemmour,Macron,Jadot,Melenchon,Arthaud
+775,strategic,0.0,Zemmour,Melenchon,Macron,Roussel,Hidalgo,Jadot,Le Pen,Lassalle,Pecresse,Dupont-Aignan,Poutou,Arthaud,Zemmour
+776,mixed,0.768,Roussel,Melenchon,Jadot,Arthaud,Pecresse,Hidalgo,Lassalle,Zemmour,Macron,Dupont-Aignan,Poutou,Le Pen,Roussel
+777,stubborn,1.0,Lassalle,Melenchon,Roussel,Arthaud,Pecresse,Hidalgo,Macron,Dupont-Aignan,Zemmour,Poutou,Jadot,Le Pen,Lassalle
+778,stubborn,1.0,Roussel,Macron,Hidalgo,Dupont-Aignan,Jadot,Poutou,Arthaud,Le Pen,Pecresse,Melenchon,Zemmour,Lassalle,Roussel
+779,strategic,0.0,Dupont-Aignan,Pecresse,Melenchon,Le Pen,Jadot,Lassalle,Roussel,Hidalgo,Macron,Zemmour,Poutou,Arthaud,Dupont-Aignan
+780,strategic,0.0,Lassalle,Poutou,Dupont-Aignan,Jadot,Pecresse,Melenchon,Hidalgo,Zemmour,Le Pen,Macron,Arthaud,Roussel,Lassalle
+781,strategic,0.0,Pecresse,Roussel,Lassalle,Le Pen,Dupont-Aignan,Poutou,Hidalgo,Macron,Zemmour,Melenchon,Jadot,Arthaud,Pecresse
+782,stubborn,1.0,Melenchon,Hidalgo,Macron,Pecresse,Lassalle,Roussel,Zemmour,Jadot,Poutou,Le Pen,Arthaud,Dupont-Aignan,Melenchon
+783,strategic,0.0,Melenchon,Macron,Arthaud,Roussel,Jadot,Poutou,Hidalgo,Dupont-Aignan,Lassalle,Le Pen,Zemmour,Pecresse,Melenchon
+784,strategic,0.0,Lassalle,Jadot,Poutou,Le Pen,Hidalgo,Melenchon,Zemmour,Pecresse,Dupont-Aignan,Arthaud,Macron,Roussel,Lassalle
+785,mixed,0.882,Melenchon,Dupont-Aignan,Zemmour,Hidalgo,Macron,Arthaud,Le Pen,Pecresse,Poutou,Lassalle,Roussel,Jadot,Melenchon
+786,stubborn,1.0,Le Pen,Zemmour,Melenchon,Pecresse,Hidalgo,Macron,Jadot,Poutou,Roussel,Dupont-Aignan,Arthaud,Lassalle,Le Pen
+787,mixed,0.735,Hidalgo,Roussel,Pecresse,Jadot,Arthaud,Poutou,Macron,Melenchon,Dupont-Aignan,Zemmour,Le Pen,Lassalle,Hidalgo
+788,strategic,0.0,Le Pen,Arthaud,Jadot,Roussel,Hidalgo,Zemmour,Macron,Dupont-Aignan,Poutou,Lassalle,Melenchon,Pecresse,Le Pen
+789,strategic,0.0,Macron,Le Pen,Arthaud,Pecresse,Zemmour,Jadot,Melenchon,Poutou,Lassalle,Roussel,Hidalgo,Dupont-Aignan,Macron
+790,mixed,0.422,Roussel,Lassalle,Macron,Dupont-Aignan,Arthaud,Poutou,Zemmour,Jadot,Pecresse,Hidalgo,Le Pen,Melenchon,Roussel
+791,strategic,0.0,Lassalle,Melenchon,Hidalgo,Macron,Dupont-Aignan,Jadot,Arthaud,Roussel,Pecresse,Le Pen,Poutou,Zemmour,Lassalle
+792,strategic,0.0,Melenchon,Poutou,Arthaud,Lassalle,Roussel,Dupont-Aignan,Macron,Hidalgo,Zemmour,Le Pen,Jadot,Pecresse,Melenchon
+793,mixed,0.627,Le Pen,Pecresse,Jadot,Macron,Roussel,Melenchon,Hidalgo,Lassalle,Poutou,Dupont-Aignan,Zemmour,Arthaud,Le Pen
+794,mixed,0.641,Lassalle,Hidalgo,Macron,Dupont-Aignan,Le Pen,Arthaud,Melenchon,Jadot,Poutou,Pecresse,Zemmour,Roussel,Lassalle
+795,strategic,0.0,Arthaud,Hidalgo,Jadot,Zemmour,Poutou,Macron,Roussel,Le Pen,Dupont-Aignan,Pecresse,Lassalle,Melenchon,Arthaud
+796,mixed,0.744,Arthaud,Lassalle,Roussel,Poutou,Dupont-Aignan,Zemmour,Jadot,Pecresse,Melenchon,Le Pen,Hidalgo,Macron,Arthaud
+797,strategic,0.0,Macron,Roussel,Hidalgo,Poutou,Arthaud,Pecresse,Dupont-Aignan,Lassalle,Jadot,Le Pen,Melenchon,Zemmour,Macron
+798,mixed,0.674,Zemmour,Le Pen,Pecresse,Arthaud,Lassalle,Hidalgo,Poutou,Macron,Roussel,Melenchon,Dupont-Aignan,Jadot,Zemmour
+799,mixed,0.438,Poutou,Le Pen,Zemmour,Roussel,Dupont-Aignan,Melenchon,Lassalle,Hidalgo,Pecresse,Arthaud,Jadot,Macron,Poutou
+800,stubborn,1.0,Roussel,Pecresse,Melenchon,Arthaud,Zemmour,Dupont-Aignan,Macron,Le Pen,Poutou,Jadot,Lassalle,Hidalgo,Roussel
+801,stubborn,1.0,Melenchon,Pecresse,Hidalgo,Dupont-Aignan,Poutou,Lassalle,Zemmour,Jadot,Le Pen,Roussel,Arthaud,Macron,Melenchon
+802,stubborn,1.0,Roussel,Dupont-Aignan,Jadot,Hidalgo,Zemmour,Lassalle,Le Pen,Melenchon,Arthaud,Poutou,Pecresse,Macron,Roussel
+803,stubborn,1.0,Pecresse,Lassalle,Le Pen,Melenchon,Macron,Jadot,Arthaud,Poutou,Hidalgo,Dupont-Aignan,Roussel,Zemmour,Pecresse
+804,stubborn,1.0,Roussel,Dupont-Aignan,Hidalgo,Macron,Lassalle,Jadot,Melenchon,Le Pen,Pecresse,Poutou,Arthaud,Zemmour,Roussel
+805,stubborn,1.0,Jadot,Hidalgo,Roussel,Arthaud,Pecresse,Dupont-Aignan,Lassalle,Melenchon,Poutou,Zemmour,Macron,Le Pen,Jadot
+806,stubborn,1.0,Hidalgo,Melenchon,Dupont-Aignan,Le Pen,Lassalle,Pecresse,Roussel,Macron,Zemmour,Poutou,Arthaud,Jadot,Hidalgo
+807,strategic,0.0,Macron,Le Pen,Melenchon,Hidalgo,Roussel,Arthaud,Jadot,Lassalle,Zemmour,Dupont-Aignan,Pecresse,Poutou,Macron
+808,mixed,0.897,Dupont-Aignan,Hidalgo,Lassalle,Poutou,Roussel,Pecresse,Arthaud,Zemmour,Melenchon,Jadot,Le Pen,Macron,Dupont-Aignan
+809,mixed,0.423,Poutou,Dupont-Aignan,Melenchon,Roussel,Pecresse,Arthaud,Jadot,Lassalle,Le Pen,Hidalgo,Macron,Zemmour,Poutou
+810,mixed,0.407,Zemmour,Le Pen,Dupont-Aignan,Poutou,Hidalgo,Jadot,Macron,Melenchon,Arthaud,Roussel,Pecresse,Lassalle,Zemmour
+811,stubborn,1.0,Zemmour,Poutou,Arthaud,Macron,Roussel,Dupont-Aignan,Lassalle,Pecresse,Le Pen,Jadot,Melenchon,Hidalgo,Zemmour
+812,mixed,0.404,Arthaud,Zemmour,Dupont-Aignan,Melenchon,Le Pen,Pecresse,Jadot,Hidalgo,Macron,Roussel,Poutou,Lassalle,Arthaud
+813,mixed,0.799,Lassalle,Zemmour,Jadot,Melenchon,Poutou,Le Pen,Macron,Roussel,Pecresse,Arthaud,Hidalgo,Dupont-Aignan,Lassalle
+814,mixed,0.829,Jadot,Zemmour,Le Pen,Lassalle,Roussel,Pecresse,Arthaud,Melenchon,Dupont-Aignan,Macron,Hidalgo,Poutou,Jadot
+815,stubborn,1.0,Melenchon,Roussel,Zemmour,Arthaud,Macron,Pecresse,Lassalle,Le Pen,Poutou,Jadot,Hidalgo,Dupont-Aignan,Melenchon
+816,strategic,0.0,Arthaud,Zemmour,Pecresse,Roussel,Jadot,Dupont-Aignan,Melenchon,Le Pen,Poutou,Macron,Hidalgo,Lassalle,Arthaud
+817,strategic,0.0,Roussel,Melenchon,Le Pen,Dupont-Aignan,Arthaud,Zemmour,Macron,Hidalgo,Jadot,Poutou,Pecresse,Lassalle,Roussel
+818,strategic,0.0,Jadot,Macron,Zemmour,Arthaud,Poutou,Roussel,Pecresse,Melenchon,Hidalgo,Le Pen,Dupont-Aignan,Lassalle,Jadot
+819,mixed,0.585,Lassalle,Macron,Arthaud,Pecresse,Le Pen,Zemmour,Melenchon,Jadot,Dupont-Aignan,Roussel,Hidalgo,Poutou,Lassalle
+820,stubborn,1.0,Roussel,Le Pen,Macron,Poutou,Melenchon,Dupont-Aignan,Hidalgo,Jadot,Lassalle,Pecresse,Arthaud,Zemmour,Roussel
+821,stubborn,1.0,Arthaud,Pecresse,Melenchon,Jadot,Dupont-Aignan,Hidalgo,Roussel,Lassalle,Macron,Poutou,Le Pen,Zemmour,Arthaud
+822,stubborn,1.0,Jadot,Le Pen,Arthaud,Macron,Poutou,Dupont-Aignan,Zemmour,Hidalgo,Roussel,Melenchon,Lassalle,Pecresse,Jadot
+823,strategic,0.0,Le Pen,Dupont-Aignan,Lassalle,Poutou,Hidalgo,Arthaud,Jadot,Roussel,Macron,Melenchon,Pecresse,Zemmour,Le Pen
+824,strategic,0.0,Dupont-Aignan,Macron,Lassalle,Poutou,Melenchon,Roussel,Pecresse,Arthaud,Hidalgo,Jadot,Zemmour,Le Pen,Dupont-Aignan
+825,strategic,0.0,Zemmour,Jadot,Dupont-Aignan,Hidalgo,Arthaud,Pecresse,Lassalle,Le Pen,Macron,Roussel,Melenchon,Poutou,Zemmour
+826,mixed,0.877,Poutou,Macron,Hidalgo,Jadot,Dupont-Aignan,Lassalle,Melenchon,Roussel,Le Pen,Pecresse,Zemmour,Arthaud,Poutou
+827,stubborn,1.0,Pecresse,Poutou,Lassalle,Hidalgo,Le Pen,Zemmour,Melenchon,Arthaud,Macron,Dupont-Aignan,Roussel,Jadot,Pecresse
+828,mixed,0.407,Pecresse,Dupont-Aignan,Macron,Le Pen,Jadot,Zemmour,Roussel,Arthaud,Poutou,Lassalle,Melenchon,Hidalgo,Pecresse
+829,stubborn,1.0,Dupont-Aignan,Pecresse,Lassalle,Arthaud,Jadot,Roussel,Poutou,Zemmour,Hidalgo,Melenchon,Le Pen,Macron,Dupont-Aignan
+830,stubborn,1.0,Melenchon,Arthaud,Le Pen,Roussel,Pecresse,Zemmour,Jadot,Lassalle,Poutou,Macron,Hidalgo,Dupont-Aignan,Melenchon
+831,strategic,0.0,Le Pen,Arthaud,Poutou,Roussel,Melenchon,Pecresse,Jadot,Macron,Lassalle,Hidalgo,Zemmour,Dupont-Aignan,Le Pen
+832,stubborn,1.0,Roussel,Melenchon,Poutou,Jadot,Pecresse,Lassalle,Zemmour,Arthaud,Le Pen,Hidalgo,Macron,Dupont-Aignan,Roussel
+833,mixed,0.613,Macron,Le Pen,Poutou,Dupont-Aignan,Melenchon,Arthaud,Jadot,Roussel,Hidalgo,Zemmour,Pecresse,Lassalle,Macron
+834,strategic,0.0,Macron,Jadot,Lassalle,Pecresse,Hidalgo,Le Pen,Zemmour,Roussel,Poutou,Melenchon,Dupont-Aignan,Arthaud,Macron
+835,mixed,0.835,Jadot,Le Pen,Zemmour,Pecresse,Macron,Roussel,Arthaud,Hidalgo,Poutou,Lassalle,Melenchon,Dupont-Aignan,Jadot
+836,mixed,0.408,Pecresse,Lassalle,Macron,Jadot,Hidalgo,Le Pen,Arthaud,Dupont-Aignan,Roussel,Poutou,Melenchon,Zemmour,Pecresse
+837,stubborn,1.0,Le Pen,Poutou,Pecresse,Zemmour,Macron,Hidalgo,Melenchon,Roussel,Arthaud,Dupont-Aignan,Jadot,Lassalle,Le Pen
+838,strategic,0.0,Roussel,Poutou,Le Pen,Melenchon,Pecresse,Macron,Hidalgo,Lassalle,Dupont-Aignan,Jadot,Arthaud,Zemmour,Roussel
+839,stubborn,1.0,Macron,Jadot,Poutou,Melenchon,Roussel,Pecresse,Zemmour,Le Pen,Lassalle,Arthaud,Dupont-Aignan,Hidalgo,Macron
+840,mixed,0.504,Melenchon,Arthaud,Poutou,Dupont-Aignan,Hidalgo,Roussel,Pecresse,Zemmour,Jadot,Le Pen,Lassalle,Macron,Melenchon
+841,strategic,0.0,Pecresse,Dupont-Aignan,Hidalgo,Le Pen,Lassalle,Zemmour,Roussel,Jadot,Poutou,Melenchon,Macron,Arthaud,Pecresse
+842,stubborn,1.0,Arthaud,Lassalle,Le Pen,Macron,Melenchon,Zemmour,Hidalgo,Dupont-Aignan,Jadot,Pecresse,Poutou,Roussel,Arthaud
+843,mixed,0.553,Hidalgo,Lassalle,Melenchon,Jadot,Poutou,Pecresse,Macron,Dupont-Aignan,Le Pen,Arthaud,Zemmour,Roussel,Hidalgo
+844,stubborn,1.0,Dupont-Aignan,Lassalle,Poutou,Jadot,Macron,Zemmour,Melenchon,Arthaud,Le Pen,Pecresse,Roussel,Hidalgo,Dupont-Aignan
+845,mixed,0.747,Arthaud,Zemmour,Poutou,Le Pen,Macron,Pecresse,Melenchon,Dupont-Aignan,Jadot,Lassalle,Roussel,Hidalgo,Arthaud
+846,stubborn,1.0,Hidalgo,Zemmour,Arthaud,Lassalle,Pecresse,Macron,Jadot,Melenchon,Roussel,Poutou,Dupont-Aignan,Le Pen,Hidalgo
+847,stubborn,1.0,Poutou,Lassalle,Hidalgo,Dupont-Aignan,Pecresse,Arthaud,Le Pen,Roussel,Jadot,Macron,Melenchon,Zemmour,Poutou
+848,stubborn,1.0,Jadot,Roussel,Melenchon,Pecresse,Arthaud,Poutou,Zemmour,Dupont-Aignan,Hidalgo,Le Pen,Lassalle,Macron,Jadot
+849,mixed,0.518,Melenchon,Arthaud,Zemmour,Hidalgo,Dupont-Aignan,Lassalle,Le Pen,Pecresse,Roussel,Macron,Jadot,Poutou,Melenchon
+850,strategic,0.0,Roussel,Pecresse,Jadot,Poutou,Melenchon,Dupont-Aignan,Lassalle,Le Pen,Zemmour,Hidalgo,Arthaud,Macron,Roussel
+851,strategic,0.0,Arthaud,Roussel,Melenchon,Hidalgo,Dupont-Aignan,Macron,Lassalle,Poutou,Pecresse,Jadot,Zemmour,Le Pen,Arthaud
+852,stubborn,1.0,Jadot,Lassalle,Zemmour,Macron,Dupont-Aignan,Roussel,Melenchon,Hidalgo,Pecresse,Arthaud,Le Pen,Poutou,Jadot
+853,mixed,0.413,Hidalgo,Dupont-Aignan,Lassalle,Pecresse,Le Pen,Melenchon,Macron,Zemmour,Poutou,Arthaud,Jadot,Roussel,Hidalgo
+854,mixed,0.791,Jadot,Poutou,Lassalle,Melenchon,Pecresse,Le Pen,Arthaud,Zemmour,Roussel,Dupont-Aignan,Hidalgo,Macron,Jadot
+855,stubborn,1.0,Le Pen,Pecresse,Roussel,Jadot,Zemmour,Macron,Dupont-Aignan,Poutou,Arthaud,Hidalgo,Lassalle,Melenchon,Le Pen
+856,strategic,0.0,Poutou,Zemmour,Hidalgo,Pecresse,Lassalle,Jadot,Macron,Arthaud,Le Pen,Roussel,Melenchon,Dupont-Aignan,Poutou
+857,strategic,0.0,Hidalgo,Pecresse,Macron,Arthaud,Roussel,Dupont-Aignan,Lassalle,Zemmour,Poutou,Jadot,Melenchon,Le Pen,Hidalgo
+858,strategic,0.0,Roussel,Macron,Le Pen,Arthaud,Pecresse,Poutou,Lassalle,Hidalgo,Melenchon,Dupont-Aignan,Zemmour,Jadot,Roussel
+859,mixed,0.612,Zemmour,Lassalle,Le Pen,Pecresse,Hidalgo,Melenchon,Jadot,Dupont-Aignan,Arthaud,Roussel,Macron,Poutou,Zemmour
+860,stubborn,1.0,Lassalle,Melenchon,Pecresse,Zemmour,Hidalgo,Dupont-Aignan,Le Pen,Poutou,Macron,Arthaud,Roussel,Jadot,Lassalle
+861,strategic,0.0,Hidalgo,Pecresse,Le Pen,Melenchon,Arthaud,Macron,Lassalle,Roussel,Jadot,Poutou,Dupont-Aignan,Zemmour,Hidalgo
+862,mixed,0.652,Le Pen,Macron,Hidalgo,Arthaud,Poutou,Pecresse,Dupont-Aignan,Roussel,Melenchon,Zemmour,Lassalle,Jadot,Le Pen
+863,stubborn,1.0,Pecresse,Poutou,Arthaud,Dupont-Aignan,Zemmour,Jadot,Le Pen,Melenchon,Hidalgo,Lassalle,Roussel,Macron,Pecresse
+864,stubborn,1.0,Poutou,Zemmour,Arthaud,Macron,Melenchon,Roussel,Hidalgo,Lassalle,Le Pen,Dupont-Aignan,Jadot,Pecresse,Poutou
+865,mixed,0.721,Poutou,Melenchon,Roussel,Zemmour,Macron,Dupont-Aignan,Hidalgo,Lassalle,Arthaud,Jadot,Pecresse,Le Pen,Poutou
+866,stubborn,1.0,Zemmour,Dupont-Aignan,Melenchon,Roussel,Lassalle,Hidalgo,Macron,Jadot,Arthaud,Le Pen,Pecresse,Poutou,Zemmour
+867,mixed,0.863,Poutou,Hidalgo,Pecresse,Melenchon,Arthaud,Zemmour,Macron,Le Pen,Lassalle,Jadot,Roussel,Dupont-Aignan,Poutou
+868,strategic,0.0,Le Pen,Hidalgo,Pecresse,Arthaud,Roussel,Zemmour,Poutou,Melenchon,Macron,Lassalle,Dupont-Aignan,Jadot,Le Pen
+869,strategic,0.0,Hidalgo,Roussel,Dupont-Aignan,Arthaud,Melenchon,Jadot,Macron,Le Pen,Zemmour,Poutou,Pecresse,Lassalle,Hidalgo
+870,mixed,0.761,Poutou,Dupont-Aignan,Melenchon,Zemmour,Jadot,Roussel,Lassalle,Macron,Hidalgo,Pecresse,Arthaud,Le Pen,Poutou
+871,stubborn,1.0,Zemmour,Jadot,Pecresse,Le Pen,Lassalle,Melenchon,Poutou,Roussel,Hidalgo,Dupont-Aignan,Arthaud,Macron,Zemmour
+872,strategic,0.0,Roussel,Arthaud,Le Pen,Jadot,Pecresse,Macron,Lassalle,Dupont-Aignan,Poutou,Zemmour,Melenchon,Hidalgo,Roussel
+873,mixed,0.884,Jadot,Poutou,Roussel,Pecresse,Macron,Lassalle,Le Pen,Hidalgo,Dupont-Aignan,Zemmour,Melenchon,Arthaud,Jadot
+874,mixed,0.766,Le Pen,Macron,Melenchon,Jadot,Roussel,Zemmour,Poutou,Arthaud,Pecresse,Dupont-Aignan,Hidalgo,Lassalle,Le Pen
+875,strategic,0.0,Hidalgo,Le Pen,Melenchon,Roussel,Macron,Zemmour,Lassalle,Jadot,Poutou,Dupont-Aignan,Arthaud,Pecresse,Hidalgo
+876,stubborn,1.0,Lassalle,Le Pen,Melenchon,Hidalgo,Arthaud,Poutou,Macron,Zemmour,Jadot,Pecresse,Dupont-Aignan,Roussel,Lassalle
+877,stubborn,1.0,Poutou,Roussel,Jadot,Pecresse,Zemmour,Macron,Hidalgo,Arthaud,Melenchon,Le Pen,Lassalle,Dupont-Aignan,Poutou
+878,stubborn,1.0,Roussel,Jadot,Poutou,Melenchon,Pecresse,Macron,Le Pen,Arthaud,Zemmour,Hidalgo,Dupont-Aignan,Lassalle,Roussel
+879,strategic,0.0,Le Pen,Melenchon,Zemmour,Arthaud,Roussel,Dupont-Aignan,Jadot,Pecresse,Hidalgo,Macron,Poutou,Lassalle,Le Pen
+880,stubborn,1.0,Pecresse,Macron,Arthaud,Melenchon,Poutou,Jadot,Hidalgo,Roussel,Dupont-Aignan,Zemmour,Lassalle,Le Pen,Pecresse
+881,mixed,0.461,Zemmour,Melenchon,Macron,Arthaud,Pecresse,Dupont-Aignan,Jadot,Lassalle,Hidalgo,Roussel,Poutou,Le Pen,Zemmour
+882,mixed,0.602,Melenchon,Zemmour,Pecresse,Macron,Le Pen,Roussel,Jadot,Poutou,Arthaud,Lassalle,Hidalgo,Dupont-Aignan,Melenchon
+883,mixed,0.402,Hidalgo,Lassalle,Melenchon,Pecresse,Zemmour,Le Pen,Jadot,Macron,Dupont-Aignan,Poutou,Roussel,Arthaud,Hidalgo
+884,strategic,0.0,Le Pen,Dupont-Aignan,Pecresse,Zemmour,Melenchon,Jadot,Roussel,Arthaud,Poutou,Hidalgo,Lassalle,Macron,Le Pen
+885,mixed,0.456,Dupont-Aignan,Lassalle,Zemmour,Pecresse,Melenchon,Roussel,Jadot,Le Pen,Arthaud,Hidalgo,Poutou,Macron,Dupont-Aignan
+886,stubborn,1.0,Pecresse,Poutou,Dupont-Aignan,Arthaud,Lassalle,Hidalgo,Le Pen,Jadot,Zemmour,Melenchon,Macron,Roussel,Pecresse
+887,stubborn,1.0,Macron,Melenchon,Dupont-Aignan,Jadot,Lassalle,Arthaud,Poutou,Zemmour,Hidalgo,Pecresse,Roussel,Le Pen,Macron
+888,mixed,0.432,Roussel,Melenchon,Dupont-Aignan,Pecresse,Lassalle,Hidalgo,Le Pen,Jadot,Arthaud,Poutou,Macron,Zemmour,Roussel
+889,strategic,0.0,Pecresse,Hidalgo,Jadot,Dupont-Aignan,Zemmour,Lassalle,Macron,Melenchon,Roussel,Arthaud,Le Pen,Poutou,Pecresse
+890,strategic,0.0,Jadot,Lassalle,Poutou,Roussel,Macron,Arthaud,Le Pen,Pecresse,Hidalgo,Melenchon,Zemmour,Dupont-Aignan,Jadot
+891,stubborn,1.0,Le Pen,Zemmour,Melenchon,Hidalgo,Jadot,Roussel,Lassalle,Dupont-Aignan,Macron,Poutou,Arthaud,Pecresse,Le Pen
+892,stubborn,1.0,Macron,Poutou,Hidalgo,Roussel,Arthaud,Le Pen,Jadot,Dupont-Aignan,Melenchon,Zemmour,Pecresse,Lassalle,Macron
+893,stubborn,1.0,Macron,Pecresse,Lassalle,Hidalgo,Zemmour,Roussel,Poutou,Le Pen,Jadot,Dupont-Aignan,Melenchon,Arthaud,Macron
+894,strategic,0.0,Macron,Melenchon,Le Pen,Roussel,Poutou,Arthaud,Dupont-Aignan,Hidalgo,Lassalle,Zemmour,Jadot,Pecresse,Macron
+895,stubborn,1.0,Arthaud,Zemmour,Macron,Roussel,Hidalgo,Jadot,Pecresse,Le Pen,Lassalle,Dupont-Aignan,Melenchon,Poutou,Arthaud
+896,mixed,0.52,Lassalle,Le Pen,Dupont-Aignan,Poutou,Melenchon,Hidalgo,Pecresse,Zemmour,Macron,Jadot,Roussel,Arthaud,Lassalle
+897,mixed,0.893,Jadot,Dupont-Aignan,Arthaud,Lassalle,Melenchon,Pecresse,Hidalgo,Zemmour,Macron,Le Pen,Roussel,Poutou,Jadot
+898,strategic,0.0,Hidalgo,Poutou,Roussel,Arthaud,Zemmour,Lassalle,Melenchon,Jadot,Dupont-Aignan,Le Pen,Macron,Pecresse,Hidalgo
+899,strategic,0.0,Le Pen,Jadot,Zemmour,Pecresse,Melenchon,Lassalle,Poutou,Dupont-Aignan,Arthaud,Roussel,Macron,Hidalgo,Le Pen
+900,strategic,0.0,Lassalle,Arthaud,Roussel,Pecresse,Hidalgo,Macron,Dupont-Aignan,Poutou,Jadot,Zemmour,Le Pen,Melenchon,Lassalle
+901,strategic,0.0,Roussel,Arthaud,Hidalgo,Melenchon,Macron,Poutou,Lassalle,Jadot,Zemmour,Le Pen,Dupont-Aignan,Pecresse,Roussel
+902,mixed,0.514,Pecresse,Jadot,Le Pen,Poutou,Zemmour,Arthaud,Hidalgo,Lassalle,Macron,Dupont-Aignan,Melenchon,Roussel,Pecresse
+903,mixed,0.635,Arthaud,Hidalgo,Poutou,Pecresse,Lassalle,Jadot,Melenchon,Le Pen,Zemmour,Macron,Roussel,Dupont-Aignan,Arthaud
+904,stubborn,1.0,Pecresse,Lassalle,Macron,Arthaud,Hidalgo,Jadot,Zemmour,Poutou,Melenchon,Le Pen,Roussel,Dupont-Aignan,Pecresse
+905,mixed,0.58,Le Pen,Lassalle,Roussel,Poutou,Melenchon,Macron,Hidalgo,Pecresse,Zemmour,Arthaud,Dupont-Aignan,Jadot,Le Pen
+906,strategic,0.0,Lassalle,Dupont-Aignan,Pecresse,Jadot,Melenchon,Macron,Poutou,Zemmour,Arthaud,Hidalgo,Roussel,Le Pen,Lassalle
+907,mixed,0.434,Arthaud,Melenchon,Le Pen,Macron,Lassalle,Dupont-Aignan,Jadot,Hidalgo,Zemmour,Roussel,Poutou,Pecresse,Arthaud
+908,stubborn,1.0,Jadot,Roussel,Macron,Pecresse,Lassalle,Poutou,Hidalgo,Le Pen,Melenchon,Zemmour,Dupont-Aignan,Arthaud,Jadot
+909,stubborn,1.0,Hidalgo,Arthaud,Melenchon,Lassalle,Zemmour,Le Pen,Poutou,Pecresse,Jadot,Dupont-Aignan,Roussel,Macron,Hidalgo
+910,stubborn,1.0,Poutou,Zemmour,Melenchon,Le Pen,Jadot,Dupont-Aignan,Pecresse,Lassalle,Hidalgo,Roussel,Macron,Arthaud,Poutou
+911,strategic,0.0,Le Pen,Dupont-Aignan,Jadot,Hidalgo,Poutou,Zemmour,Lassalle,Macron,Melenchon,Roussel,Arthaud,Pecresse,Le Pen
+912,stubborn,1.0,Macron,Zemmour,Roussel,Dupont-Aignan,Jadot,Melenchon,Pecresse,Poutou,Lassalle,Hidalgo,Arthaud,Le Pen,Macron
+913,mixed,0.711,Macron,Hidalgo,Pecresse,Roussel,Arthaud,Le Pen,Dupont-Aignan,Lassalle,Poutou,Jadot,Zemmour,Melenchon,Macron
+914,mixed,0.431,Zemmour,Hidalgo,Lassalle,Le Pen,Macron,Jadot,Poutou,Melenchon,Arthaud,Dupont-Aignan,Pecresse,Roussel,Zemmour
+915,strategic,0.0,Lassalle,Roussel,Le Pen,Pecresse,Zemmour,Arthaud,Jadot,Hidalgo,Melenchon,Poutou,Dupont-Aignan,Macron,Lassalle
+916,strategic,0.0,Zemmour,Lassalle,Roussel,Macron,Poutou,Pecresse,Dupont-Aignan,Arthaud,Hidalgo,Le Pen,Melenchon,Jadot,Zemmour
+917,stubborn,1.0,Macron,Melenchon,Jadot,Arthaud,Roussel,Zemmour,Lassalle,Hidalgo,Pecresse,Poutou,Le Pen,Dupont-Aignan,Macron
+918,mixed,0.722,Macron,Melenchon,Roussel,Poutou,Arthaud,Hidalgo,Pecresse,Lassalle,Jadot,Le Pen,Dupont-Aignan,Zemmour,Macron
+919,strategic,0.0,Jadot,Lassalle,Melenchon,Dupont-Aignan,Arthaud,Zemmour,Le Pen,Poutou,Pecresse,Macron,Roussel,Hidalgo,Jadot
+920,stubborn,1.0,Arthaud,Macron,Pecresse,Melenchon,Lassalle,Le Pen,Zemmour,Hidalgo,Poutou,Dupont-Aignan,Jadot,Roussel,Arthaud
+921,strategic,0.0,Melenchon,Arthaud,Lassalle,Roussel,Jadot,Le Pen,Dupont-Aignan,Hidalgo,Poutou,Macron,Zemmour,Pecresse,Melenchon
+922,mixed,0.487,Melenchon,Pecresse,Jadot,Macron,Lassalle,Hidalgo,Roussel,Zemmour,Dupont-Aignan,Le Pen,Arthaud,Poutou,Melenchon
+923,strategic,0.0,Arthaud,Melenchon,Poutou,Zemmour,Pecresse,Macron,Dupont-Aignan,Roussel,Lassalle,Le Pen,Jadot,Hidalgo,Arthaud
+924,strategic,0.0,Pecresse,Le Pen,Roussel,Macron,Jadot,Hidalgo,Melenchon,Arthaud,Zemmour,Dupont-Aignan,Lassalle,Poutou,Pecresse
+925,stubborn,1.0,Roussel,Jadot,Macron,Dupont-Aignan,Zemmour,Le Pen,Lassalle,Poutou,Hidalgo,Pecresse,Melenchon,Arthaud,Roussel
+926,stubborn,1.0,Roussel,Lassalle,Hidalgo,Jadot,Poutou,Dupont-Aignan,Arthaud,Melenchon,Pecresse,Le Pen,Zemmour,Macron,Roussel
+927,stubborn,1.0,Pecresse,Roussel,Macron,Jadot,Poutou,Zemmour,Dupont-Aignan,Melenchon,Le Pen,Arthaud,Hidalgo,Lassalle,Pecresse
+928,mixed,0.573,Melenchon,Roussel,Zemmour,Le Pen,Arthaud,Pecresse,Hidalgo,Dupont-Aignan,Jadot,Lassalle,Macron,Poutou,Melenchon
+929,stubborn,1.0,Macron,Dupont-Aignan,Roussel,Poutou,Zemmour,Jadot,Lassalle,Pecresse,Hidalgo,Arthaud,Melenchon,Le Pen,Macron
+930,strategic,0.0,Arthaud,Dupont-Aignan,Macron,Jadot,Lassalle,Hidalgo,Zemmour,Pecresse,Poutou,Roussel,Melenchon,Le Pen,Arthaud
+931,mixed,0.89,Dupont-Aignan,Hidalgo,Pecresse,Jadot,Macron,Arthaud,Lassalle,Le Pen,Poutou,Roussel,Zemmour,Melenchon,Dupont-Aignan
+932,strategic,0.0,Arthaud,Pecresse,Poutou,Zemmour,Le Pen,Roussel,Dupont-Aignan,Jadot,Hidalgo,Lassalle,Melenchon,Macron,Arthaud
+933,mixed,0.854,Melenchon,Dupont-Aignan,Zemmour,Pecresse,Jadot,Poutou,Arthaud,Macron,Lassalle,Le Pen,Roussel,Hidalgo,Melenchon
+934,strategic,0.0,Zemmour,Le Pen,Melenchon,Macron,Poutou,Jadot,Lassalle,Roussel,Arthaud,Dupont-Aignan,Pecresse,Hidalgo,Zemmour
+935,stubborn,1.0,Le Pen,Zemmour,Macron,Melenchon,Jadot,Roussel,Hidalgo,Lassalle,Dupont-Aignan,Poutou,Arthaud,Pecresse,Le Pen
+936,mixed,0.756,Lassalle,Le Pen,Hidalgo,Pecresse,Jadot,Roussel,Poutou,Zemmour,Arthaud,Dupont-Aignan,Melenchon,Macron,Lassalle
+937,mixed,0.492,Zemmour,Poutou,Pecresse,Hidalgo,Jadot,Melenchon,Le Pen,Dupont-Aignan,Macron,Arthaud,Lassalle,Roussel,Zemmour
+938,strategic,0.0,Le Pen,Lassalle,Roussel,Dupont-Aignan,Macron,Pecresse,Jadot,Zemmour,Hidalgo,Arthaud,Melenchon,Poutou,Le Pen
+939,mixed,0.565,Melenchon,Dupont-Aignan,Lassalle,Jadot,Arthaud,Roussel,Pecresse,Hidalgo,Le Pen,Zemmour,Poutou,Macron,Melenchon
+940,stubborn,1.0,Pecresse,Macron,Zemmour,Melenchon,Roussel,Poutou,Dupont-Aignan,Hidalgo,Jadot,Lassalle,Le Pen,Arthaud,Pecresse
+941,stubborn,1.0,Le Pen,Zemmour,Hidalgo,Melenchon,Jadot,Pecresse,Poutou,Dupont-Aignan,Arthaud,Lassalle,Macron,Roussel,Le Pen
+942,mixed,0.849,Poutou,Le Pen,Melenchon,Roussel,Arthaud,Jadot,Pecresse,Zemmour,Hidalgo,Dupont-Aignan,Macron,Lassalle,Poutou
+943,stubborn,1.0,Le Pen,Jadot,Dupont-Aignan,Zemmour,Pecresse,Lassalle,Poutou,Macron,Hidalgo,Melenchon,Roussel,Arthaud,Le Pen
+944,mixed,0.704,Pecresse,Hidalgo,Poutou,Roussel,Le Pen,Zemmour,Arthaud,Macron,Lassalle,Jadot,Melenchon,Dupont-Aignan,Pecresse
+945,strategic,0.0,Zemmour,Arthaud,Lassalle,Roussel,Dupont-Aignan,Macron,Hidalgo,Poutou,Melenchon,Jadot,Pecresse,Le Pen,Zemmour
+946,strategic,0.0,Hidalgo,Melenchon,Macron,Poutou,Dupont-Aignan,Jadot,Arthaud,Roussel,Le Pen,Pecresse,Zemmour,Lassalle,Hidalgo
+947,stubborn,1.0,Zemmour,Arthaud,Macron,Hidalgo,Dupont-Aignan,Le Pen,Pecresse,Poutou,Jadot,Lassalle,Roussel,Melenchon,Zemmour
+948,mixed,0.602,Melenchon,Hidalgo,Poutou,Arthaud,Roussel,Le Pen,Lassalle,Zemmour,Pecresse,Jadot,Dupont-Aignan,Macron,Melenchon
+949,strategic,0.0,Jadot,Le Pen,Macron,Hidalgo,Poutou,Zemmour,Lassalle,Pecresse,Melenchon,Arthaud,Dupont-Aignan,Roussel,Jadot
+950,strategic,0.0,Lassalle,Pecresse,Jadot,Le Pen,Macron,Melenchon,Arthaud,Zemmour,Dupont-Aignan,Roussel,Hidalgo,Poutou,Lassalle
+951,strategic,0.0,Dupont-Aignan,Hidalgo,Roussel,Jadot,Pecresse,Arthaud,Macron,Zemmour,Le Pen,Lassalle,Poutou,Melenchon,Dupont-Aignan
+952,mixed,0.768,Dupont-Aignan,Jadot,Lassalle,Hidalgo,Pecresse,Le Pen,Macron,Poutou,Melenchon,Zemmour,Roussel,Arthaud,Dupont-Aignan
+953,stubborn,1.0,Pecresse,Roussel,Zemmour,Le Pen,Lassalle,Macron,Dupont-Aignan,Poutou,Arthaud,Melenchon,Jadot,Hidalgo,Pecresse
+954,stubborn,1.0,Melenchon,Macron,Jadot,Hidalgo,Le Pen,Arthaud,Lassalle,Pecresse,Zemmour,Poutou,Dupont-Aignan,Roussel,Melenchon
+955,mixed,0.773,Pecresse,Roussel,Macron,Dupont-Aignan,Melenchon,Le Pen,Zemmour,Poutou,Hidalgo,Jadot,Lassalle,Arthaud,Pecresse
+956,mixed,0.457,Dupont-Aignan,Roussel,Pecresse,Poutou,Lassalle,Jadot,Melenchon,Le Pen,Hidalgo,Arthaud,Macron,Zemmour,Dupont-Aignan
+957,stubborn,1.0,Roussel,Zemmour,Dupont-Aignan,Lassalle,Poutou,Hidalgo,Macron,Arthaud,Le Pen,Jadot,Pecresse,Melenchon,Roussel
+958,stubborn,1.0,Le Pen,Dupont-Aignan,Hidalgo,Jadot,Macron,Zemmour,Lassalle,Arthaud,Roussel,Poutou,Melenchon,Pecresse,Le Pen
+959,strategic,0.0,Poutou,Roussel,Le Pen,Arthaud,Zemmour,Jadot,Dupont-Aignan,Macron,Melenchon,Lassalle,Pecresse,Hidalgo,Poutou
+960,mixed,0.554,Jadot,Lassalle,Pecresse,Zemmour,Roussel,Arthaud,Melenchon,Poutou,Macron,Dupont-Aignan,Hidalgo,Le Pen,Jadot
+961,strategic,0.0,Dupont-Aignan,Arthaud,Poutou,Le Pen,Pecresse,Macron,Melenchon,Lassalle,Jadot,Hidalgo,Roussel,Zemmour,Dupont-Aignan
+962,mixed,0.683,Le Pen,Melenchon,Pecresse,Dupont-Aignan,Macron,Lassalle,Hidalgo,Arthaud,Jadot,Roussel,Poutou,Zemmour,Le Pen
+963,mixed,0.839,Arthaud,Jadot,Dupont-Aignan,Poutou,Melenchon,Lassalle,Roussel,Macron,Hidalgo,Pecresse,Le Pen,Zemmour,Arthaud
+964,strategic,0.0,Roussel,Dupont-Aignan,Melenchon,Pecresse,Poutou,Le Pen,Arthaud,Lassalle,Hidalgo,Jadot,Zemmour,Macron,Roussel
+965,mixed,0.512,Roussel,Hidalgo,Poutou,Pecresse,Le Pen,Arthaud,Dupont-Aignan,Jadot,Macron,Lassalle,Melenchon,Zemmour,Roussel
+966,mixed,0.533,Dupont-Aignan,Arthaud,Macron,Melenchon,Pecresse,Jadot,Hidalgo,Zemmour,Le Pen,Lassalle,Roussel,Poutou,Dupont-Aignan
+967,stubborn,1.0,Macron,Melenchon,Poutou,Hidalgo,Arthaud,Zemmour,Jadot,Pecresse,Dupont-Aignan,Roussel,Le Pen,Lassalle,Macron
+968,stubborn,1.0,Poutou,Dupont-Aignan,Arthaud,Macron,Lassalle,Zemmour,Jadot,Hidalgo,Le Pen,Roussel,Pecresse,Melenchon,Poutou
+969,strategic,0.0,Le Pen,Dupont-Aignan,Jadot,Lassalle,Pecresse,Zemmour,Arthaud,Macron,Roussel,Melenchon,Hidalgo,Poutou,Le Pen
+970,mixed,0.548,Hidalgo,Dupont-Aignan,Lassalle,Arthaud,Le Pen,Macron,Zemmour,Melenchon,Jadot,Pecresse,Roussel,Poutou,Hidalgo
+971,strategic,0.0,Dupont-Aignan,Lassalle,Macron,Roussel,Poutou,Arthaud,Pecresse,Jadot,Melenchon,Le Pen,Hidalgo,Zemmour,Dupont-Aignan
+972,mixed,0.551,Poutou,Le Pen,Lassalle,Jadot,Hidalgo,Arthaud,Dupont-Aignan,Roussel,Macron,Melenchon,Zemmour,Pecresse,Poutou
+973,strategic,0.0,Lassalle,Le Pen,Melenchon,Arthaud,Jadot,Hidalgo,Poutou,Roussel,Zemmour,Dupont-Aignan,Pecresse,Macron,Lassalle
+974,stubborn,1.0,Poutou,Dupont-Aignan,Melenchon,Jadot,Hidalgo,Arthaud,Lassalle,Le Pen,Pecresse,Macron,Zemmour,Roussel,Poutou
+975,strategic,0.0,Hidalgo,Macron,Zemmour,Arthaud,Roussel,Melenchon,Dupont-Aignan,Poutou,Jadot,Lassalle,Le Pen,Pecresse,Hidalgo
+976,stubborn,1.0,Le Pen,Roussel,Hidalgo,Melenchon,Macron,Zemmour,Lassalle,Jadot,Arthaud,Poutou,Dupont-Aignan,Pecresse,Le Pen
+977,stubborn,1.0,Pecresse,Dupont-Aignan,Lassalle,Macron,Le Pen,Zemmour,Arthaud,Roussel,Hidalgo,Melenchon,Jadot,Poutou,Pecresse
+978,strategic,0.0,Zemmour,Jadot,Lassalle,Macron,Hidalgo,Le Pen,Roussel,Melenchon,Poutou,Arthaud,Dupont-Aignan,Pecresse,Zemmour
+979,strategic,0.0,Le Pen,Jadot,Roussel,Pecresse,Macron,Dupont-Aignan,Hidalgo,Arthaud,Melenchon,Poutou,Zemmour,Lassalle,Le Pen
+980,strategic,0.0,Pecresse,Lassalle,Roussel,Le Pen,Macron,Melenchon,Arthaud,Dupont-Aignan,Zemmour,Jadot,Hidalgo,Poutou,Pecresse
+981,stubborn,1.0,Jadot,Poutou,Melenchon,Lassalle,Dupont-Aignan,Pecresse,Roussel,Hidalgo,Macron,Le Pen,Arthaud,Zemmour,Jadot
+982,strategic,0.0,Dupont-Aignan,Pecresse,Le Pen,Zemmour,Arthaud,Lassalle,Melenchon,Jadot,Roussel,Macron,Hidalgo,Poutou,Dupont-Aignan
+983,stubborn,1.0,Melenchon,Hidalgo,Roussel,Lassalle,Arthaud,Dupont-Aignan,Poutou,Macron,Le Pen,Jadot,Pecresse,Zemmour,Melenchon
+984,stubborn,1.0,Le Pen,Arthaud,Zemmour,Melenchon,Macron,Pecresse,Lassalle,Roussel,Dupont-Aignan,Poutou,Hidalgo,Jadot,Le Pen
+985,mixed,0.77,Melenchon,Roussel,Pecresse,Zemmour,Dupont-Aignan,Hidalgo,Lassalle,Macron,Poutou,Le Pen,Arthaud,Jadot,Melenchon
+986,strategic,0.0,Arthaud,Macron,Pecresse,Hidalgo,Melenchon,Lassalle,Zemmour,Poutou,Dupont-Aignan,Jadot,Roussel,Le Pen,Arthaud
+987,stubborn,1.0,Jadot,Zemmour,Poutou,Lassalle,Pecresse,Hidalgo,Melenchon,Dupont-Aignan,Arthaud,Le Pen,Macron,Roussel,Jadot
+988,stubborn,1.0,Roussel,Melenchon,Dupont-Aignan,Poutou,Macron,Jadot,Zemmour,Hidalgo,Arthaud,Pecresse,Le Pen,Lassalle,Roussel
+989,strategic,0.0,Jadot,Arthaud,Zemmour,Pecresse,Melenchon,Poutou,Roussel,Macron,Lassalle,Le Pen,Hidalgo,Dupont-Aignan,Jadot
+990,mixed,0.776,Pecresse,Melenchon,Zemmour,Lassalle,Macron,Hidalgo,Jadot,Dupont-Aignan,Roussel,Arthaud,Poutou,Le Pen,Pecresse
+991,stubborn,1.0,Zemmour,Le Pen,Pecresse,Arthaud,Dupont-Aignan,Melenchon,Jadot,Hidalgo,Poutou,Lassalle,Roussel,Macron,Zemmour
+992,stubborn,1.0,Zemmour,Dupont-Aignan,Macron,Poutou,Pecresse,Melenchon,Lassalle,Le Pen,Jadot,Arthaud,Roussel,Hidalgo,Zemmour
+993,strategic,0.0,Poutou,Arthaud,Zemmour,Melenchon,Dupont-Aignan,Le Pen,Jadot,Roussel,Hidalgo,Lassalle,Pecresse,Macron,Poutou
+994,mixed,0.52,Hidalgo,Lassalle,Macron,Pecresse,Roussel,Dupont-Aignan,Le Pen,Jadot,Melenchon,Arthaud,Poutou,Zemmour,Hidalgo
+995,strategic,0.0,Poutou,Melenchon,Le Pen,Hidalgo,Jadot,Lassalle,Pecresse,Roussel,Arthaud,Macron,Zemmour,Dupont-Aignan,Poutou
+996,stubborn,1.0,Zemmour,Jadot,Lassalle,Melenchon,Arthaud,Poutou,Hidalgo,Macron,Pecresse,Dupont-Aignan,Roussel,Le Pen,Zemmour
+997,stubborn,1.0,Roussel,Arthaud,Melenchon,Pecresse,Zemmour,Lassalle,Dupont-Aignan,Hidalgo,Jadot,Le Pen,Macron,Poutou,Roussel
+998,stubborn,1.0,Arthaud,Melenchon,Pecresse,Jadot,Lassalle,Hidalgo,Dupont-Aignan,Macron,Poutou,Le Pen,Zemmour,Roussel,Arthaud
+999,mixed,0.875,Le Pen,Roussel,Poutou,Dupont-Aignan,Zemmour,Macron,Arthaud,Melenchon,Pecresse,Hidalgo,Lassalle,Jadot,Le Pen
