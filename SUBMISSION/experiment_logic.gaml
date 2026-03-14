@@ -1,21 +1,14 @@
-/**
-* Name: ScalingModel
-* Final version for scaling batch (N=3000, 5000)
-*/
-
 model ScalingModel
 
 global {
     int num_days    <- 60;
     int current_day <- 0;
 
-    // Parameters
     string scenario_id      <- "D1";
     int    repetition_id    <- 1;
     int    num_agents       <- 3000;
     string experiment_config <- "IC_ER";
 
-    // Path Config
     string input_folder  <- "C:/Users/moeez/Downloads/ATAI/projWeek/AI-Project/input_scaling/";
     string output_folder <- "C:/Users/moeez/Downloads/ATAI/projWeek/AI-Project/COMPR_output/";
 
@@ -47,23 +40,18 @@ global {
     action setup_metrics {
         scores <- map([]);
         loop c over: candidates { scores[c] <- 0; }
-        
         ask voter {
             scores[current_vote] <- scores[current_vote] + 1;
         }
-
         list<string> sc <- candidates sort_by (- scores[each]);
         top2 <- length(sc) >= 2 ? [sc[0], sc[1]] : copy(sc);
-
         list<float> counts <- [];
         loop c over: candidates { counts <- counts + [float(scores[c])]; }
         float m <- mean(counts);
         float s <- 0.0;
         loop v over: counts { s <- s + (v - m)^2; }
         variance_val <- s / length(counts);
-        
         changes_val <- length(voter where (each.changed));
-
         float w_sum <- 0.0;
         if length(top2) >= 1 {
             string c1 <- top2[0];
@@ -86,23 +74,19 @@ global {
     }
 
     init {
-        // Logic for config mapping
         if experiment_config = "IC_ER" { pref_mod <- "IC"; net_type <- "erdos_renyi"; }
         else if experiment_config = "IC_BA" { pref_mod <- "IC"; net_type <- "barabasi_albert"; }
         else if experiment_config = "Urn_ER" { pref_mod <- "Urn"; net_type <- "erdos_renyi"; }
         else if experiment_config = "Urn_BA" { pref_mod <- "Urn"; net_type <- "barabasi_albert"; }
-
         if scenario_id = "D1" { p_stubborn <- 0.6; p_strategic <- 0.2; p_mixed <- 0.2; }
         else if scenario_id = "D2" { p_stubborn <- 0.4; p_strategic <- 0.3; p_mixed <- 0.3; }
         else if scenario_id = "D3" { p_stubborn <- 0.3; p_strategic <- 0.4; p_mixed <- 0.3; }
         else if scenario_id = "D4" { p_stubborn <- 0.2; p_strategic <- 0.6; p_mixed <- 0.2; }
         else if scenario_id = "D5" { p_stubborn <- 0.2; p_strategic <- 0.3; p_mixed <- 0.5; }
-
         run_folder   <- input_folder + experiment_config + "/" + scenario_id + "_N" + string(num_agents) + "_run_001/";
         voters_file  <- run_folder + "voters.csv";
         edges_file   <- run_folder + "edges.csv";
         results_file <- output_folder + "simulation_results_" + experiment_config + "_" + scenario_id + "_N" + string(num_agents) + "_run_001.csv";
-
         matrix vm <- matrix(csv_file(voters_file, ",", true));
         loop i from: 0 to: vm.rows - 1 {
             create voter {
@@ -117,18 +101,16 @@ global {
                 next_vote    <- current_vote;
             }
         }
-
         ask voter { neighbors <- []; }
         matrix em <- matrix(csv_file(edges_file, ",", true));
         loop i from: 0 to: em.rows - 1 {
             voter s <- one_of(voter where (each.voter_id = int(em[0, i])));
             voter t <- one_of(voter where (each.voter_id = int(em[1, i])));
-            if s != nil and t != nil {
+            if s != nil and vt != nil {
                 if !(t in s.neighbors) { add t to: s.neighbors; }
                 if !(s in t.neighbors) { add s to: t.neighbors; }
             }
         }
-
         do setup_metrics;
         save ["scenario_id","repetition_id","day","num_agents","network_type","preference_model","prop_stubborn","prop_strategic","prop_mixed","variance_scores","social_welfare","num_changes"] 
         to: results_file format: "csv" rewrite: true;
@@ -160,29 +142,24 @@ species voter {
     list<voter> neighbors <- [];
     map<string,int> local_poll <- map([]);
     list<string> local_top2 <- [];
-
     int get_rank(string c) {
         int i <- prefs index_of c;
         return i < 0 ? 12 : i + 1;
     }
-
     int get_welfare(string c) {
         int i <- prefs index_of c;
         return i < 0 ? 12 : i + 1;
     }
-
     action decide {
         local_poll <- map([]);
         loop c over: candidates { local_poll[c] <- 0; }
         loop n over: neighbors { local_poll[n.current_vote] <- local_poll[n.current_vote] + 1; }
         list<string> sc <- candidates sort_by (- local_results[each]);
         local_top2 <- length(sc) >= 2 ? [sc[0], sc[1]] : copy(sc);
-
         string fav <- prefs[0];
         string best_v <- local_top2[0];
         int r_best <- get_rank(best_v);
         loop v over: local_top2 { if get_rank(v) < r_best { best_v <- v; r_best <- get_rank(v); } }
-
         if type = "stubborn" { next_vote <- fav; }
         else if type = "strategic" { next_vote <- fav in local_top2 ? fav : best_v; }
         else {

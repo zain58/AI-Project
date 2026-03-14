@@ -1,8 +1,3 @@
-/**
-* Name: NewModel
-* Team project - Simulation Part
-*/
-
 model NewModel
 
 global {
@@ -10,7 +5,6 @@ global {
     int current_day <- 0;
     int run_id      <- 1;
 
-    // Paths
     string input_folder  <- "C:/Users/moeez/Downloads/ATAI/GamaSetting/AIProject/input/";
     string output_folder <- "C:/Users/moeez/Downloads/ATAI/GamaSetting/AIProject/output/";
 
