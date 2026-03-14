@@ -12,7 +12,6 @@ from tensorflow.keras.layers import Input, Dense, Dropout, LSTM, Concatenate
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from tensorflow.keras.losses import Huber
 
-# Global config
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "gama_runs"
 META_FILE = DATA_DIR / "run_metadata.csv"
@@ -179,32 +178,26 @@ def main():
     tr_val_ids, te_ids = train_test_split(ids, test_size=TEST_SIZE, random_state=SEED)
     tr_ids, val_ids = train_test_split(tr_val_ids, test_size=VAL_SIZE/(1-TEST_SIZE), random_state=SEED)
     tr_runs = [r for r in runs if r["run_id"] in tr_ids]
-    vl_runs = [r for r in runs if r["run_id"] in val_ids]
+    val_runs = [r for r in runs if r["run_id"] in val_ids]
     te_runs = [r for r in runs if r["run_id"] in te_ids]
-
     scaler, encoder = setup_preprocessors(tr_runs)
     t_scalers = init_target_scalers(tr_runs)
     s_dim = len(get_static_vec(tr_runs[0]["static"], scaler, encoder))
-    
     models = {}
     for name in TARGETS:
         xs, xst, ys = build_train_data(tr_runs, scaler, encoder, t_scalers, name)
-        vxs, vxst, vys = build_train_data(vl_runs, scaler, encoder, t_scalers, name)
+        vxs, vxst, vys = build_train_data(val_runs, scaler, encoder, t_scalers, name)
         m = compile_lstm(s_dim, LOSS_BY_TARGET[name])
-        m.fit([xs, xst], ys, validation_data=([vxs, vxst], vys), epochs=EPOCHS, batch_size=BATCH_SIZE, 
-              callbacks=[EarlyStopping(patience=15, restore_best_weights=True)], verbose=1)
+        cb = [EarlyStopping(patience=15, restore_best_weights=True),
+              ModelCheckpoint(str(OUT_DIR / "models" / f"best_{name}.keras"), save_best_only=True)]
+        m.fit([xs, xst], ys, validation_data=([vxs, vxst], vys), epochs=EPOCHS, batch_size=BATCH_SIZE, callbacks=cb, verbose=1)
         models[name] = m
-
-    # Extrapolation Comparison Plot
     base = te_runs[0]
     extra_static = dict(base["static"])
     extra_static["num_agents_log"] = np.log1p(EXTRAP_N)
     pred_100k = predict_rollout(base, models, scaler, encoder, t_scalers, override=extra_static)
-    
-    # Normalize for single graph comparison
     mms = MinMaxScaler()
     norm_pred = mms.fit_transform(pred_100k)
-    
     plt.figure(figsize=(10, 6))
     plt.plot(base["days"], norm_pred[:, 0], label="Opinion Changes", color="red", lw=2.5)
     plt.plot(base["days"], norm_pred[:, 1], label="Variance (Consensus)", color="blue", lw=2.5)
@@ -217,8 +210,7 @@ def main():
     plt.tight_layout()
     plt.savefig(OUT_DIR / "plots" / "extrapolation_100k_combined.png", dpi=200)
     plt.close()
-
-    print("Success. Extrapolation comparison plot generated.")
+    print("Execution complete. Results saved.")
 
 if __name__ == "__main__":
     main()
