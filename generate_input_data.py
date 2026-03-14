@@ -1,12 +1,9 @@
 import argparse
 import os
 import random
-from typing import List, Dict, Tuple
-
 import networkx as nx
 import pandas as pd
 from preflibtools.instances.sampling import generate_IC
-
 
 CANDIDATES = [
     "Macron", "Le Pen", "Melenchon", "Zemmour", "Pecresse",
@@ -14,7 +11,7 @@ CANDIDATES = [
     "Hidalgo", "Poutou", "Arthaud"
 ]
 
-DISTRIBUTIONS: Dict[str, Tuple[float, float, float]] = {
+SCENARIOS = {
     "D1": (0.6, 0.2, 0.2),
     "D2": (0.4, 0.3, 0.3),
     "D3": (0.3, 0.4, 0.3),
@@ -22,237 +19,68 @@ DISTRIBUTIONS: Dict[str, Tuple[float, float, float]] = {
     "D5": (0.2, 0.3, 0.5),
 }
 
+def get_prefs(n, rng):
+    random.seed(rng.randint(0, 1000000))
+    raw = generate_IC(n, len(CANDIDATES))
+    final = []
+    for order, count in raw.items():
+        ranking = [CANDIDATES[int(item[0])] for item in order]
+        for _ in range(count):
+            final.append(ranking[:])
+    rng.shuffle(final)
+    return final[:n]
 
-def sample_ic_preferences(num_agents: int, rng: random.Random) -> List[List[str]]:
-    random.seed(rng.randint(0, 2**31 - 1))
-
-    instance = generate_IC(num_agents, len(CANDIDATES))
-
-    prefs: List[List[str]] = []
-
-    for order, multiplicity in instance.items():
-
-        if len(order) > 0 and isinstance(order[0], tuple):
-            ranking = [CANDIDATES[alt - 1] for group in order for alt in group]
-        else:
-            ranking = [CANDIDATES[alt - 1] for alt in order]
-
-        for _ in range(multiplicity):
-            prefs.append(ranking[:])
-
-    if len(prefs) != num_agents:
-        raise ValueError(f"Expected {num_agents} IC rankings, got {len(prefs)}")
-
-    rng.shuffle(prefs)
-    return prefs
-
-
-def assign_agent_types(
-    num_agents: int,
-    prop_stubborn: float,
-    prop_strategic: float,
-    prop_mixed: float,
-    rng: random.Random
-) -> List[str]:
-    total = prop_stubborn + prop_strategic + prop_mixed
-    if abs(total - 1.0) > 1e-9:
-        raise ValueError("Agent proportions must sum to 1.0")
-    if prop_stubborn < 0 or prop_strategic < 0 or prop_mixed < 0:
-        raise ValueError("Agent proportions must be non-negative")
-
-    n_stubborn = int(num_agents * prop_stubborn)
-    n_strategic = int(num_agents * prop_strategic)
-    n_mixed = num_agents - n_stubborn - n_strategic
-
-    agent_types = (
-        ["stubborn"] * n_stubborn +
-        ["strategic"] * n_strategic +
-        ["mixed"] * n_mixed
-    )
-    rng.shuffle(agent_types)
-    return agent_types
-
-
-def build_network(
-    num_agents: int,
-    network_type: str,
-    avg_degree: int,
-    seed: int,
-    rng: random.Random
-) -> nx.Graph:
-    if network_type == "erdos_renyi":
-        p = min(1.0, avg_degree / max(1, num_agents - 1))
-        G = nx.erdos_renyi_graph(num_agents, p, seed=seed)
-    elif network_type == "barabasi_albert":
-        m = max(1, avg_degree // 2)
-        G = nx.barabasi_albert_graph(num_agents, m, seed=seed)
-    else:
-        raise ValueError("network_type must be 'erdos_renyi' or 'barabasi_albert'")
-
-    isolates = list(nx.isolates(G))
-    for node in isolates:
-        choices = [x for x in range(num_agents) if x != node]
-        target = rng.choice(choices)
-        G.add_edge(node, target)
-
-    return G
-
-
-def run_sanity_checks(voters_df: pd.DataFrame, edges_df: pd.DataFrame, num_agents: int) -> None:
-    required_agent_types = {"stubborn", "strategic", "mixed"}
-    found_agent_types = set(voters_df["agent_type"].unique())
-
-    if not found_agent_types.issubset(required_agent_types):
-        raise ValueError(f"Unexpected agent types found: {found_agent_types}")
-    if len(voters_df) != num_agents:
-        raise ValueError(f"Expected {num_agents} voters, got {len(voters_df)}")
-    if not (voters_df["initial_vote"] == voters_df["pref_1"]).all():
-        raise ValueError("Some rows have initial_vote different from pref_1")
-    if (edges_df["source"] == edges_df["target"]).any():
-        raise ValueError("Self-loops detected in edges file")
-    if voters_df["voter_id"].duplicated().any():
-        raise ValueError("Duplicate voter_id detected")
-
-    pref_cols = [f"pref_{i}" for i in range(1, 13)]
-    for idx, row in voters_df[pref_cols].iterrows():
-        if len(set(row.tolist())) != 12:
-            raise ValueError(f"Duplicate candidate in preferences for voter row {idx}")
-
-
-def generate_one_run(
-    scenario_id: str,
-    repetition_id: int,
-    num_agents: int,
-    network_type: str,
-    avg_degree: int,
-    prop_stubborn: float,
-    prop_strategic: float,
-    prop_mixed: float,
-    preference_model: str,
-    seed: int,
-    base_output_dir: str
-) -> dict:
+def setup_run(s_id, r_id, n, net_type, deg, p_stub, p_strat, p_mix, pref_mod, seed, out_dir):
     rng = random.Random(seed)
+    tag = f"{r_id:03d}"
+    folder_name = f"{s_id}_N{n}_run_{tag}"
+    path = os.path.join(out_dir, folder_name)
+    os.makedirs(path, exist_ok=True)
 
-    if preference_model != "IC":
-        raise ValueError("This baseline currently implements IC only.")
+    prefs = get_prefs(n, rng)
+    
+    types = (["stubborn"] * int(n * p_stub) + 
+             ["strategic"] * int(n * p_strat) + 
+             ["mixed"] * (n - int(n * p_stub) - int(n * p_strat)))
+    rng.shuffle(types)
 
-    run_tag = f"{repetition_id:03d}"
-    run_folder_name = f"{scenario_id}_N{num_agents}_run_{run_tag}"
-    run_folder = os.path.join(base_output_dir, run_folder_name)
-    os.makedirs(run_folder, exist_ok=True)
+    rows = []
+    for i in range(n):
+        l = 1.0 if types[i] == "stubborn" else 0.0 if types[i] == "strategic" else round(rng.uniform(0.4, 0.9), 3)
+        row = {"voter_id": i, "agent_type": types[i], "loyalty": l}
+        for j, c in enumerate(prefs[i], start=1): row[f"pref_{j}"] = c
+        row["initial_vote"] = prefs[i][0]
+        rows.append(row)
 
-    preferences = sample_ic_preferences(num_agents, rng)
-    agent_types = assign_agent_types(
-        num_agents, prop_stubborn, prop_strategic, prop_mixed, rng
-    )
+    if net_type == "erdos_renyi":
+        G = nx.erdos_renyi_graph(n, deg/n, seed=seed)
+    else:
+        G = nx.barabasi_albert_graph(n, deg//2, seed=seed)
 
-    loyalties = []
-    for t in agent_types:
-        if t == "stubborn":
-            loyalties.append(1.0)
-        elif t == "strategic":
-            loyalties.append(0.0)
-        else:
-            loyalties.append(round(rng.uniform(0.4, 0.9), 3))
-
-    voter_rows = []
-    for i in range(num_agents):
-        row = {
-            "voter_id": i,
-            "agent_type": agent_types[i],
-            "loyalty": loyalties[i]
-        }
-        for j, cand in enumerate(preferences[i], start=1):
-            row[f"pref_{j}"] = cand
-        row["initial_vote"] = preferences[i][0]
-        voter_rows.append(row)
-
-    voters_df = pd.DataFrame(voter_rows)
-
-    G = build_network(
-        num_agents=num_agents,
-        network_type=network_type,
-        avg_degree=avg_degree,
-        seed=seed,
-        rng=rng
-    )
-
-    edges_df = pd.DataFrame(list(G.edges()), columns=["source", "target"])
-
-    run_sanity_checks(voters_df, edges_df, num_agents)
-
-    voters_path = os.path.join(run_folder, "voters.csv")
-    edges_path = os.path.join(run_folder, "edges.csv")
-
-    voters_df.to_csv(voters_path, index=False)
-    edges_df.to_csv(edges_path, index=False)
-
-    print(f"[OK] {run_folder_name}")
-    print(f"     voters : {voters_path}")
-    print(f"     edges  : {edges_path}")
-    print(f"     edges count: {len(edges_df)}")
-
-    return {
-        "scenario_id": scenario_id,
-        "repetition_id": repetition_id,
-        "run_folder": run_folder_name,
-        "num_agents": num_agents,
-        "network_type": network_type,
-        "preference_model": preference_model,
-        "prop_stubborn": prop_stubborn,
-        "prop_strategic": prop_strategic,
-        "prop_mixed": prop_mixed,
-        "avg_degree": avg_degree,
-        "seed": seed
-    }
-
+    pd.DataFrame(rows).to_csv(os.path.join(path, "voters.csv"), index=False)
+    pd.DataFrame(list(G.edges()), columns=["source", "target"]).to_csv(os.path.join(path, "edges.csv"), index=False)
+    
+    return {"scenario_id": s_id, "repetition_id": r_id, "run_folder": folder_name, "num_agents": n, "network_type": net_type, "preference_model": pref_mod, "prop_stubborn": p_stub, "prop_strategic": p_strat, "prop_mixed": p_mix, "avg_degree": deg, "seed": seed}
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate input data for GAMA voting simulation")
-    parser.add_argument("--sizes", type=int, nargs="+", default=[1000, 3000, 5000])
-    parser.add_argument("--runs_per_setting", type=int, default=10)
-    parser.add_argument("--network_type", type=str, default="erdos_renyi",
-                        choices=["erdos_renyi", "barabasi_albert"])
-    parser.add_argument("--avg_degree", type=int, default=10)
-    parser.add_argument("--preference_model", type=str, default="IC")
-    parser.add_argument("--base_seed", type=int, default=42)
-    parser.add_argument("--output_dir", type=str, default="input")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--n", type=int, default=1000)
+    parser.add_argument("--reps", type=int, default=10)
+    parser.add_argument("--out", type=str, default="input")
     args = parser.parse_args()
 
-    os.makedirs(args.output_dir, exist_ok=True)
+    os.makedirs(args.out, exist_ok=True)
+    meta = []
+    s_val = 42
 
-    metadata_rows = []
-    seed_counter = 0
+    for sid, (ps, pt, pm) in SCENARIOS.items():
+        for r in range(1, args.reps + 1):
+            res = setup_run(sid, r, args.n, "erdos_renyi", 10, ps, pt, pm, "IC", s_val, args.out)
+            meta.append(res)
+            s_val += 1
 
-    for scenario_id, (prop_stubborn, prop_strategic, prop_mixed) in DISTRIBUTIONS.items():
-        for num_agents in args.sizes:
-            for repetition_id in range(1, args.runs_per_setting + 1):
-                seed = args.base_seed + seed_counter
-                seed_counter += 1
-
-                meta = generate_one_run(
-                    scenario_id=scenario_id,
-                    repetition_id=repetition_id,
-                    num_agents=num_agents,
-                    network_type=args.network_type,
-                    avg_degree=args.avg_degree,
-                    prop_stubborn=prop_stubborn,
-                    prop_strategic=prop_strategic,
-                    prop_mixed=prop_mixed,
-                    preference_model=args.preference_model,
-                    seed=seed,
-                    base_output_dir=args.output_dir
-                )
-                metadata_rows.append(meta)
-
-    metadata_df = pd.DataFrame(metadata_rows)
-    metadata_path = os.path.join(args.output_dir, "run_metadata.csv")
-    metadata_df.to_csv(metadata_path, index=False)
-
-    print(f"\n[OK] Wrote metadata : {metadata_path}")
-    print(f"[OK] Total runs generated: {len(metadata_df)}")
-
+    pd.DataFrame(meta).to_csv(os.path.join(args.out, "run_metadata.csv"), index=False)
+    print("Done. Generated", len(meta), "runs.")
 
 if __name__ == "__main__":
     main()
